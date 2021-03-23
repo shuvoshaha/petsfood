@@ -1,6 +1,7 @@
 :root{
     --linkColor: #004959!important;
     --linkHoverColor: #46b1e7!important;
+    --delay: all 0.2s ease-out;
 }
 
 *{
@@ -10,16 +11,18 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: #f4f5f6;
 }
 
 /*
-=========Header==========
-*/
+=========Header==========*/
 
 .header{
   
 }
+
+/*
+=========Top Nav=======*/
 
 .top-nav{
   box-shadow: 0 2px 1px rgba(225,225,225,.9);
@@ -52,6 +55,9 @@ body{
 
 .lang-de{}
 
+/*
+============Top Social-Media-links=========*/
+
 .social-media-links{
     margin-right: 1rem;
 }
@@ -60,4 +66,80 @@ body{
     color: var(--linkColor);
     font-size: 17px;
     margin-left: 8px;
+    
 }
+
+.social-links:hover{
+    color: var(--linkHoverColor);
+    transition: var(--delay);
+}
+
+
+/*
+==========Main Nav========*/
+
+.brand-logo{
+    width: 200px;
+}
+
+.navbar-nav .nav-link{
+    color: var(--linkColor);
+    font-size: clamp(1vw, 3vw, 18px);
+    font-weight: 600;
+    transition: var(--delay);
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--linkHoverColor);
+}
+
+/*
+========Main==========*/
+
+.brand-hero{
+    position: relative;
+    max-width: 100%;
+    max-height: 600px;
+    min-height: 500px;
+}
+
+.hero-bg{
+    width: 100%;
+    max-height: 500px;
+}
+
+
+/*
+=======Hero top text==========*/
+
+.hero{
+    background: url(../img/hero-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+
+}
+
+.hero-top-text{
+    padding: 4px 0;
+    background: #fbb722;
+    text-align: center;
+    max-width: 100%;
+}
+
+.text{
+    color: #fff;
+}
+
+.badge{
+    
+}
+
+.trust-thumb{
+    max-width: 100px;
+    margin-top: -30px; 
+}
+
+
