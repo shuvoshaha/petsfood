@@ -1,0 +1,1 @@
+const popUp = document.getElementById("popup")
