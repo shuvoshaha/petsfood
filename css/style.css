@@ -2,6 +2,7 @@
     --linkColor: #004959!important;
     --linkHoverColor: #46b1e7!important;
     --delay: all 0.2s ease-out;
+    --text-color: #004959 !important;
 }
 
 *{
@@ -25,6 +26,7 @@ body{
 =========Top Nav=======*/
 
 .top-nav{
+    position: relative;
   box-shadow: 0 2px 1px rgba(225,225,225,.9);
 }
 
@@ -59,7 +61,8 @@ body{
 ============Top Social-Media-links=========*/
 
 .social-media-links{
-    margin-right: 1rem;
+    position: absolute;
+    right: 10px;
 }
 
 .social-links{
@@ -80,6 +83,9 @@ body{
 
 .brand-logo{
     width: 200px;
+}
+.navbar-brand{
+    padding: 0!important;
 }
 
 .navbar-nav .nav-link{
@@ -145,21 +151,29 @@ body{
 =====hero overlay box======*/
 
 .hero-overlay-box{
-    display: FLEX;
+    display: flex;
     align-items: center;
     margin-left: auto;
-    background: #fafafa;
+    background: #f9eddb;
     padding: 2rem 1rem;
     width: 300px;
-    flex-direction: COLUMN;
+    flex-direction: column;
     text-align: CENTER;
+    opacity: 0.9;
 }
 
 .overlay-head{}
 
-.overlay-head h2{}
+.overlay-head h2{
+    font-size: clamp(2vw, 5vw, 30px);
+    font-weight: 700;
+    color: var(--text-color);
+}
 
-.overlay-head p{}
+.overlay-head p{
+    color: var(--text-color);
+    font-size: 17px;
+}
 
 .overlay-body{
     display: flex;
@@ -178,7 +192,7 @@ body{
 .contents span{
     width: 30px;
     height: 30px;
-    background: #888;
+    background: var(--text-color);
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -194,7 +208,7 @@ body{
     position: absolute;
     width: 2px;
     height: 31px;
-    background: #656060;
+    background: var(--text-color);
     bottom: 0;
     margin: -30px;
 }
@@ -217,13 +231,38 @@ body{
     margin-right: 1rem;
     font-size: clamp(2vw, 3vw, 42px);
     margin-top: -10px;
+    color: var(--text-color);
 }
 
 .o-text{}
 
-.o-text p{}
+.o-text p{
+    color: var(--text-color);
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
 
-.overlay-btn{}
+.overlay-btn{
+    background: var(--text-color);
+    padding: 10px 45px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: var(--delay);
+}
 
-.overlay-btn span{}
+.overlay-btn:hover{
+    background: var(--linkHoverColor);
+}
+
+.overlay-btn span{
+    margin: 0 !important;font-weight: 600;color: #fff;font-size: clamp(1vw, 5vw, 15px);
+}
+
+/*
+========Product Gallery========*/
+
+.product{
+
+}
 
