@@ -1,0 +1,63 @@
+:root{
+    --linkColor: #004959!important;
+    --linkHoverColor: #46b1e7!important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+/*
+=========Header==========
+*/
+
+.header{
+  
+}
+
+.top-nav{
+  box-shadow: 0 2px 1px rgba(225,225,225,.9);
+}
+
+.top-nav .nav .nav-link{
+ color: var(--linkColor);
+ font-weight: 600;
+ font-size: 14px;
+ transition: all 0.2s ease-out;
+}
+
+.top-nav .nav .nav-link:hover{
+ color: var(--linkHoverColor);
+}
+
+.top-nav .nav .nav-link:first-child{
+    letter-spacing: 0.4px;
+}
+
+.lang{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.lang a{
+    color: var(--linkColor);
+    margin: 0 2px;
+}
+
+.lang-de{}
+
+.social-media-links{
+    margin-right: 1rem;
+}
+
+.social-links{
+    color: var(--linkColor);
+    font-size: 17px;
+    margin-left: 8px;
+}

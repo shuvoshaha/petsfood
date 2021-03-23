@@ -1,1 +1,8 @@
-const popUp = document.getElementById("popup")
+// 
+const popUp =()=>{
+    this.addClassList('.active')
+}
+
+
+
+// Plugins Init
