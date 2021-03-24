@@ -1,15 +1,125 @@
-.owl-carousel .owl-item img{
+.owl-carousel .owl-item img {
     width: 150px;
 }
 
 button.owl-prev {
     position: absolute;
     top: 36%;
-    left: -20px;
+    left: -38px;
 }
 
 button.owl-next {
     position: absolute;
     top: 36%;
-    right: 2px;
+    right: -7px;
 }
+
+
+.arrow {
+    width: 70%;
+    opacity: 0.7;
+    transition: all 0.2s ease-out;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+
+
+/*
+=========Slick Slider=========*/
+
+.slick-dots{
+    display: flex;
+    position: absolute;
+    top: -37px;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  .slick-dots li{
+      list-style: none;
+      width: 13px;
+      height: 13px;
+      border: 2px solid #004959;
+      border-radius: 10px;
+      margin-right: 7px;
+      cursor: pointer;
+  }
+  
+  .slick-dots li button{
+      display: none;
+  }
+  
+  .slick-dots li.slick-active{
+      width: 13px;
+      height: 13px;
+      border: 2px solid #004959;
+      background-color: #004959;
+  }
+
+  .slick-arrow{
+      position: absolute;
+      width: 17px;
+      opacity: 0.7;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+  }
+
+  .slick-arrow:hover{
+      opacity: 1;
+  }
+
+  .left-arrow{
+      left: -40px;
+      top: 50%;
+  }
+
+  .right-arrow{
+      top: 50%;
+      right: -40px;
+  }
+
+  /*
+  ========testmonial carousel==========
+  */
+
+  .testmonial-carousel{
+      width: 100%;
+  }
+
+  .testmonial-carousel .left-arrow{
+      
+  }
+
+  .testmonial-carousel .right-arrow{
+    right: -7px !important;
+}
+
+
+.testmonial-carousel .slick-dots{
+    display: flex;
+    position: absolute;
+    top: -37px;
+    right: 19px !important;
+    cursor: pointer;
+  }
+
+
+@media (max-width: 768px) {
+    button.owl-prev {
+            
+            left: 0 !important;
+        }
+
+        button.owl-next {
+            right: 0 !important;
+        }
+
+        .arrow {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 400px) {}

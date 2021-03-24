@@ -270,6 +270,7 @@ body {
     background: #fffbf2;
     margin-top: 0 !important;
     padding: 2rem 0;
+    position: relative;
 }
 
 .product-section h2 {
@@ -341,8 +342,6 @@ body {
     right: 0px;
 }
 
-.product-desc {}
-
 .product-desc h4 {
     font-size: 1rem;
     margin-top: 8px;
@@ -364,11 +363,15 @@ body {
 .weight span::after {
     content: '';
     position: absolute;
-    right: -5px;
-    top: 2px;
-    width: 1px;
-    height: 20px;
+    right: -8px;
+    top: 4px;
+    width: 2px;
+    height: 15px;
     background: var(--text-color);
+}
+
+.weight span:last-child::after {
+    width: 0 !important;
 }
 
 .weight-active {
@@ -421,6 +424,43 @@ form select {
 }
 
 
+/*Gaurantee include*/
+.guarantee-liflet{
+    width: 100px;
+    background: #fff;
+    text-align: center;
+    padding: 10px 4px;
+    box-shadow: 0 1px 16px rgb(0, 0, 0, .2);
+    border-radius: 20px;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.liflet-inner img{
+    width: 100%;
+}
+
+.liflet-inner h4{
+    font-size: 13px;
+}
+
+.liflet-inner span{
+    display: flex;
+    justify-content: center;
+}
+
+.liflet-inner hr{
+    margin: 6px 0 !important;
+}
+
+
+.liflet-inner span [class*=fa ] {
+ color: #fbb722;
+ font-size: 13px;
+}
+
+
 /*
 ========Pets display========*/
 
@@ -470,19 +510,20 @@ form select {
 
 .pet-help-row img {
     width: 50%;
+    transform: rotate3d(0, 106, 1, 189deg);
 }
 
 .help-box {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     border: 1px solid var(--borderColor);
     text-align: center;
     margin: auto;
     background: #fff;
-    width: 500px;
+    width: 362px;
 }
 
 .help-box h2 {
-    font-size: 30px;
+    font-size: 24px;
     color: var(--linkColor);
     font-weight: 700;
 }
@@ -497,13 +538,12 @@ form select {
 .help-btn {
     display: flex;
     justify-content: center;
-    padding: 10px 30px;
+    padding: 6px 0;
     background: #fbb722;
     width: 50%;
-    /* text-align: center; */
     margin: auto !important;
     border-radius: 18px;
-    color: var(--linkColor);
+    color: var(--linkColor) !important;
     font-weight: 700;
     margin-top: -17px !important;
 }

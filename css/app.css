@@ -13,3 +13,7 @@ p {
 h2 {
     margin: 0;
 }
+
+button:focus{
+    outline: none;
+}

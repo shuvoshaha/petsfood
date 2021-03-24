@@ -1,64 +1,14 @@
-// 
-const popUp =()=>{
-    this.addClassList('.active')
-}
-
-
 
 // Plugins Init
-
-// Swiper 
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-
-    
-    breakpoints: {
-        375: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            
-          },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-      },
-  
-
-    
-    autoplay: {
-        delay: 3000,
-      },
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-});
-
 
  // Owl Slider Init
  $('.owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
+    dots: true,
+    // navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    navText : ["<img class='left-arrow arrow' src='./img/left-arrow.png' />","<img class='arrow arrow-right' src='./img/right-arrow.png' />"],
     responsive:{
         0:{
             items:1
@@ -70,4 +20,147 @@ const swiper = new Swiper('.swiper-container', {
             items:2
         }
     }
+    
 })
+
+
+
+// Slick Slider init
+
+$(document).ready(function(){
+  $('.product-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 2000,
+  prevArrow: "<img src='./img/left-arrow.png' class='left-arrow' /> ",
+  nextArrow: "<img src='./img/right-arrow.png' class='right-arrow' /> ",
+  dots: true,
+  dotsClass: "slick-dots",
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+  });
+});
+
+
+$(document).ready(function(){
+  $('.testmonial-carousel').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 2000,
+  prevArrow: "<img src='./img/left-arrow.png' class='left-arrow' /> ",
+  nextArrow: "<img src='./img/right-arrow.png' class='right-arrow' /> ",
+  dots: true,
+  dotsClass: "slick-dots",
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false
+        }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+  });
+});
+
+
+
