@@ -14,12 +14,19 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <!-- App CSS -->
     <link rel="stylesheet" href="./css/app.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Plugins Customize CSS -->
+    <link rel="stylesheet" href="./css/plugins.customize.css">
 </head>
 
 <body>
@@ -28,7 +35,8 @@
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
-                <nav class="nav justify-content-end align-items-center">
+                <!-- Desktop version -->
+                <nav class="nav d-flex justify-content-end align-items-center desktop-v">
                     <a class="nav-link" href="#"> <i class="fa fa-user"></i> LOGIN</a>
                     <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
                     <a class="nav-link" href="#"><i class="fa fa-heart"></i> Wunschliste</a>
@@ -39,15 +47,29 @@
                     </span>
                     <a class="nav-link" href="#">Ernährungsberatung</a>
                 </nav>
+
+                <!-- Mobile version -->
+                <nav class="nav d-flex justify-content-start align-items-center mobile-v">
+                    <a class="nav-link" href="#"> <i class="fa fa-user"></i></a>
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> </a>
+                    <a class="nav-link" href="#"><i class="fa fa-heart"></i> </a>
+                    <span class="lang d-flex">
+                        <a class="lang-de" href="#">DE</a>
+                        <span class="seperator">|</span>
+                        <a class="lang-en" href="#">EN</a>
+                    </span>
+                    <a class="nav-link" href="#"></a>
+                </nav>
+
             </div>
 
             <!-- Top Social-Media-links -->
             <div class="social-media-links">
                 <nav class="nav d-flex">
                     <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-envelope-square"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
                     <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
                     <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
                 </nav>
             </div>
@@ -155,81 +177,548 @@
             </div>
         </div>
 
-        <!-- Product gallery -->
-        <div class="container">
-            <div class="product-gallery">
+        <!-- Product section -->
+        <div class="product-section">
+            <h2 class="text-center my-3">Aktuell im Angebot</h2>
+            <div class="container">
+                <div class="product-gallery">
 
-                <div class="product">
-                    <div class="product-head">
-                        <img src="./img/product-1.jpg" alt="">
-                        <span class="wishlist">
-                            <i class="fa fa-heart"></i>
-                        </span>
-                        <span class="feature">
-                            <img src="./img/feature-1.png" alt="">
-                            <img src="./img/feature-2.png" alt="">
-                            <img src="./img/feature-3.png" alt="">
-                            <img src="./img/feature-4.png" alt="">
-                        </span>
-                        <span class="discount">
-                            -10%
-                        </span>
-                        <span class="info">
-                            <i class="fa fa-info"></i>
-                        </span>
+                    <!-- Swiper Slider -->
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-head">
+                                        <img src="./img/product-1.jpg" alt="">
+                                        <span class="wishlist">
+                                            <i class="fa fa-heart"></i>
+                                        </span>
+                                        <span class="feature">
+                                            <img src="./img/feature-1.png" alt="">
+                                            <img src="./img/feature-2.png" alt="">
+                                            <img src="./img/feature-3.png" alt="">
+                                            <img src="./img/feature-4.png" alt="">
+                                        </span>
+                                        <span class="discount">
+                                            -10%
+                                        </span>
+                                        <span class="info">
+                                            <i class="fa fa-info"></i>
+                                        </span>
+                                    </div>
+
+                                    <!-- Product-description -->
+                                    <div class="product-desc">
+                                        <h4>Dog‘s Love – Welpenfutter</h4>
+
+                                        <div class="weight">
+                                            <span class="weight-active">300g</span>
+                                            <span>600g</span>
+                                            <span>900g</span>
+                                        </div>
+
+                                        <div class="product-foot">
+                                            <div class="price">
+                                                <del>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,60
+                                                </del>
+                                                <span>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,20
+                                                </span>
+                                            </div>
+                                            <div class="cart-option">
+                                                <form action="">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                    </select>
+                                                    <button class="cart-btn">
+                                                        <i class="fa fa-shopping-bag"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-head">
+                                        <img src="./img/product-1.jpg" alt="">
+                                        <span class="wishlist">
+                                            <i class="fa fa-heart"></i>
+                                        </span>
+                                        <span class="feature">
+                                            <img src="./img/feature-1.png" alt="">
+                                            <img src="./img/feature-2.png" alt="">
+                                            <img src="./img/feature-3.png" alt="">
+                                            <img src="./img/feature-4.png" alt="">
+                                        </span>
+                                        <span class="discount">
+                                            -10%
+                                        </span>
+                                        <span class="info">
+                                            <i class="fa fa-info"></i>
+                                        </span>
+                                    </div>
+
+                                    <!-- Product-description -->
+                                    <div class="product-desc">
+                                        <h4>Dog‘s Love – Welpenfutter</h4>
+
+                                        <div class="weight">
+                                            <span class="weight-active">300g</span>
+                                            <span>600g</span>
+                                            <span>900g</span>
+                                        </div>
+
+                                        <div class="product-foot">
+                                            <div class="price">
+                                                <del>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,60
+                                                </del>
+                                                <span>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,20
+                                                </span>
+                                            </div>
+                                            <div class="cart-option">
+                                                <form action="">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                    </select>
+                                                    <button class="cart-btn">
+                                                        <i class="fa fa-shopping-bag"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-head">
+                                        <img src="./img/product-1.jpg" alt="">
+                                        <span class="wishlist">
+                                            <i class="fa fa-heart"></i>
+                                        </span>
+                                        <span class="feature">
+                                            <img src="./img/feature-1.png" alt="">
+                                            <img src="./img/feature-2.png" alt="">
+                                            <img src="./img/feature-3.png" alt="">
+                                            <img src="./img/feature-4.png" alt="">
+                                        </span>
+                                        <span class="discount">
+                                            -10%
+                                        </span>
+                                        <span class="info">
+                                            <i class="fa fa-info"></i>
+                                        </span>
+                                    </div>
+
+                                    <!-- Product-description -->
+                                    <div class="product-desc">
+                                        <h4>Dog‘s Love – Welpenfutter</h4>
+
+                                        <div class="weight">
+                                            <span class="weight-active">300g</span>
+                                            <span>600g</span>
+                                            <span>900g</span>
+                                        </div>
+
+                                        <div class="product-foot">
+                                            <div class="price">
+                                                <del>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,60
+                                                </del>
+                                                <span>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,20
+                                                </span>
+                                            </div>
+                                            <div class="cart-option">
+                                                <form action="">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                    </select>
+                                                    <button class="cart-btn">
+                                                        <i class="fa fa-shopping-bag"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-head">
+                                        <img src="./img/product-1.jpg" alt="">
+                                        <span class="wishlist">
+                                            <i class="fa fa-heart"></i>
+                                        </span>
+                                        <span class="feature">
+                                            <img src="./img/feature-1.png" alt="">
+                                            <img src="./img/feature-2.png" alt="">
+                                            <img src="./img/feature-3.png" alt="">
+                                            <img src="./img/feature-4.png" alt="">
+                                        </span>
+                                        <span class="discount">
+                                            -10%
+                                        </span>
+                                        <span class="info">
+                                            <i class="fa fa-info"></i>
+                                        </span>
+                                    </div>
+
+                                    <!-- Product-description -->
+                                    <div class="product-desc">
+                                        <h4>Dog‘s Love – Welpenfutter</h4>
+
+                                        <div class="weight">
+                                            <span class="weight-active">300g</span>
+                                            <span>600g</span>
+                                            <span>900g</span>
+                                        </div>
+
+                                        <div class="product-foot">
+                                            <div class="price">
+                                                <del>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,60
+                                                </del>
+                                                <span>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,20
+                                                </span>
+                                            </div>
+                                            <div class="cart-option">
+                                                <form action="">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                    </select>
+                                                    <button class="cart-btn">
+                                                        <i class="fa fa-shopping-bag"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-head">
+                                        <img src="./img/product-1.jpg" alt="">
+                                        <span class="wishlist">
+                                            <i class="fa fa-heart"></i>
+                                        </span>
+                                        <span class="feature">
+                                            <img src="./img/feature-1.png" alt="">
+                                            <img src="./img/feature-2.png" alt="">
+                                            <img src="./img/feature-3.png" alt="">
+                                            <img src="./img/feature-4.png" alt="">
+                                        </span>
+                                        <span class="discount">
+                                            -10%
+                                        </span>
+                                        <span class="info">
+                                            <i class="fa fa-info"></i>
+                                        </span>
+                                    </div>
+
+                                    <!-- Product-description -->
+                                    <div class="product-desc">
+                                        <h4>Dog‘s Love – Welpenfutter</h4>
+
+                                        <div class="weight">
+                                            <span class="weight-active">300g</span>
+                                            <span>600g</span>
+                                            <span>900g</span>
+                                        </div>
+
+                                        <div class="product-foot">
+                                            <div class="price">
+                                                <del>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,60
+                                                </del>
+                                                <span>
+                                                    <i class="fa fa-euro-sign"></i>
+                                                    5,20
+                                                </span>
+                                            </div>
+                                            <div class="cart-option">
+                                                <form action="">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                    </select>
+                                                    <button class="cart-btn">
+                                                        <i class="fa fa-shopping-bag"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pets display -->
+        <div class="pets-gallery py-3">
+            <div class="container">
+                <div class="pets-row">
+                    <div class="pets-col">
+                        <img src="./img/pet-1.jpg" alt="">
+                        <h1>
+                            <a href="#">HUND</a>
+                        </h1>
                     </div>
 
-                    <!-- Product-description -->
-                    <div class="product-desc">
-                        <h4>Dog‘s Love – Welpenfutter</h4>
-
-                        <div class="weight">
-                            <span>300 g</span>
-                            <span>600 g</span>
-                            <span>900 g</span>
-                        </div>
-
-                        <div class="product-foot">
-                            <div class="price">
-                                <del>
-                                    <i class="fa fa-euro-sign"></i>
-                                    5,60
-                                </del>
-                                <span>
-                                    <i class="fa fa-euro-sign"></i>
-                                    5,20
-                                </span>
-                            </div>
-                            <div class="cart-option">
-                                <form action="">
-                                    <select name="" id="">
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                    </select>
-                                    <button class="cart-btn">
-                                        <i class="fa fa-shopping-bag"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-
-                        
+                    <div class="pets-col">
+                        <img src="./img/pet-2.jpg" alt="">
+                        <h1>
+                            <a href="#">KATZE</a>
+                        </h1>
                     </div>
+
+                    <div class="pets-col">
+                        <img src="./img/pet-3.jpg" alt="">
+                        <h1>
+                            <a href="#">HUND</a>
+                        </h1>
+                    </div>
+
+                    <div class="pets-col">
+                        <img src="./img/pet-4.jpg" alt="">
+                        <h1>
+                            <a href="#">HUND</a>
+                        </h1>
+                    </div>
+
+                    <div class="pets-col">
+                        <img src="./img/pet-4.jpg" alt="">
+                        <h1>
+                            <a href="#">HUND</a>
+                        </h1>
+                    </div>
+
+                    <div class=" pets-col">
+                        <img src="./img/pet-1.jpg" alt="">
+                        <h1>
+                            <a href="#">HUND</a>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Pets help section -->
+        <div class="pet-help-section py-5">
+            <div class="container">
+                <div class="pet-help-row">
+                    <img src="./img/pet-4.jpg" alt="">
+                    <div class="help-col">
+                        <div class="help-box">
+                            <h2>Sie brauchen Hilfe bei
+                                der Futter-Auswahl für
+                                Ihren Liebling?</h2>
+                            <p>Hier geht‘s zu unserem </p>
+                        </div>
+                        <a class="help-btn" href="#">Futter-Konfigurator</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Testmonial -->
+        <div class="testmonial">
+            <h2 class="text-center">Stimmen über uns</h2>
+            <div class="container">
+                <div class="row">
+                   
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="client-testmonial">
+                                <div class="left-task">
+                                    <p class="review">»Vielfältiges Angebot, Lieferung ohne Probleme.
+                                        Für meine Patientinnen und Patienten, auch für die empfindlichen
+                                         wird man im Webshop fündig. Tolles Angebot, Service hervorragend!«</p>
+                                    <p class="via">via google</p>     
+                                </div>
+                                <div class="right-task">
+                                    <img src="./img/client-1.jpg" alt="">
+                                    <p class="name">Dr. Alexandra Mustermann</p>
+                                    <p class="designation">Tierärztin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-testmonial">
+                                <div class="left-task">
+                                    <p class="review">»Vielfältiges Angebot, Lieferung ohne Probleme.
+                                        Für meine Patientinnen und Patienten, auch für die empfindlichen
+                                         wird man im Webshop fündig. Tolles Angebot, Service hervorragend!«</p>
+                                    <p class="via">via google</p>     
+                                </div>
+                                <div class="right-task">
+                                    <img src="./img/client-1.jpg" alt="">
+                                    <p class="name">Dr. Alexandra Mustermann</p>
+                                    <p class="designation">Tierärztin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-testmonial">
+                                <div class="left-task">
+                                    <p class="review">»Vielfältiges Angebot, Lieferung ohne Probleme.
+                                        Für meine Patientinnen und Patienten, auch für die empfindlichen
+                                         wird man im Webshop fündig. Tolles Angebot, Service hervorragend!«</p>
+                                    <p class="via">via google</p>     
+                                </div>
+                                <div class="right-task">
+                                    <img src="./img/client-1.jpg" alt="">
+                                    <p class="name">Dr. Alexandra Mustermann</p>
+                                    <p class="designation">Tierärztin</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>    
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment method -->
+        <div class="payment-method">
+            <div class="container">
+                <div class="row payment-gateway">
+                    <img src="./img/Visa_logo.png" alt="">
+                    <img src="./img/SepaLogo.png" alt="">
+                    <img src="./img/PayPal-grau.png" alt="">
+                    <img src="./img/Mastercard-logo.png" alt="">
+                    <img src="./img/kaufaufrechnung.png" alt="">
+                    <img src="./img/Amazon_Pay_logo-gray.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Footer logo -->
+                <div class="col-md-4 ">
+                    <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                </div>
 
+                <!-- Footer Nav -->
+                <div class="col-md-4  footer-menu">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <!-- Social icon -->
+                            <span class="footer-nav-1 d-flex">
+                                <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
+                                <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
+                                <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                                <a href="#" class="social-links"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                            </span>
+
+                            <a href="#">
+                                <i class="fa fa-file"></i>
+                                -certificate
+                            </a>
+                            <a href="">BIO-Zertifikat</a>
+                            <a href="">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="">Kontakt</a>
+                            <a href="">Partner</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="">Datenschutz &<br> Sicherheit</a>
+                            <a href="">Qualität</a>
+                            <a href="">AGBs</a>
+                            <a href="">Impressum</a>
+                            <a href="">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote
+                            und Aktionen per E-Mail erhalten.</h4>
+                        <form action="">
+                            <input required type="text" class="text-center" placeholder=" E-Mail Adresse hier eingeben!"
+                                name="" id="">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich! </p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
+                </div>
+                <p class="copytext">copyright 2021: pets fine food</p>
+            </div>
+        </div>
     </footer>
     <!-- JQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Owl JS -->
+    <script src="./js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/pet-script.js"></script>
 

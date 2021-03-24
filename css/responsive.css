@@ -1,0 +1,83 @@
+
+@media (min-width: 769px){
+   
+
+    .mobile-v{
+        display: none!important;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .desktop-v{
+        display: none !important;
+    }
+
+    .mobile-v{
+        display: flex!important;
+    }
+
+    .hero-overlay-box{
+        margin: auto !important;
+    }
+
+    .product{
+        margin: auto !important;
+    }
+
+
+    .pets-row{
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .pet-help-row img{
+        width: 100%  !important;
+    }
+
+    .pet-help-row{
+        flex-direction: column !important;
+    }
+
+    .help-box{
+        width: 100% !important;
+        margin-top: 1rem  !important;
+    }
+    .help-btn{
+        width: 80% !important;
+    }
+
+    .client-testmonial{
+        margin: auto !important;
+    }
+
+    footer{
+        text-align: center !important;
+    }
+
+    .footer-menu{
+        margin: 1rem !important;
+    }
+
+    .copytext{
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 400px){
+    .pets-row{
+        grid-template-columns: 1fr !important;
+    }
+
+    .payment-gateway{
+        justify-content: space-around !important;
+    }
+
+    .payment-gateway img{
+        width: 45px !important;
+    }
+
+    footer{
+        text-align: center !important;
+    }
+}

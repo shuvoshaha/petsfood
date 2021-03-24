@@ -1,0 +1,15 @@
+.owl-carousel .owl-item img{
+    width: 150px;
+}
+
+button.owl-prev {
+    position: absolute;
+    top: 36%;
+    left: -20px;
+}
+
+button.owl-next {
+    position: absolute;
+    top: 36%;
+    right: 2px;
+}
