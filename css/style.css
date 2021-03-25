@@ -4,6 +4,9 @@
     --delay: all 0.2s ease-out;
     --text-color: #004959 !important;
     --borderColor: #afc5ca;
+    --primary-bg: #fffbf2;
+    --secondery-color: #fbb722;
+    --placeholder-color: #7a9fa8;
 }
 
 * {
@@ -44,7 +47,7 @@ body {
     letter-spacing: 0.4px;
 }
 
-.nav-icon{
+.nav-icon {
     width: 16px;
     height: auto;
     margin-top: -4px;
@@ -65,7 +68,7 @@ body {
 
 /*=======Dropdown======*/
 
-.popup{
+.popup {
     /* max-width: 100%; */
     width: 400px;
     background: #fffbf2;
@@ -75,14 +78,15 @@ body {
     left: 42%;
     z-index: 1000;
     display: none;
-    
+
 
 }
 
-#dropdown-popup:hover .popup{
+#dropdown-popup:hover .popup {
     display: block !important;
 
 }
+
 .popup p {}
 
 .popup form {}
@@ -101,7 +105,7 @@ body {
     font-size: 15px;
     color: #7a9fa8;
     transition: all 0.2s ease-out;
-    
+
 }
 
 .popup input:hover,
@@ -195,7 +199,9 @@ body {
     background: #326cd3;
 }
 
-.apple {}
+.apple {
+    background: #000;
+}
 
 .dropdown-foot {}
 
@@ -293,7 +299,7 @@ body {
 }
 
 .hero-top-text {
-    padding: 10px 0;
+    padding: 3px 0;
     background: #fbb722;
     text-align: center;
     max-width: 100%;
@@ -586,7 +592,7 @@ form select {
 
 
 /*Gaurantee include*/
-.guarantee-liflet{
+.guarantee-liflet {
     width: 100px;
     background: #fff;
     text-align: center;
@@ -598,27 +604,27 @@ form select {
     right: 10px;
 }
 
-.liflet-inner img{
+.liflet-inner img {
     width: 100%;
 }
 
-.liflet-inner h4{
+.liflet-inner h4 {
     font-size: 13px;
 }
 
-.liflet-inner span{
+.liflet-inner span {
     display: flex;
     justify-content: center;
 }
 
-.liflet-inner hr{
+.liflet-inner hr {
     margin: 6px 0 !important;
 }
 
 
-.liflet-inner span [class*=fa ] {
- color: #fbb722;
- font-size: 13px;
+.liflet-inner span [class*=fa] {
+    color: #fbb722;
+    font-size: 13px;
 }
 
 
@@ -760,7 +766,7 @@ form select {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-   
+
 }
 
 .name {
@@ -803,7 +809,7 @@ footer {
     background: #004959;
 }
 
-.rows{
+.rows {
     display: flex;
 }
 
@@ -830,7 +836,7 @@ footer {
     color: #fff !important;
 }
 
-.footer-social-links .social-links{
+.footer-social-links .social-links {
     margin-left: 0 !important;
     margin-right: 8px !important;
 }
@@ -925,4 +931,158 @@ footer {
     color: #fff;
     font-size: 14px;
     margin: 1rem 2rem 0 !important;
+}
+
+/*=====================
+  Login Page
+=======================
+*/
+
+
+/*
+===== Login Section =====
+*/
+.log-register {}
+
+.lg-bg {}
+
+.login-section {}
+
+.login-section form {}
+
+.login-section form input {}
+
+.lg-action {}
+
+.lg-action button {}
+
+.lg-action-btn a {}
+
+.lg-red-txt {}
+
+.lg-option-title {}
+
+.lg-social {}
+
+.lg-round {
+    height: 27px;
+    width: 114px;
+    max-width: 100%;
+    margin-right: 11px;
+    border-radius: 12px;
+    display: flex;
+    align-items: CENTER;
+    justify-content: CENTER;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+
+/*
+========= Register========*/
+
+.register-section {}
+
+.reg-inner {}
+
+.reg-inner p {}
+
+
+
+
+
+/*
+===================
+  register page
+===================  
+*/
+
+.register {
+    background: var(--primary-bg);
+}
+
+.register-inner{
+    width: 350px;
+    max-width: 100%;
+    padding: 2rem 0;
+}
+
+.reg-social-option {}
+
+.reg-social-option p {}
+
+.reg-social {
+    padding-top: 8px;
+}
+
+.reg-social a [class*=fa] {
+    margin-right: 4px;
+}
+
+
+/*
+======= register form======*/
+
+.reg-form {}
+
+.reg-form input::placeholder{
+    color: var(--placeholder-color);
+}
+.reg-form input {
+    margin: 10px 0;
+}
+
+.reg-form input[type='text'], 
+.reg-form input[type='email'], 
+.reg-form input[type='password']
+
+{
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--placeholder-color);
+    outline: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.reg-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-form-check input {
+    margin-right: 6px;
+}
+
+.reg-form-check label{
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.reg-captcha {}
+
+.reg-btn {
+    margin-top: 2rem;
+}
+
+.req-txt {
+    font-size: 13px;
+    margin-top: 7px!important;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.reg-psw-txt{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 10px !important;
 }

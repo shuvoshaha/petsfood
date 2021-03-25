@@ -1,3 +1,15 @@
+:root{
+    --linkColor: #004959 !important;
+    --linkHoverColor: #46b1e7 !important;
+    --delay: all 0.2s ease-out;
+    --text-color: #004959 !important;
+    --borderColor: #afc5ca;
+    --primary-bg: #fffbf2;
+    --secondery-color: #fbb722;
+    --btn-color: #fbb722;
+    --placeholder-color: #7a9fa8;
+}
+
 img {
     object-fit: cover;
 }
@@ -14,10 +26,70 @@ h2 {
     margin: 0;
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
-.navbar{
-  padding: .5rem 0 !important;
+.navbar {
+    padding: .5rem 0 !important;
+}
+
+/*
+=======Login Page=======*/
+
+.lg-line{}
+
+.header-line{}
+
+.page-title{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.reg-details{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.cm-btn{
+    padding: 5px 44px;
+    outline: none;
+    border: none;
+    background: var(--btn-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-color);
+    border-radius: 12px;
+    letter-spacing: .4px;
+    transition: var(--delay);
+}
+
+.cm-btn:hover{
+background-color: var(--linkHoverColor);
+}
+
+.breadcum p{
+    color: #7a9fa8;
+}
+
+
+.breadcum a{
+    position: relative;
+    color: var(--text-color);
+    margin-right: 17px;
+    font-weight: 500;
+    text-decoration: underline !important;
+}
+
+
+.breadcum a::after{
+    content: '>';
+    position: absolute;
+}
+
+.breadcum a:last-child::after{
+ content: '';
 }
