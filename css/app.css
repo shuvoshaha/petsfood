@@ -17,3 +17,7 @@ h2 {
 button:focus{
     outline: none;
 }
+
+.navbar{
+  padding: .5rem 0 !important;
+}

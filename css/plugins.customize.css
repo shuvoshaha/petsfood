@@ -72,7 +72,7 @@ button.owl-next {
   }
 
   .left-arrow{
-      left: -40px;
+      left: -25px;
       top: 50%;
   }
 
@@ -94,15 +94,15 @@ button.owl-next {
   }
 
   .testmonial-carousel .right-arrow{
-    right: -7px !important;
+    right: -11px !important;
 }
 
 
 .testmonial-carousel .slick-dots{
     display: flex;
     position: absolute;
-    top: -37px;
-    right: 19px !important;
+    top: -39px;
+    right: 6px !important;
     cursor: pointer;
   }
 
@@ -122,4 +122,17 @@ button.owl-next {
         }
     }
 
-    @media (max-width: 400px) {}
+    @media (max-width: 400px) {
+
+        .slick-arrow{
+            z-index: 100 !important;
+        }
+
+        .left-arrow{
+            left: 8px !important;
+        }
+
+        .right-arrow{
+            right: 0 !important;
+        }
+    }

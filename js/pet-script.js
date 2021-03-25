@@ -1,29 +1,6 @@
 
 // Plugins Init
 
- // Owl Slider Init
- $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:true,
-    dots: true,
-    // navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-    navText : ["<img class='left-arrow arrow' src='./img/left-arrow.png' />","<img class='arrow arrow-right' src='./img/right-arrow.png' />"],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    }
-    
-})
-
-
 
 // Slick Slider init
 
@@ -38,6 +15,7 @@ $(document).ready(function(){
   nextArrow: "<img src='./img/right-arrow.png' class='right-arrow' /> ",
   dots: true,
   dotsClass: "slick-dots",
+  centerPadding: '50px',
   responsive: [
     {
       breakpoint: 1200,
@@ -49,10 +27,19 @@ $(document).ready(function(){
       }
     },
     {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
       breakpoint: 800,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -99,12 +86,13 @@ $(document).ready(function(){
   slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 1000,
+  speed: 2000,
   autoplaySpeed: 2000,
   prevArrow: "<img src='./img/left-arrow.png' class='left-arrow' /> ",
   nextArrow: "<img src='./img/right-arrow.png' class='right-arrow' /> ",
   dots: true,
   dotsClass: "slick-dots",
+  
   responsive: [
     {
       breakpoint: 1200,
@@ -143,7 +131,7 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrow: false
       }
       },
       {
@@ -151,7 +139,8 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: false
+          dots: false,
+          arrow: false
         }
     }
     // You can unslick at a given breakpoint now by adding:

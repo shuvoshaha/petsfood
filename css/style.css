@@ -20,9 +20,6 @@ body {
 /*
 =========Header==========*/
 
-.header {}
-
-
 /*
 =========Top Nav=======*/
 
@@ -36,6 +33,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 
 .top-nav .nav .nav-link:hover {
@@ -44,6 +42,12 @@ body {
 
 .top-nav .nav .nav-link:first-child {
     letter-spacing: 0.4px;
+}
+
+.nav-icon{
+    width: 16px;
+    height: auto;
+    margin-top: -4px;
 }
 
 .lang {
@@ -57,6 +61,163 @@ body {
 }
 
 .lang-de {}
+
+
+/*=======Dropdown======*/
+
+.popup{
+    /* max-width: 100%; */
+    width: 400px;
+    background: #fffbf2;
+    padding: 2rem 2rem;
+    position: absolute;
+    top: 38px;
+    left: 42%;
+    z-index: 1000;
+    display: none;
+    
+
+}
+
+#dropdown-popup:hover .popup{
+    display: block !important;
+
+}
+.popup p {}
+
+.popup form {}
+
+.popup form span {
+    display: block;
+}
+
+.popup input {
+    width: 100%;
+    outline: none;
+    background: #fff;
+    border: 2px solid #7a9fa8;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    font-size: 15px;
+    color: #7a9fa8;
+    transition: all 0.2s ease-out;
+    
+}
+
+.popup input:hover,
+.popup input:focus {
+    border: 2px solid #46b1e7;
+}
+
+.popup input::placeholder {
+    color: #7a9fa8;
+}
+
+.required-txt {
+    color: #004959;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.action-btn {}
+
+.action-btn button {
+    outline: none;
+    border: none;
+    padding: 5px 33px;
+    background: #ffc107;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #004959;
+    cursor: pointer;
+    transition: var(--delay);
+}
+
+.action-btn button:hover {
+    background: var(--linkHoverColor);
+}
+
+.action-btn a {
+    color: #004959 !important;
+    font-size: 14px;
+}
+
+.action-btn a:hover {
+    color: var(--linkHoverColor);
+}
+
+.popup hr {
+    background: #fbb722;
+    height: 1px;
+}
+
+
+/*optional-login */
+.optional-login {}
+
+.optional-login p {
+    font-size: 1rem;
+    color: #004959;
+    margin-bottom: 8px !important;
+    font-weight: 600;
+}
+
+.optional-login a {
+    transition: var(--delay);
+}
+
+.optional-login a:hover {
+    color: var(--linkHoverColor);
+}
+
+.optional-login span {
+    display: flex;
+}
+
+.round {
+    width: 42px;
+    height: 33px;
+    padding: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 11px;
+    background: #000;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.google {
+    background: #326cd3;
+}
+
+.apple {}
+
+.dropdown-foot {}
+
+.dropdown-foot p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #004959;
+    margin-bottom: 16px !important;
+}
+
+.dropdown-foot a {
+    padding: 10px 30px;
+    background: #004959;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+
+
 
 
 /*
@@ -92,7 +253,7 @@ body {
 
 .navbar-nav .nav-link {
     color: var(--linkColor);
-    font-size: clamp(1vw, 3vw, 18px);
+    font-size: clamp(1vw, 3vw, 17px);
     font-weight: 600;
     transition: var(--delay);
 }
@@ -269,7 +430,7 @@ body {
 .product-section {
     background: #fffbf2;
     margin-top: 0 !important;
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
     position: relative;
 }
 
@@ -293,7 +454,7 @@ body {
 }
 
 .product-head img {
-    width: 250px;
+    width: 232px;
 }
 
 .wishlist {
@@ -329,7 +490,7 @@ body {
     color: #fff;
     padding: 0px 10px;
     font-weight: 600;
-    top: 244px;
+    top: 226px;
 }
 
 .info {
@@ -338,7 +499,7 @@ body {
     height: 30px;
     border: 2px solid var(--borderColor);
     text-align: center;
-    top: 238px;
+    top: 220px;
     right: 0px;
 }
 
@@ -475,7 +636,6 @@ form select {
 .pets-col img {
     width: 100%;
     height: 250px;
-    border: 2px solid #004959;
     border-radius: 4px;
     z-index: -1;
 }
@@ -487,10 +647,10 @@ form select {
 }
 
 .pets-col a {
-    padding: 6px 75px;
+    padding: 3px 75px;
     background: #004959;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -538,14 +698,14 @@ form select {
 .help-btn {
     display: flex;
     justify-content: center;
-    padding: 6px 0;
+    padding: 5px;
     background: #fbb722;
-    width: 50%;
+    width: 66%;
     margin: auto !important;
-    border-radius: 18px;
+    border-radius: 12px;
     color: var(--linkColor) !important;
     font-weight: 700;
-    margin-top: -17px !important;
+    margin-top: -19px !important;
 }
 
 
@@ -565,7 +725,7 @@ form select {
 }
 
 .client-testmonial {
-    width: 95%;
+    width: 98%;
     max-width: 100%;
     border: 1px solid var(--borderColor);
     padding: 1rem;
@@ -600,7 +760,7 @@ form select {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-top: -26px;
+   
 }
 
 .name {
@@ -643,10 +803,14 @@ footer {
     background: #004959;
 }
 
+.rows{
+    display: flex;
+}
+
 .footer-nav-1 {}
 
 .footer-navs h3 {
-    font-size: 21px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -656,12 +820,19 @@ footer {
 
 .footer-menu {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #fff;
+    justify-content: space-around;
+    border-bottom: 3px solid #fff;
+    margin: 0 6rem;
+    width: 30%;
 }
 
 .footer-nav-1 a {
     color: #fff !important;
+}
+
+.footer-social-links .social-links{
+    margin-left: 0 !important;
+    margin-right: 8px !important;
 }
 
 .footer-nav-2 {
@@ -690,10 +861,11 @@ footer {
 .newsletter {
     padding: 1rem;
     background: #206b78;
+    width: 312px;
 }
 
 .newsletter h2 {
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 700;
     color: #fbb722;
 }
