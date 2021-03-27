@@ -1,4 +1,4 @@
-:root{
+:root {
     --linkColor: #004959 !important;
     --linkHoverColor: #46b1e7 !important;
     --delay: all 0.2s ease-out;
@@ -8,6 +8,7 @@
     --secondery-color: #fbb722;
     --btn-color: #fbb722;
     --placeholder-color: #7a9fa8;
+    --input-color: #cbd8dc;
 }
 
 img {
@@ -37,23 +38,29 @@ button:focus {
 /*
 =======Login Page=======*/
 
-.lg-line{}
+.lg-line {
+    background: var(--btn-color);
+    height: 1px;
+}
 
-.header-line{}
+.header-line {
+    background: var(--btn-color);
+    height: 1px;
+}
 
-.page-title{
+.page-title {
     color: var(--text-color);
     font-size: 18px;
     font-weight: 700;
 }
 
-.reg-details{
+.reg-details {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
 }
 
-.cm-btn{
+.cm-btn {
     padding: 5px 44px;
     outline: none;
     border: none;
@@ -67,16 +74,16 @@ button:focus {
     transition: var(--delay);
 }
 
-.cm-btn:hover{
-background-color: var(--linkHoverColor);
+.cm-btn:hover {
+    background-color: var(--linkHoverColor);
 }
 
-.breadcum p{
+.breadcum p {
     color: #7a9fa8;
 }
 
 
-.breadcum a{
+.breadcum a {
     position: relative;
     color: var(--text-color);
     margin-right: 17px;
@@ -85,11 +92,11 @@ background-color: var(--linkHoverColor);
 }
 
 
-.breadcum a::after{
+.breadcum a::after {
     content: '>';
     position: absolute;
 }
 
-.breadcum a:last-child::after{
- content: '';
+.breadcum a:last-child::after {
+    content: '';
 }

@@ -99,7 +99,7 @@ button.owl-next {
 .testmonial-carousel .slick-dots {
     display: flex;
     position: absolute;
-    top: -39px;
+    top: -34px;
     right: 6px !important;
     cursor: pointer;
 }
@@ -120,7 +120,7 @@ button.owl-next {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
 
     .slick-arrow {
         z-index: 100 !important;
@@ -132,5 +132,17 @@ button.owl-next {
 
     .right-arrow {
         right: 0 !important;
+    }
+
+    .testmonial-carousel .left-arrow {
+            top: unset !important;
+            bottom: -37px !important;
+            left: 43% !important;
+    }
+
+    .testmonial-carousel .right-arrow {
+        right: 40%!important;
+        top: unset !important;
+        bottom: -37px !important;
     }
 }

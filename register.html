@@ -222,9 +222,11 @@
                             <input name="password" type="password" required placeholder="Passwort bestätigen*">
                         </div>
 
-                        <div class="reg-captcha">
+                        <!-- Re-captcha -->
+                        <div class="reg-captcha py-2">
                             <span class="reg-verification-code">
-
+                                <img src="./img/verification.png" alt="">
+                                <button type="button">CAPTCHA <br> neu laden</button>
                             </span>
                             <p class="reg-details">Bitte geben Sie die Buchstaben und Zahlen ein:</p>
                             <input type="text" placeholder="*" name="captcha">
@@ -245,11 +247,11 @@
             <div class="container">
                 <div class="payment-gateway">
                     <img src="./img/Visa_logo.png" alt="">
-                    <img src="./img/SepaLogo.png" alt="">
+                    <img src="./img/SepaLogo-s.png" alt="">
                     <img src="./img/PayPal-grau.png" alt="">
-                    <img src="./img/Mastercard-logo.png" alt="">
-                    <img src="./img/kaufaufrechnung.png" class="" style="max-width:100% ;" alt="">
-                    <img src="./img/Amazon_Pay_logo-gray.png" style="max-width:12% ;" alt="">
+                    <img src="./img/Mastercard-logo-s.png" alt="">
+                    <img src="./img/kaufaufrechnung.png" class="" alt="">
+                    <img src="./img/Amazon_Pay_logo-gray.png" alt="">
                 </div>
             </div>
         </div>
@@ -307,12 +309,11 @@
                     <div class="newsletter">
                         <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
                         <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
-                        <form action="">
-                            <input required type="text" class="text-center" placeholder=" E-Mail Adresse hier eingeben!"
-                                name="" id="">
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center" placeholder="E-Mail Adresse hier eingeben!">
                             <button class="newsletter-btn">Jetzt abonnieren</button>
                         </form>
-                        <p class="my-3">Abmelden jederzeit möglich! </p>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
                         <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
                     </div>
                 </div>
@@ -323,11 +324,11 @@
 
     <!-- JQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.min.js"></script>
     <!-- Slick JS -->
-    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/pet-script.js"></script>
 

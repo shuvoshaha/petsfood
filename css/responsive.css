@@ -1,18 +1,32 @@
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .desktop-v {
         justify-content: center !important;
     }
 }
 
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
     .mobile-v {
         display: none !important;
     }
 }
 
+@media screen and (max-width: 992px) and (max-width: 992px) {
+    .login-section form {
+        width: 100% !important;
+    }
 
-@media (max-width: 768px) {
+    .lg-option-title {
+        font-size: 20px !important;
+    }
+
+    .reg-head {
+        padding: 0rem 0 2rem !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
     .desktop-v {
         display: none !important;
     }
@@ -54,16 +68,21 @@
         margin: auto !important;
     }
 
+    .footer-logo {
+        width: 70% !important;
+    }
+
     footer {
         text-align: center !important;
     }
 
     .footer-menu {
-        margin: 1rem !important;
+        margin: 1rem 0 !important;
     }
 
     .copytext {
         text-align: center !important;
+        margin: 1rem 2rem 0 !important;
     }
 
     .guarantee-liflet {
@@ -81,25 +100,77 @@
 
     .newsletter {
         width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .log-register-wrapper {
+        flex-direction: column !important;
+    }
+
+    .lg-bg {
+        width: 100% !important;
+    }
+
+    .login-section {
+        margin-bottom: 1rem;
+    }
+
+    .lg-wrapper {
+        max-width: 100% !important;
+    }
+
+    .lg-wrapper::before {
+        width: 100% !important;
+        top: 33px !important;
+        height: 41% !important;
+    }
+
+    .reg-inner::after {
+        top: 55% !important;
+        width: 100% !important;
+    }
+
+    .reg-inner {
+        padding: 0 !important;
+    }
+
+    .reg-head {
+        padding: 1rem 0 2rem !important;
+    }
+
+    .payment-gateway img {
+
+        max-width: 100%;
+    }
+
+    .payment-gateway {
+        grid-template-columns: repeat(3, auto) !important;
+        grid-gap: 20px !important;
     }
 
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    .payment-gateway img {
+        max-width: 70%;
+    }
+
+    .payment-gateway {
+        grid-template-columns: repeat(3, auto) !important;
+        grid-gap: 27px !important;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
 
     .pets-row {
         grid-template-columns: 1fr !important;
     }
 
-    .payment-gateway {
-        justify-content: space-around !important;
-    }
-
-    .payment-gateway img {
-        width: 45px !important;
-    }
-
     footer {
         text-align: center !important;
     }
+
+
 }

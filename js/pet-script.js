@@ -8,7 +8,7 @@ $(document).ready(function(){
   $('.product-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   speed: 1000,
   autoplaySpeed: 2000,
   prevArrow: "<img src='./img/left-arrow.png' class='left-arrow' /> ",
@@ -27,12 +27,12 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 1024,
+      breakpoint: 1025,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+      
       }
     },
     {
@@ -48,28 +48,31 @@ $(document).ready(function(){
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
       }
     },
     {
       breakpoint: 500,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: false
       }
     },
     {
-      breakpoint: 400,
+      breakpoint: 414,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: false
       }
       },
       {
         breakpoint: 400,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false
         }
     }
     // You can unslick at a given breakpoint now by adding:
