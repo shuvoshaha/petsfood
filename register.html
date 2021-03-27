@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="./css//slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <!-- App CSS -->
     <link rel="stylesheet" href="./css/app.css">
     <!-- Responsive CSS -->
@@ -125,14 +125,17 @@
         <div class="main-nav mt-2">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="./img/logo.PNG" class="brand-logo" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars"></span>
-                    </button>
+                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="fa fa-bars"></span> -->
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
@@ -166,11 +169,11 @@
         <div class="container">
             <hr class="header-line">
 
-            <!-- breadcum -->
+            <!-- breadcrumbs -->
             <div class="d-flex breadcum pt-1 pb-3">
                 <p>Sie befinden sich hier:</p>
                 <a href="/index.html">Home</a>
-                <a href="/login..html">Registrieren</a>
+                <a href="/register.html">Registrieren</a>
             </div>
             <h2 class="page-title py-3">REGISTRIEREN</h2>
         </div>
@@ -333,5 +336,4 @@
     <script src="./js/pet-script.js"></script>
 
 </body>
-
 </html>

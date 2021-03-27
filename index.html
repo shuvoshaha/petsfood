@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="./css//slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <!-- App CSS -->
     <link rel="stylesheet" href="./css/app.css">
     <!-- Responsive CSS -->
@@ -32,7 +32,7 @@
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
-                <!-- Desktop version -->
+                <!-- Desktop version top nav -->
                 <ul class="nav d-flex justify-content-end align-items-center desktop-v">
                     <li class="nav-item" id="dropdown-popup">
                         <a href="./login.html" class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
@@ -91,7 +91,7 @@
                     </li>
                 </ul>
 
-                <!-- Mobile version -->
+                <!-- Mobile version top nav -->
                 <nav class="nav d-flex justify-content-start align-items-center mobile-v">
                     <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i></a>
                     <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> </a>
@@ -124,13 +124,16 @@
         <div class="main-nav mt-2">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="./img/logo.PNG" class="brand-logo" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars"></span>
+                        <!-- <span class="fa fa-bars"></span> -->
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -699,6 +702,7 @@
 
     <!-- Footer -->
     <footer class="py-5">
+        
         <div class="container">
             <div class="rows">
                 <!-- Footer logo -->
@@ -761,6 +765,11 @@
             <p class="copytext">copyright 2021: pets fine food</p>
         </div>
     </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- JQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

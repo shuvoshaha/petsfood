@@ -1,7 +1,22 @@
 
+//Bars
+const resbar =(x)=>{
+  x.classList.toggle('changed')
+}
+
+
+// Scroll Top
+const scroll = document.querySelector('.scroll-top');
+window.onscroll =()=>{
+  if( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+    scroll.style.display = "flex"
+  } else{
+    scroll.style.display = "none"
+  }
+}
+
+
 // Plugins Init
-
-
 // Slick Slider init
 
 $(document).ready(function(){
@@ -153,6 +168,7 @@ $(document).ready(function(){
 
   });
 });
+
 
 
 

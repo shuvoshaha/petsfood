@@ -11,6 +11,36 @@
     --input-color: #cbd8dc;
 }
 
+/*
+ ===== Bars ======
+*/
+
+.bar-1, 
+.bar-2, 
+.bar-3{
+    width: 23px;
+    height: 3px;
+    background: var(--text-color);
+    display: block;
+    transition: var(--delay);
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+.changed .bar-1{
+  transform: rotate(-45deg) translate(-3px, 5px);
+}
+
+.changed .bar-2{
+    display: none;
+}
+
+
+.changed .bar-3{
+    transform: rotate(45deg) translate(0px, -2px);
+}
+
+
 img {
     object-fit: cover;
 }
@@ -100,3 +130,32 @@ button:focus {
 .breadcum a:last-child::after {
     content: '';
 }
+
+/*
+====== Scroll Top
+*/
+
+.scroll-top{
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--text-color);
+    color: #fff;
+    border-radius: 28px;
+    display: none;
+    font-size: 26px;
+    font-weight: 700;
+    transition: var(--delay);
+}
+
+
+.scroll-top:hover{
+    background: var(--linkHoverColor);
+    color: #fff
+}
+

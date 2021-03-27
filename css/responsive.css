@@ -146,6 +146,7 @@
     .payment-gateway {
         grid-template-columns: repeat(3, auto) !important;
         grid-gap: 20px !important;
+        justify-content: space-between;
     }
 
 }
