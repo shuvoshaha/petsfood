@@ -2,6 +2,9 @@
     .desktop-v {
         justify-content: center !important;
     }
+    .contact-option-list{
+        width: 55% !important;
+    }
 }
 
 
@@ -11,7 +14,7 @@
     }
 }
 
-@media screen and (max-width: 992px) and (max-width: 992px) {
+@media screen and (max-width: 992px)  {
     .login-section form {
         width: 100% !important;
     }
@@ -22,6 +25,10 @@
 
     .reg-head {
         padding: 0rem 0 2rem !important;
+    }
+    .contact-option-list{
+        width: 100% !important;
+        flex-direction: column !important;
     }
 }
 
@@ -148,6 +155,11 @@
         grid-gap: 20px !important;
         justify-content: space-between;
     }
+
+    .contact-option h2{
+        font-size: 18px !important;
+    }
+  
 
 }
 

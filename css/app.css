@@ -10,16 +10,17 @@
     --placeholder-color: #7a9fa8;
     --input-color: #cbd8dc;
     --nav-active: #fbb722 !important;
-    --footer-active: #fde2a7!important;
+    --footer-active: #fde2a7 !important;
+    --hr-color: #9fb9c0;
 }
 
 /*
  ===== Bars ======
 */
 
-.bar-1, 
-.bar-2, 
-.bar-3{
+.bar-1,
+.bar-2,
+.bar-3 {
     width: 23px;
     height: 3px;
     background: var(--text-color);
@@ -29,16 +30,16 @@
     border-radius: 4px;
 }
 
-.changed .bar-1{
-  transform: rotate(-45deg) translate(-3px, 5px);
+.changed .bar-1 {
+    transform: rotate(-45deg) translate(-3px, 5px);
 }
 
-.changed .bar-2{
+.changed .bar-2 {
     display: none;
 }
 
 
-.changed .bar-3{
+.changed .bar-3 {
     transform: rotate(45deg) translate(0px, -2px);
 }
 
@@ -112,17 +113,18 @@ button:focus {
 
 .breadcum p {
     color: #7a9fa8;
+    font-size: 15px;
 }
 
 
 .breadcum a {
     position: relative;
+    font-size: 14px;
     color: var(--text-color);
     margin-right: 17px;
     font-weight: 500;
     text-decoration: underline !important;
 }
-
 
 .breadcum a::after {
     content: '>';
@@ -137,7 +139,7 @@ button:focus {
 ====== Scroll Top=======
 */
 
-.scroll-top{
+.scroll-top {
     position: fixed;
     bottom: 2%;
     right: 5%;
@@ -156,16 +158,25 @@ button:focus {
 }
 
 
-.scroll-top:hover{
+.scroll-top:hover {
     background: var(--linkHoverColor);
     color: #fff
 }
 
-.nav-active{
+.nav-active {
     color: var(--nav-active);
 }
 
-.active{
-    color: var(--footer-active);
+.active {
+    color: var(--footer-active) !important;
+}
+
+.hr-color {
+    background: var(--hr-color);
+}
+
+.head-line {
+    margin-bottom: 0 !important;
+    /* margin-top: 0 !important; */
 }
 
