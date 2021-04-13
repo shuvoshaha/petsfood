@@ -7,18 +7,18 @@ const resbar =(x)=>{
 
 // Scroll Top
 const scroll = document.querySelector('.scroll-top');
-window.onscroll =()=>{
+window.onscroll =(e)=>{
   if( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
-    scroll.style.display = "flex"
+    e.preventDefault();
+    scroll.style.display = "flex";
   } else{
-    scroll.style.display = "none"
+    scroll.style.display = "none";
   }
 }
 
 
 // Plugins Init
-// Slick Slider init
-
+// Product Slider
 $(document).ready(function(){
   $('.product-slider').slick({
   slidesToShow: 4,
@@ -90,15 +90,13 @@ $(document).ready(function(){
           dots: false
         }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 
   });
 });
 
 
+// Testmonial carousel
 $(document).ready(function(){
   $('.testmonial-carousel').slick({
   slidesToShow: 2,
@@ -161,9 +159,6 @@ $(document).ready(function(){
           arrow: false
         }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 
   });

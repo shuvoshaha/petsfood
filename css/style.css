@@ -1,6 +1,6 @@
 :root {
     --linkColor: #004959 !important;
-    --linkHoverColor: #46b1e7 !important;
+    --linkHoverColor: #fbb722 !important;
     --delay: all 0.2s ease-out;
     --text-color: #004959 !important;
     --borderColor: #afc5ca;
@@ -9,6 +9,8 @@
     --placeholder-color: #7a9fa8;
     --input-color: #cbd8dc;
     --gray-color: #f4f5f6;
+    --linkhover: #fde2a7;
+    
 }
 
 * {
