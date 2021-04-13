@@ -15,6 +15,11 @@
 
 }
 
+@font-face {
+    font-family: FontAwesome;
+    src: url(../webfonts//fa-solid-900.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1260,17 +1265,13 @@ footer {
 =======================
 */
 
-.privacy-title{
+.privacy-title {
     font-size: 22px !important;
 }
-
-.topics-list {}
 
 .topics {
     color: var(--text-color);
 }
-
-.topics-list ul {}
 
 .topics-list li {
     list-style: none;
@@ -1279,7 +1280,7 @@ footer {
 .topics-list li a {
     color: var(--text-color);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: underline !important;
 }
 
@@ -1288,14 +1289,12 @@ a {}
 /*
 =======topics description=======*/
 
-.topics-des {}
-
 .topics-content {
     margin: 1rem 0;
 }
 
 .topics-content h2 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--text-color);
 }
 
@@ -1317,8 +1316,6 @@ a {}
     font-size: 15px;
 
 }
-
-.topics-content p a {}
 
 .bullet-less li {
     list-style: none !important;
@@ -1350,50 +1347,72 @@ a {}
     color: var(--text-color-2);
 }
 
-.contact-option-list span {}
-
-.contact-option-list span a {}
-
-
 /*
 =========================
         FAQ Page
 =========================*/
 
-.card{
-    border-radius: 35px;
-    border: 1px solid var(--secondery-color);
-    margin-bottom: 10px !important;
-}
-
-.card-header{
-    background: none !important;
-    border-bottom: none !important;
-    padding: 2px !important;
+.faq-topics-wrapper{
     position: relative;
 }
 
-.card-header::after{
-    content: '+';
+.faq-search-form{
     position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--input-color);
+    border-radius: 28px;
+    width: 400px;
+    max-width: 100%;
+    padding: 3px 11px !important;
+    font-style: italic;
+}
+.faq-search-form input{
+    width: 80%;
+    max-width: 100%;
+    border: none;
+    margin-left:  0 !important;
 }
 
-.btn-link .card-header::after:focus{
-    content: '-';
+.faq-search-form input::placeholder {
+   font-style: italic;
 }
 
-.card-header .btn-link{
-    color: var(--text-color);
+.card {
+    border: none;
+    border: 1px solid var(--text-color-2);
+    border-radius: 32px;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.card-header .btn-link:hover{
-    text-decoration: none !important;
+.accordion {
+    width: 100%;
+    outline: none;
+    color: var(--text-color);
+    text-align: left;
+    padding: 9px 18px;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
 }
 
-.card-header .btn-link::after{
-    
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+    background: transparent;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion::after {
+    content: '\f067';
+    font-family: FontAwesome;
+    float: right;
+}
+
+.acc-active::after {
+    content: '\f068';
+    font-family: FontAwesome;
+    float: right;
 }

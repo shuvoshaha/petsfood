@@ -164,6 +164,30 @@ $(document).ready(function(){
   });
 });
 
+//accordion
+let accordion = document.getElementsByClassName('accordion');
+
+let i = 0;
+
+for ( i = 0; i <= accordion.length; i++ ){
+  accordion[i].addEventListener("click", function(){
+
+    this.classList.toggle('acc-active')
+    let panel = this.nextElementSibling;
+    let card = document.getElementsByClassName('card');
+
+    if(panel.style.maxHeight ){
+      panel.style.maxHeight = null;
+      panel.style.marginBottom = 0 +'px';
+      
+    } else{
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.marginBottom = 10 +'px';
+      
+    }
+  });
+}
+
 
 
 
