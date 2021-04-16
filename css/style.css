@@ -1838,7 +1838,8 @@ Single Product Page
 
 .checkout-input-form {}
 
-.checkout-input-form input {
+.checkout-input-form input[type="text"],
+.checkout-input-form input[type="email"] {
     margin-bottom: 15px;
 }
 
@@ -1913,7 +1914,7 @@ Single Product Page
 }
 
 .address-option label input[type="radio"] {
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 .diff-address-info {}
@@ -1949,7 +1950,7 @@ Single Product Page
     cursor: pointer;
 }
 .subscription-label input[type="checkbox"] {
-    margin-right: 3px;
+    margin-right: 6px;
 }
 
 .coupon {}
@@ -1958,15 +1959,41 @@ Single Product Page
 
 .coupon div {}
 
-.coupon-entry {}
+.coupon input{
+    margin-bottom: 0 !important;
+    width: 68%;
+}
 
-.coupon-btn {}
+.coupon-btn {
+    padding: 6px 28px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    border-radius: 15px;
+}
 
-.newsletter-label {}
+.newsletter-label {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
 
-.newsletter-input {}
+#newsletter-entry {
+    margin-right: 6px;
+}
 
-.btn-checkout-submit {}
+.btn-checkout-submit {
+    outline: none;
+    border: none;
+    padding: 5px 82px;
+    border-radius: 15px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
 
 /*
 ======Cart added product info======*/

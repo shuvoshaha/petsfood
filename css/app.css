@@ -273,18 +273,27 @@ button{
 
 .btn-blue{
  background: var(--btn-color);
+ transition: var(--delay);
 }
 
 .btn-blue:hover{
     background: var(--btn-hover);
+    color: var(--text-color);
 }
 
 .btn-orange{
+    transition: var(--delay);
     background: var(--btn-orange);
 }
 
 .btn-orange:hover{
     background: var(--btn-orange-hover);
+    color: #fff;
+}
+
+label{
+    display: flex !important;
+    align-items: center;
 }
 
 
