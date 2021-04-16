@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pets food">
+    <meta name="description" content="pets fine food">
+    <title>Pets fine food</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Plugins Customize CSS -->
+    <link rel="stylesheet" href="./css/plugins.customize.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Top Nav -->
+        <div class="top-nav d-flex align-items-center">
+            <div class="container">
+                <!-- Desktop version Top Nav-->
+                <ul class="nav d-flex justify-content-end align-items-center desktop-v">
+                    <li class="nav-item" id="dropdown-popup">
+                        <a class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
+                        <!-- popup -->
+                        <div class="popup">
+                            <form action="index.html">
+                                <input type="text" required name="email" autocomplete="off"
+                                    placeholder="Benutzername*" />
+                                <input type="password" required name="password" placeholder="Passwort*" />
+                                <span class="required-txt">* Pflichtfeld</span>
+
+                                <span class="action-btn">
+                                    <button type="button" class="login-btn">ANMELDEN</button>
+                                    <a href="#">Passwort vergessen?</a>
+                                </span>
+                            </form>
+                            <hr>
+
+                            <!-- optional-login -->
+                            <div class="optional-login">
+                                <p>oder LOGIN mit</p>
+                                <span>
+                                    <a href="#" class="facebook round">
+                                        <i class="fa fa-google"></i>
+                                    </a>
+                                    <a href="#" class="google round">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="apple round">
+                                        <i class="fa fa-apple"></i>
+                                    </a>
+                                </span>
+                            </div>
+
+                            <hr>
+                            <div class="dropdown-foot">
+                                <p>Noch kein Konto?</p>
+                                <a href="#">JETZT REGISTRIEREN</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-heart"></i> Wunschliste</a>
+                    </li>
+                    <li class="lang d-flex">
+                        <a class="lang-de" href="#">DE</a>
+                        <span class="seperator">|</span>
+                        <a class="lang-en" href="#">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #46b1e7 ">
+                            <img src="./img/icons.png" class="nav-icon" alt="">
+                            Ernährungsberatung</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile version Top Nav -->
+                <nav class="nav d-flex justify-content-start align-items-center mobile-v">
+                    <a class="nav-link" href="#"> <i class="fa fa-user-o"></i></a>
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> </a>
+                    <a class="nav-link" href="#"><i class="far fa-heart"></i> </a>
+                    <span class="lang d-flex">
+                        <a class="lang-de" href="#">DE</a>
+                        <span class="seperator">|</span>
+                        <a class="lang-en" href="#">EN</a>
+                    </span>
+                    <a class="nav-link" href="#">
+                        <img src="./img/icons.png" class="nav-icon" alt="">
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Top Social-Media-links -->
+            <div class="social-media-links">
+                <nav class="nav d-flex">
+                    <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="main-nav mt-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.PNG" class="brand-logo" alt="">
+                    </a>
+                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="fa fa-bars"></span> -->
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./hund.html">Hund</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Katze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BARF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Zubehör</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="container">
+            <hr class="header-line">
+            <!-- Checkout -->
+            <div class="checkout">
+                <div class="container">
+                    <div class="checkout-row d-flex justify-content-between mt-5">
+                        <!-- form -->
+                        <div class="checkout-form w-60">
+                            <div class="checkout-step d-flex">
+                                <span class="step step-1">
+                                    <span class="step-number bg-orange ">1</span>
+                                    <span class="step-title orange-text">Daten eingeben</span>
+                                </span>
+                                <span class="step step-2  ml-3">
+                                    <span class="step-number bg-gray">2</span>
+                                    <span class="step-title gray-text">Bezahlen</span>
+                                </span>
+                            </div>
+                            <div class="orange-line my-3"></div>
+                            <!-- checkout input form -->
+                            <form action="index.html" class="checkout-input-form w-70 mt-5">
+                                <div class="user-basic-info">
+                                    <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
+                                    <input type="text" name="lname" autocomplete="off" placeholder="Nachname**">
+                                    <input type="email" name="email" autocomplete="off" placeholder="E-Mail**">
+                                </div>
+                                <span class="guest-order-info">
+                                    Sie können Ihre Bestellung als Gast fortsetzen und nach dem Bestellprozess optional
+                                    ein Kundenkonto erstellen.
+                                </span>
+                                <span class="new-acc d-flex">
+                                    Oder:
+                                    <a href="#">JETZT EINLOGGEN</a>
+                                </span>
+                                <!-- billing-address -->
+                                <div class="billing-address my-4">
+                                    <h2 class="mb-3 h2-style">Rechnungsadresse</h2>
+                                    <input type="text" placeholder="Straße*">
+                                    <input type="text" placeholder="Adresszusatz">
+                                    <div class="billing-form-group d-flex justify-content-between align-items-center">
+                                        <input type="text" placeholder="Hausnummer">
+                                        <input type="text" placeholder="Stiege">
+                                        <input type="text" placeholder="Tür">
+                                    </div>
+                                    <input type="text" placeholder="Stadt*">
+                                    <input type="text" placeholder="PLZ**">
+
+                                </div>
+
+                                <!-- deliver-address -->
+                                <div class="deliver-address mb-3 d-flex align-items-center justify-content-between">
+                                    <h2 class="h2-style">Lieferadresse</h2>
+                                    <p class="p-style">Infos zu den <a href="#">Lieferkosten</a></p>
+                                </div>
+                                
+                                <!-- address option -->
+                                <div class="address-option d-flex align-items-center justify-content-between">
+                                    <label for="invoice-address">
+                                        <input id="invoice-address" type="radio" name="invoice-add">
+                                        wie Rechnungsadresse
+                                    </label>
+                                    <label for="diff-address">
+                                        <input type="radio" id="diff-address" name="invoice-add">
+                                        abweichende Lieferadresse
+                                    </label>
+                                </div>
+                                <!-- optional shipping address -->
+                                <div class="diff-address-info">
+                                    <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
+                                    <input type="text" name="lname" autocomplete="off" placeholder="Nachname**">
+                                    <input type="text" placeholder="Straße*">
+                                    <input type="text" placeholder="Adresszusatz">
+                                    <div class="diff-address-form-group">
+                                        <input type="text" placeholder="Hausnummer">
+                                        <input type="text" placeholder="Stiege">
+                                        <input type="text" placeholder="Tür">
+                                    </div>
+                                    <input type="text" placeholder="Stadt*">
+                                    <input type="text" placeholder="PLZ**">
+                                </div>
+                                <!-- subscription -->
+                                <div class="subscription-option d-flex justify-content-between align-items-center mt-5">
+                                    <h2 class="h2-style">Als Abo bestellen</h2>
+                                    <p class="p-style">
+                                        Infos rund ums
+                                        <a href="#">Abo</a>
+                                    </p>
+                                </div>
+                                <label for="subscription" class="subscription-label mb-5 mt-2">
+                                    <input type="checkbox" id="subscription" name="subscription">
+                                    JA
+                                </label>
+
+                                <!-- Coupon -->
+                                <div class="coupon">
+                                    <h2 class="h2-style">Gutschein- oder Rabattcode</h2>
+                                    <div class="d-flex  align-items-center justify-content-between">
+                                        <input class="coupon-entry" type="text" name="coupon">
+                                        <button class="btn-blue coupon-btn">Einlösen</button>
+                                    </div>
+                                </div>
+
+                                <label for="newsletter" class="newsletter-label">
+                                    <input type="checkbox" id="newsletter">
+                                    Anmeldung zum Newsletter
+                                </label>
+
+                                <button class="btn-orange btn-checkout-submit">WEITER</button>
+                            </form>
+
+                        </div>
+                        <!-- Cart added product info -->
+                        <div class="checkout-cart-info w-40">
+                            <h2>ÜBERBLICK</h2>
+                            <div class="orange-line"></div>
+                            <div class="sub-total cart-c d-flex justify-content-between align-items-center">
+                                <p>Zwischensumme</p>
+                                <p><strong>€ 142,70</strong></p>
+                            </div>
+                            <div class="shipping-cost cart-c d-flex justify-content-between align-items-center">
+                                <p>Standardversand*</p>
+                                <p><strong>€ 4,50</strong></p>
+                            </div>
+                            <div class="mst-vat cart-c d-flex justify-content-between align-items-center">
+                                <p>MwSt. <strong>20%</strong></p>
+                                <p><strong>€ 19,16</strong></p>
+                            </div>
+
+                            <div class="orange-line"></div>
+
+                            <div class="total-price cart-c d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p>Gesamtbetrag</p>
+                                    <p>inkl. MwSt.</p>
+                                </div>
+                                <h3><strong>€ 172,70</strong></h3>
+                            </div>
+                            <!-- cart product -->
+                            <div class="cart-product-list">
+                                <div class="cart-added-product d-flex">
+                                    <div class="cart-added-product-thumb">
+                                        <img src="./img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="cart-added-product-details ml-2">
+                                        <h3>Dog‘s Love – Welpenfutter</h3>
+                                        <a href="#" class="py-2">DETAILS</a>
+                                        <div class="cart-c d-flex">
+                                            <p>Packungsgröße</p>
+                                            <p class="ml-2"><strong>300g</strong></p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="cart-c d-flex">
+                                                <p>Anzahl</p>
+                                                <p class="ml-2">1</p>
+                                            </div>
+                                            <h3><strong>€ 12,50</strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="edit-cart-link">
+                                    <a href="#" class="text-center">Warenkorb ansehen und bearbeiten</a>
+                                </div>
+                            </div><!-- cart product -->
+
+                            <div class="product-deliver-cost-info">
+                                <p>
+                                    *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht
+                                    von 59 kg betragen die Lieferkosten € 4,50 pro Lieferung.
+                                    Ab einem Bestellwert von € 50,– ist die Lieferung gratis, ausgenommen das
+                                    Liefergewicht übersteigt 60 kg. In diesem Fall muss über
+                                    einen speziellen Lieferservice geliefert werden und es fallen pro Lieferung € 12,–
+                                    an.
+                                    HIER mehr Infos zu den Lieferkosten
+                                </p>
+                                <a href="#">HIER mehr Infos zu den Lieferkosten</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="orange-line my-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main-->
+
+    <!-- Payment method -->
+    <div class="payment-method">
+        <div class="container">
+            <div class="payment-gateway">
+                <img src="./img/Visa_logo.png" alt="">
+                <img src="./img/SepaLogo-s.png" alt="">
+                <img src="./img/PayPal-grau.png" alt="">
+                <img src="./img/Mastercard-logo-s.png" alt="">
+                <img src="./img/kaufaufrechnung.png" class="" alt="">
+                <img src="./img/Amazon_Pay_logo-gray.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav">
+                    <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                </div>
+                <!-- Footer Nav -->
+                <div class="footer-nav footer-menu">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="">Kontakt</a>
+                            <a href="">Partner</a>
+                        </nav>
+                    </div>
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="footer-nav">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
+                </div>
+            </div>
+            <p class="copytext">copyright 2021: pets fine food</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/pet-script.js"></script>
+</body>
+
+</html>

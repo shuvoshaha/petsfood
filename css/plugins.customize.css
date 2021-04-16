@@ -104,6 +104,71 @@ button.owl-next {
     cursor: pointer;
 }
 
+/*
+========= Hund ==========*/
+.shop-product-gallery .slick-dots {
+    bottom: -50px;
+    right: 50%;
+    transform: translateX(-50%);
+    top: unset !important;
+}
+
+.shop-product-gallery .left-arrow {
+    left: 34%;
+    top: unset !important;
+    bottom: -40px;
+
+}
+
+.shop-arrow {
+    font-size: 23px;
+    color: var(--text-color);
+}
+
+.shop-product-gallery .right-arrow {
+    top: unset !important;
+    bottom: -40px;
+    right: 46%;
+
+
+}
+
+
+/*
+====== Single Product tabs =======
+*/
+.nav-tabs {
+    border-bottom: 1px solid var(--orange);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--orange) var(--orange) #fff !important;
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    background: var(--medium-orange-1);
+    margin-right: 40px;
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tab-content {
+    border-right: 1px solid var(--orange);
+    padding: 30px 50px;
+    border-left: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+
 
 @media (max-width: 768px) {
     button.owl-prev {
@@ -135,13 +200,13 @@ button.owl-next {
     }
 
     .testmonial-carousel .left-arrow {
-            top: unset !important;
-            bottom: -37px !important;
-            left: 43% !important;
+        top: unset !important;
+        bottom: -37px !important;
+        left: 43% !important;
     }
 
     .testmonial-carousel .right-arrow {
-        right: 40%!important;
+        right: 40% !important;
         top: unset !important;
         bottom: -37px !important;
     }

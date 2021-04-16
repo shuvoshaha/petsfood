@@ -2,16 +2,31 @@
     --linkColor: #004959 !important;
     --linkHoverColor: #46b1e7 !important;
     --delay: all 0.2s ease-out;
-    --text-color: #004959 !important;
+    --text-color: #054a54 !important;
     --borderColor: #afc5ca;
     --primary-bg: #fffbf2;
     --secondery-color: #fbb722;
-    --btn-color: #fbb722;
     --placeholder-color: #7a9fa8;
     --input-color: #cbd8dc;
     --nav-active: #fbb722 !important;
     --footer-active: #fde2a7 !important;
     --hr-color: #9fb9c0;
+
+    --btn-color: #054a54;
+    --btn-hover: #fab722;
+    --btn-orange: #fab722;
+    --btn-orange-hover:#054a54;
+    --light-orange: #fergb(27, 108, 121)
+    --orange-line: #9bb7bb;
+    --medium-orange-1: #fde2a7;
+    --medium-orange-2: #fbcc64;
+    --bg-light-blue: #f2f6f6;
+    --input-field: #9bb7bb;
+    --img-border: #9bb7bb;
+    --blue: #1c8fc3;
+    --gray: #f2f6f6;
+    --orange: #fab722;
+    --gray-2: #999;
 }
 
 /*
@@ -77,8 +92,8 @@ button:focus {
 }
 
 .header-line {
-    background: var(--btn-color);
-    height: 1px;
+    background: var(--orange);
+    height: 0.5px;
 }
 
 .page-title {
@@ -128,6 +143,7 @@ button:focus {
 
 .breadcum a::after {
     content: '>';
+    margin: 0 4px;
     position: absolute;
 }
 
@@ -167,7 +183,7 @@ button:focus {
     color: var(--nav-active);
 }
 
-.active {
+.menu-active {
     color: var(--footer-active) !important;
 }
 
@@ -197,3 +213,189 @@ input::placeholder {
     color: var(--placeholder-color);
 }
 
+.w-20{
+    width: 20%;
+    max-width: 100%;
+}
+
+
+.w-30{
+    width: 30%;
+    max-width: 100%;
+}
+
+
+.w-40{
+    width: 40%;
+    max-width: 100%;
+}
+
+.w-50{
+    width: 50%;
+    max-width: 100%;
+}
+
+.w-60{
+    width: 60%;
+    max-width: 100%;
+}
+
+
+.w-70{
+    width: 70%;
+    max-width: 100%;
+}
+
+.w-80{
+    width: 80%;
+    max-width: 100%;
+}
+
+.prev-price{
+    font-style: italic;
+    color: var(--text-color) !important;
+}
+
+.orange-line{
+    width: 100%;
+    height: 1px;
+    background: var(--orange);
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-blue{
+ background: var(--btn-color);
+}
+
+.btn-blue:hover{
+    background: var(--btn-hover);
+}
+
+.btn-orange{
+    background: var(--btn-orange);
+}
+
+.btn-orange:hover{
+    background: var(--btn-orange-hover);
+}
+
+
+/*
+======= Product gallery =========
+*/
+
+.grid.product {
+  }
+  
+  .grid.product {
+    padding: 0 0 1.5rem 0;
+    width: 100%;
+  }
+  
+  .product-image {
+    display: none;
+  }
+  
+  .image-list li {
+    margin: 0;
+  }
+  
+  @media (min-width: 62rem) {
+    .product-image img, .image-list img {
+      width: 100%;
+    }
+  
+    .product-image {
+      display: flex;
+      align-items: center;
+    }
+    .product-image img {
+      /* height: 52vh; */
+      width: 100%;
+    }
+    .product-image img.active {
+      display: block;
+      margin: 0 0 0.75rem 0;
+    }
+  
+    .image-list {
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0px;
+      left: 6px;
+    }
+    .image-list li {
+      margin: 0 0.75rem 0 0;
+      flex-basis: 100%;
+    }
+    .image-list li:nth-child(3) {
+      margin: 0;
+    }
+    .image-list img {
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+      height: 61px !important;
+      width: 62px;
+      border: 1px solid var(--borderColor);
+      padding: 3px;
+      margin-bottom: 3px;
+    }
+    .image-list img:hover {
+      opacity: 0.7;
+    }
+  
+    
+  }
+
+  .slick-slide:focus {
+    outline: none !important;
+    border: none;
+}
+
+.slick-slide img:focus{
+    outline: none !important;
+    border: none;
+}
+
+.slick-list:focus { outline: none !important; }
+
+.orange-text{
+  color: var(--orange);
+}
+
+.n-text{
+    color: var(--text-color);
+}
+
+.bg-orange{
+    background: var(--orange);
+}
+
+.bg-gray{
+ background: var(--gray-2);
+}
+
+.gray-text{
+    color: var(--gray-2)
+}
+
+.h2-style{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.p-style{
+    font-size: 14px;
+    color: var(--text-color);
+}

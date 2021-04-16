@@ -172,6 +172,9 @@
         grid-template-columns: repeat(3, auto) !important;
         grid-gap: 27px !important;
     }
+    .faq-topics-wrapper ul{
+        margin-bottom: 3.5rem  !important;
+    }
 }
 
 

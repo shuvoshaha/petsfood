@@ -122,11 +122,110 @@
     </select>
   </div>
 </div>
-     
+
+
+<div class="radio">
+  <label for="check">
+    check
+    <input type="radio" name="radio" id="check">
+    <span class="checkmark"></span>
+  </label>
+  
+  <label for="check2">
+    check2
+    <input type="radio" name="radio" id="check2">
+    <span class="checkmark"></span>
+  </label>
+</div>
+
+<div class="gallery w-50">
+  <div class="ecommerce-gallery" data-mdb-zoom-effect="true" data-mdb-auto-height="true">
+    <div class="row py-3 shadow-5">
+      <div class="col-12 mb-1">
+        <div class="lightbox">
+          <img
+            src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
+            alt="Gallery image 1"
+            class="ecommerce-gallery-main-img active w-100"
+          />
+        </div>
+      </div>
+      <div class="col-3 mt-1">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
+          data-mdb-img="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
+          alt="Gallery image 1"
+          class="active w-100"
+        />
+      </div>
+      <div class="col-3 mt-1">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
+          data-mdb-img="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
+          alt="Gallery image 2"
+          class="w-100"
+        />
+      </div>
+      <div class="col-3 mt-1">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
+          data-mdb-img="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
+          alt="Gallery image 3"
+          class="w-100"
+        />
+      </div>
+      <div class="col-3 mt-1">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+          data-mdb-img="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+          alt="Gallery image 4"
+          class="w-100"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w-50">
+   <div class="grid product">
+      <div class="column-xs-12 column-md-7">
+        <div class="product-gallery">
+          <div class="product-image">
+            <img class="active" src="https://source.unsplash.com/W1yjvf5idqA">
+          </div>
+          <ul class="image-list">
+            <li class="image-item"><img src="https://source.unsplash.com/W1yjvf5idqA"></li>
+            <li class="image-item"><img src="https://source.unsplash.com/VgbUxvW3gS4"></li>
+            <li class="image-item"><img src="https://source.unsplash.com/5WbYFH0kf_8"></li>
+          </ul>
+        </div>
+      </div>
+</div>
+
+     </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script src="./js/pet-script.js"></script>
-</body>
-</html>
+      <script>
+
+const activeImage = document.querySelector(".product-image .active");
+const productImages = document.querySelectorAll(".image-list img");
+const navItem = document.querySelector('a.toggle-nav');
+
+function changeImage(e) {
+  activeImage.src = e.target.src;
+}
+
+function toggleNavigation(){
+  this.nextElementSibling.classList.toggle('active');
+}
+
+productImages.forEach(image => image.addEventListener("click", changeImage));
+navItem.addEventListener('click', toggleNavigation);
+      </script>
+
+
+      </body>
+      </html>
