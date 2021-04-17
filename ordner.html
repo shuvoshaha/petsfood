@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pets food">
+    <meta name="description" content="pets fine food">
+    <title>Pets fine food</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Plugins Customize CSS -->
+    <link rel="stylesheet" href="./css/plugins.customize.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Top Nav -->
+        <div class="top-nav d-flex align-items-center">
+            <div class="container">
+                <!-- Desktop version Top Nav-->
+                <ul class="nav d-flex justify-content-end align-items-center desktop-v">
+                    <li class="nav-item" id="dropdown-popup">
+                        <a class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
+                        <!-- popup -->
+                        <div class="popup">
+                            <form action="index.html">
+                                <input type="text" required name="email" autocomplete="off"
+                                    placeholder="Benutzername*" />
+                                <input type="password" required name="password" placeholder="Passwort*" />
+                                <span class="required-txt">* Pflichtfeld</span>
+
+                                <span class="action-btn">
+                                    <button type="button" class="login-btn">ANMELDEN</button>
+                                    <a href="#">Passwort vergessen?</a>
+                                </span>
+                            </form>
+                            <hr>
+
+                            <!-- optional-login -->
+                            <div class="optional-login">
+                                <p>oder LOGIN mit</p>
+                                <span>
+                                    <a href="#" class="facebook round">
+                                        <i class="fa fa-google"></i>
+                                    </a>
+                                    <a href="#" class="google round">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="apple round">
+                                        <i class="fa fa-apple"></i>
+                                    </a>
+                                </span>
+                            </div>
+
+                            <hr>
+                            <div class="dropdown-foot">
+                                <p>Noch kein Konto?</p>
+                                <a href="#">JETZT REGISTRIEREN</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-heart-o"></i> Wunschliste</a>
+                    </li>
+                    <li class="lang d-flex">
+                        <a class="lang-de" href="#">DE</a>
+                        <span class="seperator">|</span>
+                        <a class="lang-en" href="#">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #46b1e7 ">
+                            <img src="./img/icons.png" class="nav-icon" alt="">
+                            Ernährungsberatung</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile version Top Nav -->
+                <nav class="nav d-flex justify-content-start align-items-center mobile-v">
+                    <a class="nav-link" href="#"> <i class="fa fa-user-o"></i></a>
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> </a>
+                    <a class="nav-link" href="#"><i class="fa fa-heart-o"></i> </a>
+                    <span class="lang d-flex">
+                        <a class="lang-de" href="#">DE</a>
+                        <span class="seperator">|</span>
+                        <a class="lang-en" href="#">EN</a>
+                    </span>
+                    <a class="nav-link" href="#">
+                        <img src="./img/icons.png" class="nav-icon" alt="">
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Top Social-Media-links -->
+            <div class="social-media-links">
+                <nav class="nav d-flex">
+                    <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="main-nav mt-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.PNG" class="brand-logo" alt="">
+                    </a>
+                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="fa fa-bars"></span> -->
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hund</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Katze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BARF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Zubehör</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="container">
+            <hr class="header-line">
+
+            <!-- breadcrumbs -->
+            <div class="d-flex breadcum pt-1 pb-3">
+                <p>Sie befinden sich hier: &nbsp;</p>
+                <a href="/index.html">Home</a>
+                <a href="/ordner.html">Über uns</a>
+            </div>
+            <h2 class="page-title privacy-title pt-3 pb-4">Qualität</h2>
+        </div>
+        <div class="ordner pt-5 pb-4 gray-bg">
+            <div class="container">
+                <div class="ordner-list d-flex justify-content-between align-items-center mb-4">
+                    <div class="ordner-content">
+                        <h2 class="h2-style">Lieferanten als Experten</h2>
+                        <p>
+                            Tierärzte, selbst Tierhalter, Erfahrung in hochwertiger Produktion
+                            und Lebensmittelproduktion bezüglich Bestandteile und Wirkung
+                            auf Organismus der Tiere, Sport.
+                        </p>
+                    </div>
+                    <div class="ordner-thumb">
+                        <img src="./img/istockphoto-97866345-2048x2048_1_500x300.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ordner-list d-flex justify-content-between align-items-center mb-4">
+                    <div class="ordner-content">
+                        <h2 class="h2-style">Ausgewählte Lieferanten</h2>
+                        <p>
+                            Unsere Lieferanten sind zum einen nach der Qualität ihres Futters ausgewählt, aber auch
+                            anhand Ihrer Einstellung zu Tieren
+                            und der Umwelt. Viele unserer Partner sind Idealisten wie wir, die
+                            aus Leidenschaft für ihre vierbeinigen Begleiter und aus Liebe
+                            zur Natur auf hochwertige Produkte setzen. <br><br>
+                            Nahezu alle Lieferanten sind in Österreich bzw. Deutschland beheimatet, einzige Ausnahme
+                            bildet „Yarrah“ mit Holland. Selbstverständlich werden bei uns nur Marken gelistet die
+                            unseren
+                            Kriterien entsprechen.
+                        </p>
+                    </div>
+                    <div class="ordner-thumb">
+                        <img src="./img/istockphoto-187468018-2048x2048_1_500x400.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ordner-list d-flex justify-content-between align-items-center mb-4">
+                    <div class="ordner-content">
+                        <h2 class="h2-style">Regionalität so gut es geht</h2>
+                        <p>
+                            Unsere Lieferanten sind zum einen nach der Qualität ihres Futters ausgewählt, aber auch
+                            anhand Ihrer Einstellung zu Tieren
+                            und der Umwelt. Viele unserer Partner sind Idealisten wie wir, die
+                            aus Leidenschaft für ihre vierbeinigen Begleiter und aus Liebe
+                            zur Natur auf hochwertige Produkte setzen.
+                        </p>
+                    </div>
+                    <div class="ordner-thumb">
+                        <img src="./img/istockphoto-97866345-2048x2048_1_500x300.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ordner-list d-flex justify-content-between align-items-center mb-4">
+                    <div class="ordner-content">
+                        <h2 class="h2-style">Bio Zertifizierung</h2>
+                        <p>
+                            Unsere Lieferanten sind zum einen nach der Qualität ihres Futters ausgewählt, aber auch
+                            anhand Ihrer Einstellung zu Tieren
+                            und der Umwelt. Viele unserer Partner sind Idealisten wie wir, die
+                            aus Leidenschaft für ihre vierbeinigen Begleiter und aus Liebe
+                            zur Natur auf hochwertige Produkte setzen.
+                        </p>
+                    </div>
+                    <div class="ordner-thumb">
+                        <img src="./img/istockphoto-187468018-2048x2048_1_500x400.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--main-->
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav">
+                    <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                </div>
+
+                <!-- Footer Nav -->
+                <div class="footer-nav footer-menu">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+
+                            <a href="">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="">Kontakt</a>
+                            <a href="">Partner</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html" class="active">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-nav">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
+                </div>
+            </div>
+            <p class="copytext">copyright 2021: pets fine food</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/pet-script.js"></script>
+
+</body>
+
+</html>

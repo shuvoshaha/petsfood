@@ -246,25 +246,6 @@ for (i = 0; i < filter_title.length; i++) {
   });
 }
 
-// Payment method toggle
-
-var c_in = document.getElementsByClassName('c-in');
-var pgi = document.getElementsByClassName('payment-gatway-info');
-
-var i = 0, j = 0;
-for ( i = 0; i < c_in.length; i++ ){
-  for(j = 0; j < pgi.length; j++){
-    c_in[i].addEventListener('click', function(){
-     if (c_in[i] == pgi[j]){
-       console.log(this.)
-     } else{
-       console.log(false)
-     }
-    })
-  }
-}
-
-
 // Checkout diff address 
 var invoice = document.querySelector('#invoice-address');
 var diff_address = document.querySelector('#diff-address');
@@ -277,32 +258,6 @@ invoice.onclick = () => {
 diff_address.onclick = () => {
   address.style.maxHeight = address.scrollHeight + 'px';
 }
-
-
-
-
-//accordion
-var accordion = document.getElementsByClassName('accordion');
-var i = 0;
-
-for (i = 0; i <= accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-
-    this.classList.toggle('acc-active')
-    let panel = this.nextElementSibling;
-    // let card = document.getElementsByClassName('card');
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = '';
-      panel.style.marginBottom = 0 + 'px';
-
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px';
-      panel.style.marginBottom = 10 + 'px';
-
-    }
-  });
-};
 
 
 

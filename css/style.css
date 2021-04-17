@@ -29,6 +29,7 @@
     --blue: #1c8fc3;
     --gray: #f2f6f6;
     --orange: #fab722;
+    --p-bg: #054a54;
 
 
 }
@@ -2203,14 +2204,16 @@ Single Product Page
 }
 
 .payment-gatway-info{
-    display: none;
-  
+    /* max-height: 0;
+    overflow: hidden; */
     transition: var(--delay);
+    display: none;
 }
 
-.payment-gateway-method input:checked ~ 
-.payment-gatway-info{
-    display: block;
+ .for-credit{
+    max-height: 100% !important;
+    display: block !important;
+    
 }
 
 .payment-form-group input:first-child {
@@ -2241,10 +2244,28 @@ Single Product Page
     position: relative;
 }
 
+.expiry-indicator::after {
+    content: '';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0px;
+    width: 5px;
+    pointer-events: none;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/left-arrow.png);
+    /* border-left: 2px solid var(--borderColor); */
+    transform: rotate(-90deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .expiry-indicator select {
     width: 100%;
-    border: none;
     outline: none;
+    border: none;
     color: #888;
     font-weight: 400;
     padding: 4px 6px;
@@ -2252,21 +2273,7 @@ Single Product Page
     appearance: none;
     -webkit-appearance: none;
     position: relative;
-
-}
-
-.expiry-indicator select::after {
-    content: '\f107';
-    font-family: FontAwesome;
-    position: absolute;
-    right: 0;
-    width: 20px;
-    pointer-events: none;
-    text-align: center;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    color: red;
+    cursor: pointer;
 }
 
 .pay-btn{
@@ -2277,3 +2284,62 @@ Single Product Page
     color: var(--text-color);
     border-radius: 13px;
 }
+
+
+/*
+=======================
+    Ordner Page
+=======================
+*/
+
+.ordner-list{
+    background: #fff;
+    padding-left: 2rem;
+}
+
+.ordner-content{
+    width: 50%;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.ordner-content h2{
+    margin-bottom: 1rem;
+    font-size: 22px;
+    position: relative;
+    display: flex;
+}
+
+.ordner-content h2::before{
+    content: '\f061';
+    font-family: FontAwesome;
+    color: #fff;
+    margin-right: 6px;
+    background: var(--p-bg);
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    width: 28px;
+    height: 28px;
+    text-align: CENTER;
+    line-height: 28px;
+}
+
+.ordner-content p{
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.ordner-thumb{
+    width: 50%;
+    max-width: 100%;
+}
+
+.ordner-thumb img{
+    height: 300px;
+    width: 100%;
+}
+
+
+

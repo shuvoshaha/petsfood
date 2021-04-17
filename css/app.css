@@ -407,9 +407,14 @@ label {
     background: var(--gray-2);
 }
 
+.gray-bg{
+    background: var(--gray);
+}
+
 .gray-text {
     color: var(--gray-2)
 }
+
 
 .h2-style {
     color: var(--text-color);
@@ -442,4 +447,8 @@ label {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--medium-orange-2);
+}
+
+.text-upper{
+    text-transform: uppercase;
 }
