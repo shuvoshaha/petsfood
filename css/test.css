@@ -1836,3 +1836,42 @@ footer {
     opacity: 1;
   }
 }
+
+
+
+
+.test input{
+  position: relative;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.test-indicator{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  border: 1px solid red;
+}
+
+.test-indicator::after{
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.test input:checked ~ .test-indicator::after{
+  display: block;
+  left: 2px;
+  top: 3px;
+  width: 15px;
+  height: 8px;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+  transform: rotate(-45deg);
+}
+
+
+
+

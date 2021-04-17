@@ -222,14 +222,19 @@
                                 
                                 <!-- address option -->
                                 <div class="address-option d-flex align-items-center justify-content-between">
-                                    <label for="invoice-address">
-                                        <input id="invoice-address" type="radio" name="invoice-add">
-                                        wie Rechnungsadresse
-                                    </label>
+                                   
+                                        <label for="invoice-address">
+                                            <input checked type="radio" id="invoice-address" name="invoice-add">
+                                            <span class="checkout-indicator"></span>
+                                            wie Rechnungsadresse
+                                        </label>
+                                
                                     <label for="diff-address">
                                         <input type="radio" id="diff-address" name="invoice-add">
+                                        <span class="checkout-indicator"></span>
                                         abweichende Lieferadresse
                                     </label>
+                                   
                                 </div>
                                 <!-- optional shipping address -->
                                 <div class="diff-address-info">
@@ -246,18 +251,21 @@
                                     <input type="text" placeholder="PLZ**">
                                 </div>
                                 <!-- subscription -->
-                                <div class="subscription-option d-flex justify-content-between align-items-center mt-5">
-                                    <h2 class="h2-style">Als Abo bestellen</h2>
-                                    <p class="p-style">
-                                        Infos rund ums
-                                        <a href="#">Abo</a>
-                                    </p>
+                                <div class="subscription-option ">
+                                   <div class="d-flex justify-content-between align-items-center mt-5">
+                                        <h2 class="h2-style">Als Abo bestellen</h2>
+                                        <p class="p-style">
+                                            Infos rund ums
+                                            <a href="#">Abo</a>
+                                        </p>
+                                   </div>
+                                    <label for="subscription" class="subscription-label mb-5 mt-2">
+                                        <input type="checkbox" id="subscription" name="subscription">
+                                        <span class="sub-indicator"></span>
+                                        JA
+                                    </label>
                                 </div>
-                                <label for="subscription" class="subscription-label mb-5 mt-2">
-                                    <input type="checkbox" id="subscription" name="subscription">
-                                    JA
-                                </label>
-
+                               
                                 <!-- Coupon -->
                                 <div class="coupon mb-5">
                                     <h2 class="h2-style mb-2">Gutschein- oder Rabattcode</h2>
@@ -280,40 +288,46 @@
                         </div>
                         <!-- Cart added product info -->
                         <div class="checkout-cart-info w-40">
+                           <div class="bg-light-orange">
                             <h2>ÜBERBLICK</h2>
-                            <div class="orange-line"></div>
-                            <div class="sub-total cart-c d-flex justify-content-between align-items-center">
+                            <div class="orange-line my-2"></div>
+                            <div class="sub-total d-flex justify-content-between align-items-center p-style">
                                 <p>Zwischensumme</p>
                                 <p><strong>€ 142,70</strong></p>
                             </div>
-                            <div class="shipping-cost cart-c d-flex justify-content-between align-items-center">
+                            <div class="shipping-cost d-flex justify-content-between align-items-center my-2 p-style">
                                 <p>Standardversand*</p>
                                 <p><strong>€ 4,50</strong></p>
                             </div>
-                            <div class="mst-vat cart-c d-flex justify-content-between align-items-center">
+                            <div class="mst-vat d-flex justify-content-between align-items-center p-style">
                                 <p>MwSt. <strong>20%</strong></p>
                                 <p><strong>€ 19,16</strong></p>
                             </div>
 
-                            <div class="orange-line"></div>
+                            <div class="orange-line my-2"></div>
 
-                            <div class="total-price cart-c d-flex justify-content-between align-items-center">
+                            <div class="total-price d-flex justify-content-between align-items-center p-style">
                                 <div>
                                     <p>Gesamtbetrag</p>
                                     <p>inkl. MwSt.</p>
                                 </div>
                                 <h3><strong>€ 172,70</strong></h3>
                             </div>
+                           
+                        </div>
+                         <!-- <div class="orange-line mt-2"></div> -->
                             <!-- cart product -->
                             <div class="cart-product-list">
-                                <div class="cart-added-product d-flex">
+                                <p class="p-style pt-3"><strong>6 Artikel</strong> im Warenkorb</p>
+                               <div class="archive-cart-product">
+                                <div class="cart-added-product py-4 d-flex align-items-center">
                                     <div class="cart-added-product-thumb">
                                         <img src="./img/product-1.jpg" alt="">
                                     </div>
                                     <div class="cart-added-product-details ml-2">
                                         <h3>Dog‘s Love – Welpenfutter</h3>
-                                        <a href="#" class="py-2">DETAILS</a>
-                                        <div class="cart-c d-flex">
+                                        <a href="#" class="">DETAILS</a>
+                                        <div class="cart-c d-flex my-1">
                                             <p>Packungsgröße</p>
                                             <p class="ml-2"><strong>300g</strong></p>
                                         </div>
@@ -326,13 +340,75 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="cart-added-product py-4 d-flex align-items-center">
+                                    <div class="cart-added-product-thumb">
+                                        <img src="./img/product-4.jpg" alt="">
+                                    </div>
+                                    <div class="cart-added-product-details ml-2">
+                                        <h3>Royal Cannin – LECKER
+                                            BISSEN für besonders sensible Hunde mit Pferdefleisch</h3>
+                                        <a href="#" class="">DETAILS</a>
+                                        <div class="cart-c d-flex my-1">
+                                            <p>Packungsgröße</p>
+                                            <p class="ml-2"><strong>300g</strong></p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="cart-c d-flex">
+                                                <p>Anzahl</p>
+                                                <p class="ml-2">1</p>
+                                            </div>
+                                            <h3><strong>€ 36,00</strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-added-product py-4 d-flex align-items-center">
+                                    <div class="cart-added-product-thumb">
+                                        <img src="./img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="cart-added-product-details ml-2">
+                                        <h3>Dog‘s Love – Welpenfutter</h3>
+                                        <a href="#" class="">DETAILS</a>
+                                        <div class="cart-c d-flex my-1">
+                                            <p>Packungsgröße</p>
+                                            <p class="ml-2"><strong>300g</strong></p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="cart-c d-flex">
+                                                <p>Anzahl</p>
+                                                <p class="ml-2">1</p>
+                                            </div>
+                                            <h3><strong>€ 12,50</strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-added-product py-4 d-flex align-items-center">
+                                    <div class="cart-added-product-thumb">
+                                        <img src="./img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="cart-added-product-details ml-2">
+                                        <h3>Dog‘s Love – Welpenfutter</h3>
+                                        <a href="#" class="">DETAILS</a>
+                                        <div class="cart-c d-flex my-1">
+                                            <p>Packungsgröße</p>
+                                            <p class="ml-2"><strong>300g</strong></p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="cart-c d-flex">
+                                                <p>Anzahl</p>
+                                                <p class="ml-2">1</p>
+                                            </div>
+                                            <h3><strong>€ 12,50</strong></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                                </div>
                                 <div class="edit-cart-link">
                                     <a href="#" class="text-center">Warenkorb ansehen und bearbeiten</a>
-                                </div>
                             </div><!-- cart product -->
+                          
 
-                            <div class="product-deliver-cost-info">
+                            <div class="product-deliver-cost-info p-style">
                                 <p>
                                     *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht
                                     von 59 kg betragen die Lieferkosten € 4,50 pro Lieferung.

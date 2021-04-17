@@ -246,6 +246,19 @@ for (i = 0; i < filter_title.length; i++) {
   });
 }
 
+// Checkout diff address 
+var invoice = document.querySelector('#invoice-address');
+var diff_address = document.querySelector('#diff-address');
+var address = document.querySelector('.diff-address-info');
+
+invoice.onclick = () => {
+  address.style.maxHeight = null;
+}
+
+diff_address.onclick = () => {
+  address.style.maxHeight = address.scrollHeight + 'px';
+}
+
 
 //accordion
 var accordion = document.getElementsByClassName('accordion');
@@ -269,3 +282,7 @@ for (i = 0; i <= accordion.length; i++) {
     }
   });
 };
+
+
+
+
