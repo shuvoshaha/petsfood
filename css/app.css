@@ -64,6 +64,11 @@ img {
 
 a {
     text-decoration: none !important;
+    transition: var(--delay);
+}
+
+a:hover{
+    color: var(--orange);
 }
 
 p {
@@ -72,6 +77,11 @@ p {
 
 h2 {
     margin: 0;
+}
+
+h5{
+    font-size: 14px;
+    color: var(--text-color);
 }
 
 button:focus {
@@ -262,7 +272,7 @@ input::placeholder {
 }
 
 .underline {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 button {
@@ -452,3 +462,9 @@ label {
 .text-upper{
     text-transform: uppercase;
 }
+
+.text-italic{
+    font-style: italic;
+}
+
+

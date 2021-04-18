@@ -1940,8 +1940,7 @@ Single Product Page
     display: none;
 }
 
-.address-option label input[type="radio"]:checked 
-~ .checkout-indicator::after {
+.address-option label input[type="radio"]:checked~.checkout-indicator::after {
     display: block;
     left: 3px;
     top: 1px;
@@ -2185,14 +2184,13 @@ Single Product Page
     color: var(--text-color);
 }
 
-.c-indicator::after{
+.c-indicator::after {
     content: '';
     position: absolute;
     display: none;
 }
 
-.payment-gateway-method input:checked ~ 
-.c-indicator::after{
+.payment-gateway-method input:checked~.c-indicator::after {
     display: block;
     width: 5px;
     height: 7px;
@@ -2203,17 +2201,17 @@ Single Product Page
     top: 1px;
 }
 
-.payment-gatway-info{
+.payment-gatway-info {
     /* max-height: 0;
     overflow: hidden; */
     transition: var(--delay);
     display: none;
 }
 
- .for-credit{
+.for-credit {
     max-height: 100% !important;
     display: block !important;
-    
+
 }
 
 .payment-form-group input:first-child {
@@ -2276,7 +2274,7 @@ Single Product Page
     cursor: pointer;
 }
 
-.pay-btn{
+.pay-btn {
     outline: none;
     border: none;
     padding: 5px 19px;
@@ -2292,25 +2290,25 @@ Single Product Page
 =======================
 */
 
-.ordner-list{
+.ordner-list {
     background: #fff;
     padding-left: 2rem;
 }
 
-.ordner-content{
+.ordner-content {
     width: 50%;
     max-width: 100%;
     padding: 1rem;
 }
 
-.ordner-content h2{
+.ordner-content h2 {
     margin-bottom: 1rem;
     font-size: 22px;
     position: relative;
     display: flex;
 }
 
-.ordner-content h2::before{
+.ordner-content h2::before {
     content: '\f061';
     font-family: FontAwesome;
     color: #fff;
@@ -2325,21 +2323,248 @@ Single Product Page
     line-height: 28px;
 }
 
-.ordner-content p{
+.ordner-content p {
     font-size: 15px;
     color: var(--text-color);
     font-weight: 500;
 }
 
-.ordner-thumb{
+.ordner-thumb {
     width: 50%;
     max-width: 100%;
 }
 
-.ordner-thumb img{
+.ordner-thumb img {
     height: 300px;
     width: 100%;
 }
 
 
 
+/*
+===================
+    Wishlist Page
+===================*/
+
+.wishlists {
+    background: var(--light-orange);
+}
+
+.wishlist-list {
+    background: var(--white);
+    padding: 17px 14px;
+}
+
+/*
+========= Left Section =========*/
+
+.wishlist-left {}
+
+.wishlist-thumb {
+    border: 1px solid var(--borderColor);
+    position: relative;
+}
+
+.wishlist-thumb::before {
+    content: '\f004';
+    font-family: FontAwesome;
+    position: absolute;
+    left: -11px;
+    top: -7px;
+    font-size: 1rem;
+    width: 44px;
+    height: 30px;
+    background: #afc5ca;
+    line-height: 30px;
+    text-align: CENTER;
+    border-radius: 7px;
+}
+
+
+.wishlist-thumb img {
+    height: 122px;
+}
+
+/*
+======== Basic info =========*/
+
+.wishlist-basic-info {
+    display: flex;
+    flex-direction: COLUMN;
+    justify-content: space-between;
+}
+
+.wishlist-basic-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.wishlist-basic-info h4 a {
+    text-decoration: none !important;
+    transition: var(--delay);
+    width: 265px !important;
+    display: inline-block;
+    text-align: left;
+}
+
+.wishlist-basic-info h4 a:hover {
+    color: var(--orange)
+}
+
+.wishlist-basic-info a {
+    color: var(--text-color);
+    font-size: 14px;
+    text-decoration: underline !important;
+}
+
+.wishlist-basic-info p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.w-trash p a {
+    color: var(--text-color);
+    text-decoration: underline !important;
+}
+
+
+/*
+======== right section  =========*/
+.wishlist-right {}
+
+.wishlist-right-head {}
+
+.w-product-feature {}
+
+
+.w-product-feature img {
+    height: 38px;
+    margin-left: 5px;
+}
+
+.w-trash {}
+
+.w-trash p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.w-trash span {
+    margin-left: 13px;
+    background: #afc5ca;
+    width: 31px;
+    text-align: CENTER;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.wishlist-right-footer {}
+
+.w-cart-btn {
+    margin-bottom: 10px;
+}
+
+.w-cart-btn button {
+    border-radius: 9px;
+    padding: 5px 28px;
+    font-size: 12px;
+    color: #fff !important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.w-archive-price-btn {
+    /* margin: 10px 0; */
+    align-items: center;
+}
+
+.w-archive-price-btn h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0 !important;
+}
+
+.w-archive-price-btn p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+.w-archive-price-btn button {
+    border-radius: 9px;
+    padding: 5px 16px;
+    font-size: 12px;
+    color: #fff !important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.wishlist-list .select-indicator {
+    width: 68px;
+    height: 23px;
+    border: 1px solid var(--borderColor);
+    position: relative;
+
+}
+
+.wishlist-list select {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 600;
+    background: var(--medium-orange-1);
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.wishlist-list .select-indicator::after {
+    content: '\f107';
+    font-family: FontAwesome;
+    color: var(--text-color);
+    position: absolute;
+    right: 0;
+    background: #fff;
+    font-size: 11px;
+    pointer-events: none;
+    width: 20px;
+    text-align: center;
+    height: 100%;
+    line-height: 23px;
+}
+
+.wishlist-right-footer .select-indicator {
+    width: 100px !important;
+}
+
+.wishlist-right-footer .select-indicator select {
+    padding-left: 14px !important;
+}
+
+.quantity-select {
+    width: 50px !important;
+}
+
+
+/*
+======================
+    Abo info
+======================
+*/
