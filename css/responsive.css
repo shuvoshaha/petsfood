@@ -227,6 +227,11 @@
     .process-step .img-step {
         display: none !important;
     }
+
+    .partner-logo img{
+       width: 100% !important;
+       height: 50 !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -243,6 +248,11 @@
     .faq-topics-wrapper ul {
         margin-bottom: 3.5rem !important;
     }
+
+    .partner-logo img{
+        width: 100% !important;
+        height: auto !important;
+     }
 }
 
 

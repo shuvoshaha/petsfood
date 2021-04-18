@@ -2686,3 +2686,43 @@ margin-bottom: 9px;
     color: var(--text-color) !important;
     
 }
+
+/*
+==========================
+    Impressum
+==========================
+*/
+
+.impressum-content{
+    margin-bottom: 1.5rem;
+}
+
+.impressum-content p{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.impressum-content p a{
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/*
+==========================
+    Partner Page
+==========================
+*/
+
+.partner-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partner-logo img{
+    height: 70px;
+    margin-bottom: 5rem;
+    width: 21%;
+}
+
+

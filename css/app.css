@@ -52,7 +52,6 @@
     display: none;
 }
 
-
 .changed .bar-3 {
     transform: rotate(45deg) translate(0px, -2px);
 }
@@ -137,13 +136,14 @@ button:focus {
 
 .breadcum p {
     color: #7a9fa8;
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 
 .breadcum a {
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-color);
     margin-right: 17px;
     font-weight: 500;
@@ -380,8 +380,6 @@ label {
     .image-list img:hover {
         opacity: 0.7;
     }
-
-
 }
 
 .slick-slide:focus {
@@ -467,5 +465,3 @@ label {
 .text-italic{
     font-style: italic;
 }
-
-
