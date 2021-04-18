@@ -189,7 +189,7 @@ button:focus {
 }
 
 .nav-active {
-    color: var(--nav-active);
+    color: var(--nav-active) !important;
 }
 
 .menu-active {
@@ -278,6 +278,7 @@ input::placeholder {
 button {
     outline: none;
     cursor: pointer;
+    border: none;
 }
 
 .btn-blue {

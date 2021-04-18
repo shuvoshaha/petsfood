@@ -2,9 +2,20 @@
     .desktop-v {
         justify-content: center !important;
     }
-    .contact-option-list{
+
+    .contact-option-list {
         width: 55% !important;
     }
+
+    .process-step {
+        width: 100% !important;
+        flex: 1 !important;
+    }
+
+    .process-step div p {
+        width: 65% !important;
+    }
+
 }
 
 
@@ -14,7 +25,7 @@
     }
 }
 
-@media screen and (max-width: 992px)  {
+@media screen and (max-width: 992px) {
     .login-section form {
         width: 100% !important;
     }
@@ -26,24 +37,29 @@
     .reg-head {
         padding: 0rem 0 2rem !important;
     }
-    .contact-option-list{
+
+    .contact-option-list {
         width: 100% !important;
         flex-direction: column !important;
     }
+
     .ordner-list {
         flex-direction: column !important;
     }
-    .ordner-content{
-        width: 100% !important;
-    }
-    .ordner-thumb{
+
+    .ordner-content {
         width: 100% !important;
     }
 
-    .ordner-list{
+    .ordner-thumb {
+        width: 100% !important;
+    }
+
+    .ordner-list {
         padding-left: 0 !important;
     }
-    .ordner-thumb img{
+
+    .ordner-thumb img {
         height: unset !important;
     }
 }
@@ -172,24 +188,60 @@
         justify-content: space-between;
     }
 
-    .contact-option h2{
+    .contact-option h2 {
         font-size: 18px !important;
     }
-  
 
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .abo-subscription-process {
+        display: flex;
+    }
+
+    .desktop-subscription-process {
+        flex-direction: column;
+    }
+
+    .m-step-img {
+        display: block !important;
+        margin-right: 1rem;
+    }
+
+    .m-step-img img {
+        height: 145px !important;
+    }
+
+
+    .process-step div img {
+        height: 26px !important;
+        margin-right: 14px !important;
+    }
+
+    .process-content {
+        margin-bottom: 31px !important;
+    }
+
+    .process-step .img-step {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .payment-gateway img {
         max-width: 70%;
+        height: 23px !important;
     }
 
     .payment-gateway {
         grid-template-columns: repeat(3, auto) !important;
         grid-gap: 27px !important;
     }
-    .faq-topics-wrapper ul{
-        margin-bottom: 3.5rem  !important;
+
+    .faq-topics-wrapper ul {
+        margin-bottom: 3.5rem !important;
     }
 }
 
@@ -203,9 +255,13 @@
     footer {
         text-align: center !important;
     }
+
     .ordner-content h2 {
         margin-bottom: 10px;
         font-size: 1.1rem;
+    }
+    .h2-style{
+        font-size: 17px !important;
     }
 
 
