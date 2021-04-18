@@ -231,7 +231,23 @@
     .partner-logo img{
        width: 100% !important;
        height: 50 !important;
+       
     }
+    .uberuns-inner{
+        width: 100% !important;
+    }
+    .uberuns-content p {
+        text-align: justify;
+    }
+    .uberuns-gallery{
+        flex-direction: column !important;
+    }
+    
+.uberuns-gallery img{
+    width: 100% !important;
+    height: 250px !important;
+    margin-bottom: 1rem;
+}
 }
 
 @media screen and (max-width: 500px) {

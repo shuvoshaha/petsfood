@@ -66,7 +66,7 @@ a {
     transition: var(--delay);
 }
 
-a:hover{
+a:hover {
     color: var(--orange);
 }
 
@@ -78,7 +78,7 @@ h2 {
     margin: 0;
 }
 
-h5{
+h5 {
     font-size: 14px;
     color: var(--text-color);
 }
@@ -120,7 +120,7 @@ button:focus {
     padding: 5px 44px;
     outline: none;
     border: none;
-    background: var(--btn-color);
+    background: var(--orange);
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
@@ -182,7 +182,6 @@ button:focus {
     transition: var(--delay);
 }
 
-
 .scroll-top:hover {
     background: var(--linkHoverColor);
     color: #fff
@@ -227,12 +226,10 @@ input::placeholder {
     max-width: 100%;
 }
 
-
 .w-30 {
     width: 30%;
     max-width: 100%;
 }
-
 
 .w-40 {
     width: 40%;
@@ -248,7 +245,6 @@ input::placeholder {
     width: 60%;
     max-width: 100%;
 }
-
 
 .w-70 {
     width: 70%;
@@ -404,7 +400,7 @@ label {
     color: var(--text-color);
 }
 
-.n-bg{
+.n-bg {
     background: var(--text-color);
 }
 
@@ -416,7 +412,7 @@ label {
     background: var(--gray-2);
 }
 
-.gray-bg{
+.gray-bg {
     background: var(--gray);
 }
 
@@ -458,10 +454,10 @@ label {
     background: var(--medium-orange-2);
 }
 
-.text-upper{
+.text-upper {
     text-transform: uppercase;
 }
 
-.text-italic{
+.text-italic {
     font-style: italic;
 }
