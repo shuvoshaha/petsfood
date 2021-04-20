@@ -2999,8 +2999,12 @@ Single Product Page
 
 .inactive .subscription-history tr td a {}
 
+/*
+*/
+
 .myaccount .contact-option {
     background: var(--white);
+    padding: 2rem 0;
 }
 
 .myaccount .contact-option-list {
@@ -3014,18 +3018,66 @@ Single Product Page
 
 .order-history h3 {}
 
-.order-history table {}
+.order-history table {
+    width: 100%;
+}
 
-.order-history table tr {}
+.order-history table tr {
+    padding: 0 22px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+}
 
-.order-history table tr:nth-child(odd) {}
+.order-history table tr:nth-child(odd) {
+    background: var(--medium-orange-1);
+}
 
-.order-history table tr:nth-child(even) {}
+.order-history table tr:nth-child(even) {
+    background: var(--light-orange);
+}
 
-.order-history table tr th {}
 
-.order-history table tr td {}
+.order-history table tr th {
+    border-right: 2px solid #fff;
+    padding: 12px;
+    width: 2%;
+}
 
-.order-history table tr td small {}
+.order-history table tr td {
+    font-size: 14px;
+    border-right: 2px solid var(--white);
+    padding: 7px;
+}
 
-.order-history table tr td a {}
+td {}
+
+.order-history table tr td small {
+    font-weight: bold;
+}
+
+.order-history table tr td a {
+    color: var(--text-color);
+    text-decoration: underline !important;
+}
+
+.order-history table tr td button {
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+/*
+========= password tab ===========*/
+
+.password-change-form form label {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.password-change-form form button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: #fff;
+}

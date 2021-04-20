@@ -176,7 +176,7 @@
         <!-- myaccount -->
         <div class="myaccount bg-light-orange w-100 py-4">
             <div class="container">
-               
+
                 <!-- Nav tabs-->
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
@@ -429,7 +429,7 @@
                         </div>
                         <!-- order history start -->
                         <div class="order-history">
-                            <h3 class="text-color my-3"><strong>Bestellungen</strong></h3>
+                            <h3 class="text-color mt-5 mb-3"><strong>Bestellungen</strong></h3>
                             <table>
                                 <tr>
                                     <th>Datum</th>
@@ -439,7 +439,6 @@
                                     <th>Versandstatus</th>
                                     <th>Rechnung</th>
                                     <th>Bestelldetails</th>
-                                    <th></th>
                                 </tr>
                                 <tr>
                                     <td>5. Jänner 2021</td>
@@ -448,20 +447,65 @@
                                     <td>€ 54,00 <small>&euro;</small></td>
                                     <td>Versendet am 6. Jänner 2021
                                         Sendungsnummer 424003944010111409 </td>
-                                    <td>PDF</td>
+                                    <td><a href="#">PDF</a></td>
+                                    <td><a href="#">DETAILS</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4. Dezember 2020</td>
+                                    <td>ABO: Charly</td>
+                                    <td>001234567</td>
+                                    <td>€ 54,00 <small>&euro;</small></td>
+                                    <td>Versendet am 6. Jänner 2021
+                                        Sendungsnummer 424003944010111409 </td>
+                                    <td><a href="#">PDF</a></td>
+                                    <td><a href="#">DETAILS</a></td>
+                                </tr>
+                                <tr>
+                                    <td>12. November 2020</td>
+                                    <td>
+                                        Einzelbestellung
+                                        <button class="btn-orange mt-1">Abo erstellen</button>
+                                    </td>
+                                    <td>001234567</td>
+                                    <td>€ 12,00 <small>&euro;</small></td>
+                                    <td>Versendet am 6. Jänner 2021
+                                        Sendungsnummer 424003944010111409 </td>
+                                    <td><a href="#">PDF</a></td>
                                     <td><a href="#">DETAILS</a></td>
                                 </tr>
                             </table>
                         </div> <!-- order history start -->
                     </div>
 
+
+                    <!-- address tab -->
                     <div id="my-address" class="container tab-pane fade"><br>
                         <h3>Menu 2</h3>
                     </div>
 
+                    <!-- password tab -->
                     <div id="password" class="container tab-pane fade"><br>
-                        <h3>Menu 2</h3>
+                        <h3>Kennwort ändern</h3>
+                        <div class="password-change-form mt-5 w-50">
+                            <form action="">
 
+                                <div class="psw-form-group mb-4">
+                                    <label for="crnt-psw">Jetziges Passwort</label>
+                                    <input type="password" name="" id="crnt-psw" placeholder="Jetziges Passwort">
+                                </div>
+
+                                <div class="psw-form-group mb-4">
+                                    <label for="new-psw">Neues Kennwort</label>
+                                    <input type="password" name="" placeholder="Neues Kennwort" id="new-psw">
+                                </div>
+
+                                <div class="psw-form-group mb-4">
+                                    <label for="cnfrm-psw">Kennwort bestätigen </label>
+                                    <input type="password" name="" id="new-psw" placeholder="Kennwort bestätigen">
+                                </div>
+                                <button class="btn-blue mt-4 w-30">speichern</button>
+                            </form>
+                        </div>
                     </div>
 
                     <!-- contact start-->
@@ -563,4 +607,5 @@
     <script src="./js/pet-script.js"></script>
 
 </body>
+
 </html>
