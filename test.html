@@ -57,7 +57,7 @@
           </form>
         </div>
       </nav>
-<!-- 
+
    <div class="container">
     <div class="product-slider">
       <div>your content</div>
@@ -67,9 +67,27 @@
       <div>your content</div>
       <div>your content</div>
       <div>your content</div>
-      
     </div>
-   </div> -->
+   </div>
+
+   <div class="container label">
+   <form action="">
+    <label for="e">
+      <input type="radio" name="e" id="e">
+      e
+      
+    </label>
+    <label for="d">
+     <input type="radio" name="e" id="d">
+     d
+     <div class="hide df">df</div>
+   </label>
+
+   <div class="hide ef">ef</div>
+   </form>
+   </div>
+
+  
 
    <!-- popup -->
    <a  class="popup">
@@ -113,7 +131,9 @@
    </div>
   </a>
 
-<div class="container">
+
+
+<!-- <div class="container">
   <div class="select-indicator">
     <select class="indicator">
       <option value="1">1</option>
@@ -225,7 +245,62 @@
         <div class="s3"></div>
       </div>
       
+     </div> -->
+
+     <div class="container">
+      <div class="tab">
+        <div class="tab-btn-group">
+          <button class="tab-btn1 active">Tab 1</button>
+          <button class="tab-btn2">Tab 2</button>
+          <button class="tab-btn3">Tab 3</button>
+          <button class="tab-btn4">Tab 4</button>
+        </div>
+        <div id="tab1" class="tab-content">
+          <p>This is tab content 1</p>
+        </div>
+        <div id="tab2" class="tab-content">
+          <p>This is tab content 2</p>
+        </div>
+        <div id="tab3" class="tab-content">
+          <p>This is tab content 3</p>
+        </div>
+        <div id="tab4" class="tab-content">
+          <p>This is tab content 4</p>
+        </div>
+      </div>
      </div>
+     <div class="container">
+      <h2>Toggleable Tabs</h2>
+      <br>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="menu1" class=" tab-pane fade"><br>
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+      </div>
+    </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>

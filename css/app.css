@@ -16,7 +16,8 @@
     --btn-hover: #fab722;
     --btn-orange: #fab722;
     --btn-orange-hover: #054a54;
-    --light-orange: #fergb(27, 108, 121) --orange-line: #9bb7bb;
+    --light-orange: #fef8e8;
+    --orange-line: #9bb7bb;
     --medium-orange-1: #fde2a7;
     --medium-orange-2: #fbcc64;
     --bg-light-blue: #f2f6f6;
@@ -74,6 +75,10 @@ p {
     margin: 0 !important;
 }
 
+p a{
+    color: var(--te);
+}
+
 h2 {
     margin: 0;
 }
@@ -86,6 +91,7 @@ h5 {
 button:focus {
     outline: none;
 }
+
 
 .navbar {
     padding: .5rem 0 !important;
@@ -275,6 +281,7 @@ button {
     outline: none;
     cursor: pointer;
     border: none;
+    transition: var(--delay);
 }
 
 .btn-blue {
@@ -460,4 +467,34 @@ label {
 
 .text-italic {
     font-style: italic;
+}
+
+.text-orange{
+    color: var(--medium-orange-2) !important;
+}
+
+.text-deep-orange{
+  color: var(--orange) !important;
+}
+
+.text-color{
+    color: var(--text-color;)
+}
+
+.btn-black{
+    background: #000 !important;
+}
+
+.btn-black:hover{
+    background: #020202 !important;
+    color: #fff !important;
+}
+
+.btn-light-orange{
+    background: #ffe5a6 !important;
+    color: var(--text-color) !important;
+}
+
+.btn-light-orange:hover{
+    background: var(--orange) !important;
 }

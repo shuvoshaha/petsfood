@@ -2085,6 +2085,7 @@ Single Product Page
 
 .total-price h3 {
     color: var(--orange) !important;
+    font-size: 1.5rem;
 }
 
 
@@ -2509,7 +2510,8 @@ Single Product Page
     letter-spacing: 1px;
 }
 
-.wishlist-list .select-indicator {
+.wishlist-list .select-indicator,
+.cart-indicator {
     width: 68px;
     height: 23px;
     border: 1px solid var(--borderColor);
@@ -2517,7 +2519,8 @@ Single Product Page
 
 }
 
-.wishlist-list select {
+.wishlist-list select,
+.cart-indicator select {
     width: 100%;
     height: 100%;
     appearance: none;
@@ -2535,7 +2538,8 @@ Single Product Page
     cursor: pointer;
 }
 
-.wishlist-list .select-indicator::after {
+.wishlist-list .select-indicator::after,
+.cart-indicator::after {
     content: '\f107';
     font-family: FontAwesome;
     color: var(--text-color);
@@ -2569,8 +2573,9 @@ Single Product Page
 ======================
 */
 
-.abo-info{}
-.abo-info h3{
+.abo-info {}
+
+.abo-info h3 {
     font-size: 14px;
     font-weight: bold;
 }
@@ -2578,37 +2583,37 @@ Single Product Page
 /*
 ========== subscription-process  ==========*/
 
-.abo-subscription{
+.abo-subscription {
     background: var(--light-orange);
     padding: 1.5rem 0 2rem;
 }
 
-.abo-subscription-process h3{
+.abo-subscription-process h3 {
     font-size: 14px;
     font-weight: bold;
 }
 
-.abo-subscription-process{
-  
-}
-.m-step-img{
+.abo-subscription-process {}
+
+.m-step-img {
     display: none;
 }
 
-.process-step{
+.process-step {
     width: 16%;
 }
 
-.process-content{
-    
-margin-bottom: 9px;
+.process-content {
+
+    margin-bottom: 9px;
 }
 
-.process-step div img{
+.process-step div img {
     height: 33px;
     margin-right: 14px;
 }
-.process-step div p{
+
+.process-step div p {
     font-size: 14px;
     text-align: left;
     color: var(--text-color);
@@ -2617,11 +2622,11 @@ margin-bottom: 9px;
     width: 64%;
 }
 
-.process-step .img-step{
+.process-step .img-step {
     height: 26px;
 }
 
-.process-step a button{
+.process-step a button {
     font-size: 13px;
     font-weight: 600;
     padding: 4px 17px;
@@ -2633,35 +2638,35 @@ margin-bottom: 9px;
 /*
 ====== Futter-ABO =======*/
 
-.futter-abo .ordner-list{
-  padding-left: 0 !important;
+.futter-abo .ordner-list {
+    padding-left: 0 !important;
 }
 
 .futter-abo .ordner-content h2 {
     font-size: 18px;
 }
 
-.futter-abo .ordner-content h2::before{
+.futter-abo .ordner-content h2::before {
     content: '\f00c';
-    font-size: 12px ;
+    font-size: 12px;
     width: 22px;
     height: 22px;
     line-height: 23px;
 }
 
-.futter-abo .ordner-content ul li{
-   list-style: none;
-   position: relative;
-   font-size: 14px;
-   color: var(--text-color);
+.futter-abo .ordner-content ul li {
+    list-style: none;
+    position: relative;
+    font-size: 14px;
+    color: var(--text-color);
 }
 
-.futter-abo .ordner-content ul li::before{
- content: '\f0da';
- font-family: FontAwesome;
- color: var(--text-color);
- font-size: 14px;
- margin-right: 6px;
+.futter-abo .ordner-content ul li::before {
+    content: '\f0da';
+    font-family: FontAwesome;
+    color: var(--text-color);
+    font-size: 14px;
+    margin-right: 6px;
 }
 
 
@@ -2671,20 +2676,22 @@ margin-bottom: 9px;
 ==========================
 */
 
-.kontakt h2{
- font-size: 20px !important;
- font-weight: bold;
+.kontakt h2 {
+    font-size: 20px !important;
+    font-weight: bold;
 }
-.kontakt h3{
+
+.kontakt h3 {
     font-size: 18px;
 }
-.kontakt .contact-option-list{
+
+.kontakt .contact-option-list {
     width: 33%;
 }
 
-.kontakt-faq-link a{
+.kontakt-faq-link a {
     color: var(--text-color) !important;
-    
+
 }
 
 /*
@@ -2693,16 +2700,16 @@ margin-bottom: 9px;
 ==========================
 */
 
-.impressum-content{
+.impressum-content {
     margin-bottom: 1.5rem;
 }
 
-.impressum-content p{
+.impressum-content p {
     color: var(--text-color);
     font-size: 1rem;
 }
 
-.impressum-content p a{
+.impressum-content p a {
     font-size: 1rem;
     color: var(--text-color);
 }
@@ -2713,13 +2720,13 @@ margin-bottom: 9px;
 ==========================
 */
 
-.partner-logo{
+.partner-logo {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.partner-logo img{
+.partner-logo img {
     height: 70px;
     margin-bottom: 5rem;
     width: 21%;
@@ -2730,28 +2737,295 @@ margin-bottom: 9px;
   UeberUns Page
 ========================*/
 
-.uberuns-inner{
+.uberuns-inner {
     width: 80%;
 }
 
-.uberuns-content{
+.uberuns-content {
     margin-bottom: 2rem;
 }
-.uberuns-content h3{
+
+.uberuns-content h3 {
     font-size: 17px;
     color: var(--text-color);
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.uberuns-content p{
+
+.uberuns-content p {
     font-size: 14px;
     color: #000;
 }
 
 
-.uberuns-gallery{}
+.uberuns-gallery {}
 
-.uberuns-gallery img{
+.uberuns-gallery img {
     width: 32%;
     height: 250px;
 }
+
+/*
+====================
+  Cart Page
+====================
+*/
+
+/*
+======== Product =========
+*/
+
+.ribon {
+    width: 160px;
+    height: 160px;
+    background: var(--p-bg);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 12%;
+    top: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ribon p {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    width: 70%;
+    transform: rotate(-7deg);
+    font-weight: 500;
+}
+
+.cart-archive-product-list {}
+
+.cart-archive-product {
+    background: #fff;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.cart-product-section-1 {}
+
+.cart-product-thumb {
+    border: 1px solid var(--borderColor);
+}
+
+.cart-product-thumb img {
+    height: 150px;
+}
+
+.cart-product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.cart-product-details h3 {
+    font-size: 1rem;
+    width: 75%;
+}
+
+.cart-product-details a:first-child {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.cart-product-details .details-link {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.cart-product-details p {}
+
+.cart-product-section-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cart-archive-right-head {}
+
+.c-product-feature {
+    display: flex;
+}
+
+.c-product-feature img {
+    height: 37px;
+    margin-left: 8px;
+}
+
+.c-trash-btn {
+    background: #afc5ca;
+    width: 50px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.c-archive-price p {
+    font-size: 1rem !important;
+}
+
+.c-archive-price .product-discount {
+    padding: 1px 13px !important;
+    background: var(--medium-orange-2) !important;
+}
+
+/*
+======== cart product price ==========*/
+.cart-product-subtotal {
+    display: grid;
+    align-items: center;
+    height: 450px;
+    padding: 0 3.3rem;
+}
+
+.cart-product-subtotal h2 {
+    color: var(--orange) !important;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.cart-btn-d-block {
+    margin: auto;
+}
+
+.cart-btn-d-block button {
+    width: 200px;
+    display: block;
+    padding: 5px 0;
+    margin: auto;
+    border-radius: 11px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*
+ ===========================
+    My Account Page
+ ===========================
+*/
+
+.myaccount .tab-content {
+    padding: 15px 7px;
+    background: #fff;
+}
+
+.myaccount .tab-content address {}
+
+.subscription-history-section {}
+
+.subscription-history-section button {
+    width: 40%;
+    padding: 5px 9px;
+    text-align: left;
+    background: var(--p-bg);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    display: block;
+}
+
+.subscription-history {
+    margin-bottom: 1rem;
+}
+
+.subscription-history table {}
+
+.subscription-history table tr {
+    text-align: center;
+}
+
+.subscription-history table tr:last-child {}
+
+.subscription-history table tr:nth-child(even) {
+    background: #f4f5f6;
+}
+
+.subscription-history table tr:nth-child(odd) {
+    background: #cbd8dc;
+}
+
+.subscription-history table tr th {
+    border-right: 2px solid #fff;
+    font-size: 13px;
+    padding: 0 5px;
+    color: var(--text-color);
+    width: 4%;
+}
+
+.subscription-history table tr td div {
+    display: block;
+}
+
+.subscription-history table tr td {
+    font-size: 13px;
+    border-right: 2px solid #fff;
+    color: var(--text-color);
+    padding: 2px 0 14px 0;
+}
+
+.subscription-history table tr td a {
+    color: var(--text-color);
+    font-size: 13px;
+    text-decoration: underline !important;
+    display: block;
+    width: 95%;
+}
+
+.subscription-history table tr td button {
+    font-size: 13px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 3px;
+}
+
+.inactive .subscription-history table tr {}
+
+.inactive .subscription-history table tr:nth-child(odd) {
+    background: var(--gray) !important;
+}
+
+.inactive .subscription-history table tr:nth-child(even) {}
+
+.inactive table tr td {}
+
+.inactive .subscription-history tr td a {}
+
+.myaccount .contact-option {
+    background: var(--white);
+}
+
+.myaccount .contact-option-list {
+    width: 50%;
+}
+
+/*
+============ order history =============*/
+
+.order-history {}
+
+.order-history h3 {}
+
+.order-history table {}
+
+.order-history table tr {}
+
+.order-history table tr:nth-child(odd) {}
+
+.order-history table tr:nth-child(even) {}
+
+.order-history table tr th {}
+
+.order-history table tr td {}
+
+.order-history table tr td small {}
+
+.order-history table tr td a {}

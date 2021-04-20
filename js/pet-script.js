@@ -92,7 +92,6 @@ $(document).ready(function () {
   });
 });
 
-
 // Testmonial carousel
 $(document).ready(function () {
   $('.testmonial-carousel').slick({

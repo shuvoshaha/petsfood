@@ -75,7 +75,8 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                        <a class="nav-link nav-active" href="./cart.html"><i class="fas fa-shopping-bag"></i>
+                            Warenkorb</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-heart-o"></i> Wunschliste</a>
@@ -162,411 +163,357 @@
             </div>
         </div>
     </div>
-
     <!-- main -->
     <div class="main">
         <div class="container">
             <hr class="header-line">
-
             <!-- breadcrumbs -->
             <div class="d-flex breadcum pt-1 pb-3">
                 <p>Sie befinden sich hier: &nbsp;</p>
                 <a href="/index.html">Home</a>
-                <a href="/wishlist.html">Wunschliste</a>
+                <a href="/cart.html">Warenkorb</a>
             </div>
-            <h2 class="page-title text-upper pt-3 pb-4">Wunschliste</h2>
+            <h2 class="page-title text-upper pt-3 pb-4">WARENKORB</h2>
         </div>
-        <!-- wishlist -->
-        <div class="wishlists pt-5 pb-4">
+        <!-- cart -->
+        <div class="cart  w-100 gray-bg">
             <div class="container">
-                <h5 class="wishlist-product-count-title mb-4"><strong>4 Artikel</strong> auf der Wunschliste</h5>
-                <!-- product -->
-                <div class="wishlist-list d-flex justify-content-between mb-4">
-                    <!-- left section -->
-                    <div class="wishlist-left w-50 d-flex">
-                        <div class="wishlist-thumb">
-                           <a href="#">
-                            <img src="./img/product-1.jpg" alt="">
-                           </a>
-                        </div>
-                        <!-- basic info -->
-                        <div class="wishlist-basic-info ml-3">
-                            <div>
-                                <h4>
-                                    <a href="#">Dog‘s Love – Welpenfutter</a>
-                                </h4>
-                                <a href="#">DETAILS</a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <p>Packungsgröße</p>
-                                <div class="select-indicator ml-2">
-                                    <select name="wishlist" id="">
-                                        <option value="300">300g</option>
-                                        <option value="600">600g</option>
-                                        <option value="900">900g</option>
-                                    </select>
+                <h3 class="p-style py-3"><strong>6 Artikel</strong> im Warenkorb</h3>
+                <!-- ribon -->
+               
+                <div class="cart-inner d-flex justify-content-between w-100">
+                    <!-- product list-->
+                    <div class="cart-archive-product-list mr-3 w-70">
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-1.jpg" alt="">
                                 </div>
-                                <p class="mx-2">Anzahl</p>
-                                <div class="select-indicator quantity-select">
-                                    <select name="wishlist" id="">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Dog‘s Love – Welpenfutter</a>
+                                        </h3>
+                                        <a href="#" class="underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="p-style mr-2">Packungsgröße</p>
+                                        <div class="cart-indicator ml-2">
+                                            <select name="weight" id="">
+                                                <option value="300">300g</option>
+                                                <option value="600">600g</option>
+                                                <option value="900">900g</option>
+                                            </select>
+                                        </div>
+                                        <p class="p-style mx-2">Anzahl</p>
+                                        <div class="cart-indicator quantity-select">
+                                            <select name="quantity" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                        <img src="./img/glutenfrei.png" alt="">
+                                        <img src="./img/regional.png" alt="">
+                                        <img src="./img/vegan.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
                                 </div>
                             </div>
                         </div>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-4.jpg" alt="">
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Royal Cannin – LECKER
+                                                BISSEN für besonders sensible Hunde
+                                                mit Pferdefleisch</a>
+                                        </h3>
+                                        <a href="#" class="underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="p-style mr-2">Packungsgröße</p>
+                                        <div class="cart-indicator ml-2">
+                                            <select name="weight" id="">
+                                                <option value="300">300g</option>
+                                                <option value="600">600g</option>
+                                                <option value="900">900g</option>
+                                            </select>
+                                        </div>
+                                        <p class="p-style mx-2">Anzahl</p>
+                                        <div class="cart-indicator quantity-select">
+                                            <select name="quantity" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                        <img src="./img/glutenfrei.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-3.jpg" alt="">
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Cat‘s Love Senior feines Geflügel –
+                                                Pute</a>
+                                        </h3>
+                                        <a href="#" class="underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="p-style mr-2">Packungsgröße</p>
+                                        <div class="cart-indicator ml-2">
+                                            <select name="weight" id="">
+                                                <option value="300">300g</option>
+                                                <option value="600">600g</option>
+                                                <option value="900">900g</option>
+                                            </select>
+                                        </div>
+                                        <p class="p-style mx-2">Anzahl</p>
+                                        <div class="cart-indicator quantity-select">
+                                            <select name="quantity" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                        <img src="./img/glutenfrei.png" alt="">
+                                        <img src="./img/regional.png" alt="">
+                                    
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style text-italic"><del>€ 12,50</del></p>
+                                    <span class="product-discount">–10%</span>
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-2.jpg" alt="">
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Dog‘s Love Welpenfutter – Nassfutter</a>
+                                        </h3>
+                                        <a href="#" class="underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="p-style mr-2">Packungsgröße</p>
+                                        <div class="cart-indicator ml-2">
+                                            <select name="weight" id="">
+                                                <option value="300">300g</option>
+                                                <option value="600">600g</option>
+                                                <option value="900">900g</option>
+                                            </select>
+                                        </div>
+                                        <p class="p-style mx-2">Anzahl</p>
+                                        <div class="cart-indicator quantity-select">
+                                            <select name="quantity" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- back to shop page link -->
+                        <p class="p-style text-center my-5">
+                            <a href="#" class="underline">
+                               <strong>Zurück zum SHOP</strong>
+                            </a></p>
                     </div>
-                    <!-- right section -->
-                    <div class="wishlist-right w-50 d-flex flex-column justify-content-between">
-                        <div class="wishlist-right-head d-flex justify-content-between">
-                            <div class="w-product-feature">
-                                <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
-                                <img src="./img/regional.png" alt="">
-                                <img src="./img/vegan.png" alt="">
-                            </div>
-                            <div class="w-trash d-flex justify-content-between">
-                                <p>von der Wunschliste <a href="#">entfernen</a></p>
-                                <span>
-                                    <i class="fa fa-trash"></i>
-                                </span>
+                    <!-- cart product subtotal price -->
+                    <div class="cart-archive-subtotal-section w-30 position-relative">
+                        <div class="ribon">
+                            <p class="mb-2">Für die Gesundheit- meines besten Freundes</p>
+                            <p class="text-orange">biologisches Futter, nachhaltig geliefert</p>
+                        </div>
+                        <div class="cart-product-subtotal w-100 bg-light-orange">
+                            <div>
+                                <h2>ÜBERBLICK</h2>
+                                <div class="orange-line my-2"></div>
+                                <div class="sub-total d-flex justify-content-between align-items-center p-style">
+                                    <p>Zwischensumme</p>
+                                    <p><strong>€ 142,70</strong></p>
+                                </div>
+                                <div class="shipping-cost d-flex justify-content-between align-items-center my-2 p-style">
+                                    <p>Standardversand*</p>
+                                    <p><strong>€ 4,50</strong></p>
+                                </div>
+                                <div class="mst-vat d-flex justify-content-between align-items-center p-style">
+                                    <p>MwSt. <strong>20%</strong></p>
+                                    <p><strong>€ 19,16</strong></p>
+                                </div>
+    
+                                <div class="orange-line my-2"></div>
+    
+                                <div class="total-price d-flex justify-content-between align-items-center p-style">
+                                    <div>
+                                        <p>Gesamtbetrag</p>
+                                        <p>inkl. MwSt.</p>
+                                    </div>
+                                    <h3><strong>€ 172,70</strong></h3>
+                                </div>
+                                <div class="cart-btn-d-block mt-4 mb-2">
+                                    <button class="btn-blue">ZUR KASSE</button>
+                                    <button class="btn-orange mt-2">ALS ABO BESTELLEN</button>
+                                </div>
+                                <p class="p-style text-center">Infos rund ums Abo <a href="#" class="underline">HIER</a></p>
                             </div>
                         </div>
-                        <div class="wishlist-right-footer">
-                            <div class="w-cart-btn d-flex justify-content-end">
-                                <button class="btn-blue">IN DEN WARENKORB</button>
-                            </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <h3 class="mr-5">€ 12,50</h3>
-                                <p class="ml-2">ZUM ABO</p>
-                                <div class="select-indicator ml-2 mr-3">
-                                    <select name="wishlist" id="">
-                                        <option value="300">Charly</option>
-                                        <option value="600">Charly</option>
-                                        <option value="900">Charly</option>
-                                    </select>
-                                </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
-                            </div>
+                        <div class="product-deliver-cost-info mt-3">
+                            <p class="p-style text-italic">
+                                *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht von 59 kg betragen die
+                                Lieferkosten € 4,50
+                                pro Lieferung.
+                                Ab einem Bestellwert von € 50,– ist die Lieferung gratis,
+                                ausgenommen das Liefergewicht übersteigt 60 kg. In diesem Fall muss über einen
+                                speziellen Lieferservice geliefert
+                                werden und es fallen pro Lieferung € 12,– an
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- product -->
-                <div class="wishlist-list d-flex justify-content-between mb-4">
-                    <!-- left section -->
-                    <div class="wishlist-left w-50 d-flex">
-                        <div class="wishlist-thumb">
-                           <a href="#">
-                            <img src="./img/product-4.jpg" alt="">
-                           </a>
-                        </div>
-                        <!-- basic info -->
-                        <div class="wishlist-basic-info ml-3">
-                            <div>
-                                <h4>
-                                    <a href="#">Royal Cannin – LECKER
-                                        BISSEN für besonders sensible Hunde
-                                        mit Pferdefleisch</a>
-                                </h4>
-                                <a href="#">DETAILS</a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <p>Packungsgröße</p>
-                                <div class="select-indicator ml-2">
-                                    <select name="wishlist" id="">
-                                        <option value="300">300g</option>
-                                        <option value="600">600g</option>
-                                        <option value="900">900g</option>
-                                    </select>
-                                </div>
-                                <p class="mx-2">Anzahl</p>
-                                <div class="select-indicator quantity-select">
-                                    <select name="wishlist" id="">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right section -->
-                    <div class="wishlist-right w-50 d-flex flex-column justify-content-between">
-                        <div class="wishlist-right-head d-flex justify-content-between">
-                            <div class="w-product-feature">
-                                <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
-                                <img src="./img/regional.png" alt="">
-                                <img src="./img/vegan.png" alt="">
-                            </div>
-                            <div class="w-trash d-flex justify-content-between">
-                                <p>von der Wunschliste <a href="#">entfernen</a></p>
-                                <span>
-                                    <i class="fa fa-trash"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="wishlist-right-footer">
-                            <div class="w-cart-btn d-flex justify-content-end">
-                                <button class="btn-blue">IN DEN WARENKORB</button>
-                            </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <h3 class="mr-5">€ 12,50</h3>
-                                <p class="ml-2">ZUM ABO</p>
-                                <div class="select-indicator ml-2 mr-3">
-                                    <select name="wishlist" id="">
-                                        <option value="300">Charly</option>
-                                        <option value="600">Charly</option>
-                                        <option value="900">Charly</option>
-                                    </select>
-                                </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- product -->
-                <div class="wishlist-list d-flex justify-content-between mb-4">
-                    <!-- left section -->
-                    <div class="wishlist-left w-50 d-flex">
-                        <div class="wishlist-thumb">
-                         <a href="#">
-                            <img src="./img/product-3.jpg" alt="">
-                         </a>
-                        </div>
-                        <!-- basic info -->
-                        <div class="wishlist-basic-info ml-3">
-                            <div>
-                                <h4>
-                                    <a href="#">Cat‘s Love Senior feines Geflügel –
-                                        Pute</a>
-                                </h4>
-                                <a href="#">DETAILS</a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <p>Packungsgröße</p>
-                                <div class="select-indicator ml-2">
-                                    <select name="wishlist" id="">
-                                        <option value="300">300g</option>
-                                        <option value="600">600g</option>
-                                        <option value="900">900g</option>
-                                    </select>
-                                </div>
-                                <p class="mx-2">Anzahl</p>
-                                <div class="select-indicator quantity-select">
-                                    <select name="wishlist" id="">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right section -->
-                    <div class="wishlist-right w-50 d-flex flex-column justify-content-between">
-                        <div class="wishlist-right-head d-flex justify-content-between">
-                            <div class="w-product-feature">
-                                <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
-                                <img src="./img/regional.png" alt="">
-                                <img src="./img/vegan.png" alt="">
-                            </div>
-                            <div class="w-trash d-flex justify-content-between">
-                                <p>von der Wunschliste <a href="#">entfernen</a></p>
-                                <span>
-                                    <i class="fa fa-trash"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="wishlist-right-footer">
-                            <div>
-                                <!-- <div class="w-discount">
-                                    <h5><del class="text-italic">€ 12,50</del><h5>
-                                    <p class="product-discount">10%</p>
-                                </div> -->
-                                <div class="w-cart-btn d-flex justify-content-end">
-                                    <button class="btn-blue">IN DEN WARENKORB</button>
-                                </div>
-                            </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <h3 class="mr-5">€ 5,20</h3>
-                                <p class="ml-2">ZUM ABO</p>
-                                <div class="select-indicator ml-2 mr-3">
-                                    <select name="wishlist" id="">
-                                        <option value="300">Charly</option>
-                                        <option value="600">Charly</option>
-                                        <option value="900">Charly</option>
-                                    </select>
-                                </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- product -->
-                <div class="wishlist-list d-flex justify-content-between mb-4">
-                    <!-- left section -->
-                    <div class="wishlist-left w-50 d-flex">
-                        <div class="wishlist-thumb">
-                           <a href="#">
-                            <img src="./img/product-2.jpg" alt="">
-                           </a>
-                        </div>
-                        <!-- basic info -->
-                        <div class="wishlist-basic-info ml-3">
-                            <div>
-                                <h4>
-                                    <a href="#">Dog‘s Love Welpenfutter – Nassfutter</a>
-                                </h4>
-                                <a href="#">DETAILS</a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <p>Packungsgröße</p>
-                                <div class="select-indicator ml-2">
-                                    <select name="wishlist" id="">
-                                        <option value="300">300g</option>
-                                        <option value="600">600g</option>
-                                        <option value="900">900g</option>
-                                    </select>
-                                </div>
-                                <p class="mx-2">Anzahl</p>
-                                <div class="select-indicator quantity-select">
-                                    <select name="wishlist" id="">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right section -->
-                    <div class="wishlist-right w-50 d-flex flex-column justify-content-between">
-                        <div class="wishlist-right-head d-flex justify-content-between">
-                            <div class="w-product-feature">
-                                <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
-                                <img src="./img/regional.png" alt="">
-                                <img src="./img/vegan.png" alt="">
-                            </div>
-                            <div class="w-trash d-flex justify-content-between">
-                                <p>von der Wunschliste <a href="#">entfernen</a></p>
-                                <span>
-                                    <i class="fa fa-trash"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="wishlist-right-footer">
-                            <div class="w-cart-btn d-flex justify-content-end">
-                                <button class="btn-blue">IN DEN WARENKORB</button>
-                            </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <h3 class="mr-5">€ 12,50</h3>
-                                <p class="ml-2">ZUM ABO</p>
-                                <div class="select-indicator ml-2 mr-3">
-                                    <select name="wishlist" id="">
-                                        <option value="300">Charly</option>
-                                        <option value="600">Charly</option>
-                                        <option value="900">Charly</option>
-                                    </select>
-                                </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Shop link -->
-                <h5 class="back-shop-link underline text-center py-4">
-                    <a href="#" class=" n-text"><strong>zum SHOP</strong></a>
-                </h5>
             </div>
         </div>
+    </div>
+    <!--main-->
 
-        </div>
-        <!--main-->
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav">
+                    <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                </div>
 
-        <!-- Footer -->
-        <footer class="py-5">
-            <div class="container">
-                <div class="rows">
-                    <!-- Footer logo -->
-                    <div class="footer-nav">
-                        <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                <!-- Footer Nav -->
+                <div class="footer-nav footer-menu">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+
+                            <a href="">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="">Kontakt</a>
+                            <a href="">Partner</a>
+                        </nav>
                     </div>
 
-                    <!-- Footer Nav -->
-                    <div class="footer-nav footer-menu">
-                        <div class="footer-navs">
-                            <h3>healthy pet <span>shop</span></h3>
-                            <nav class="footer-nav-2">
-                                <a href="#">
-                                    <i class="fa fa-file"></i> BIO-Zertifikat
-                                </a>
-
-                                <a href="">Über uns</a>
-                                <a href="">Qualität</a>
-                                <a href="">Kontakt</a>
-                                <a href="">Partner</a>
-                            </nav>
-                        </div>
-
-                        <div class="footer-navs">
-                            <h3>Kundenservice</h3>
-                            <nav class="footer-nav-2">
-                                <a href="#">Versandkosten</a>
-                                <a href="">Zahlungsarten</a>
-                                <a href="./datenschutz-sicherheit.html" class="active">Datenschutz &<br> Sicherheit</a>
-                                <a href="">AGBs</a>
-                                <a href="">Impressum</a>
-                                <a href="./faq.html">FAQ</a>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div class="footer-nav">
-                        <div class="newsletter">
-                            <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
-                            <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
-                            <form action="index.html" method="post">
-                                <input required type="email" name="email" class="text-center"
-                                    placeholder="E-Mail Adresse hier eingeben!">
-                                <button class="newsletter-btn">Jetzt abonnieren</button>
-                            </form>
-                            <p class="my-3">Abmelden jederzeit möglich!</p>
-                            <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
-                        </div>
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html" class="active">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
                     </div>
                 </div>
-                <p class="copytext">copyright 2021: pets fine food</p>
+
+                <!-- Newsletter -->
+                <div class="footer-nav">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <p class="copytext">copyright 2021: pets fine food</p>
+        </div>
+    </footer>
 
-        <!-- Scroll Top -->
-        <a href="#" class="scroll-top">
-            <i class="fa fa-angle-up"></i>
-        </a>
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
-        <!-- JQuery JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="./js/bootstrap.min.js"></script>
-        <!-- Slick JS -->
-        <script src="./js/slick.min.js"></script>
-        <!-- Custom JS -->
-        <script src="./js/pet-script.js"></script>
+    <!-- JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/pet-script.js"></script>
 
-        </body>
-
-        </html>
+</body>
+</html>

@@ -1,4 +1,4 @@
-.slick-dots {
+/* .slick-dots {
     display: flex;
     justify-content: center;
 }
@@ -35,6 +35,12 @@
 
 .footprint:hover::after {}
 
+.tab-content{
+  display: none;
+}
+.show{
+  display: block !important;
+}
 
 
 /*
@@ -1873,5 +1879,31 @@ footer {
 }
 
 
+.label input[type="radio"] + .hide{
+  display: none;
+}
+
+.label input[type="radio"]:checked + .ef{
+  display: block !important;
+}
+
+.label input[type="radio"]:checked ~ .df{
+  display: block !important;
+}
 
 
+input[type=radio] + .details{
+  display: none;
+}
+
+input[type=radio]:checked + .fordebit {
+  display: block;
+}
+
+input[type=radio]:checked + .forcredit {
+  display: block;
+}
+input[type=radio] {
+  float:left;
+}
+ 
