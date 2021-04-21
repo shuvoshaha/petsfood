@@ -256,14 +256,17 @@ body {
 ============Top Social-Media-links=========*/
 
 .social-media-links {
-    position: absolute;
-    right: 10px;
+
 }
 
 .social-links {
     color: var(--linkColor);
-    font-size: 17px;
+    font-size: 1rem;
     margin-left: 8px;
+}
+
+.social-links span{
+    font-size: 14px;
 }
 
 .social-links:hover {
@@ -1457,7 +1460,7 @@ a {}
 /*
 =====Radio btn======*/
 
-.radio-group {}
+
 
 .radio-btn {
     background: #fff;
@@ -1466,6 +1469,10 @@ a {}
     color: var(--text-color);
     cursor: pointer;
     position: relative;
+    
+}
+
+.radio-btn label:first-child {
     margin-right: 7px;
 }
 
@@ -1626,7 +1633,7 @@ a {}
     margin-right: 7px;
 }
 
-.dropdown-toggle-btn {
+.reset-btn {
     font-size: 14px;
     font-weight: bold;
     color: var(--text-color);
@@ -1636,12 +1643,22 @@ a {}
     border: none;
     background: transparent;
 }
+
 .filter-btn{
     padding: 5px 10px;
     width: 100%;
     font-weight: bold;
     border-radius: 8px;
     color: var(--text-color);
+}
+
+.filter-toggle{
+    padding: 5px 10px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white; 
+    cursor: pointer;
 }
 
 /*
@@ -2833,7 +2850,7 @@ Single Product Page
     border-radius: 50%;
     position: absolute;
     right: 12%;
-    top: 23%;
+    top: -17%;
     display: flex;
     flex-direction: column;
     align-items: center;

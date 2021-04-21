@@ -32,91 +32,80 @@
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
-                <!-- Desktop version Top Nav-->
-                <ul class="nav d-flex justify-content-end align-items-center desktop-v">
-                    <li class="nav-item" id="dropdown-popup">
-                        <a class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
-                        <!-- popup -->
-                        <div class="popup">
-                            <form action="index.html">
-                                <input type="text" required name="email" autocomplete="off"
-                                    placeholder="Benutzername*" />
-                                <input type="password" required name="password" placeholder="Passwort*" />
-                                <span class="required-txt">* Pflichtfeld</span>
+                <div class="nav-wrapper  d-flex align-items-center justify-content-between">
+                    <!-- Top Social-Media-links -->
+                    <div class="social-media-links">
+                        <nav class="nav d-flex">
+                            <a href="#" class="social-links"><i class="fa fa-phone"></i>
+                                <span>+43 1 234 567 890</span></a>
+                            <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                        </nav>
+                    </div>
+                    <!-- Desktop version Nav-->
+                    <ul class="nav d-flex justify-content-end align-items-center desktop-v">
+                        <li class="nav-item" id="dropdown-popup">
+                            <a class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
+                            <!-- dropdown -->
+                            <div class="popup">
+                                <form action="index.html">
+                                    <input type="text" required name="email" autocomplete="off"
+                                        placeholder="Benutzername*" />
+                                    <input type="password" required name="password" placeholder="Passwort*" />
+                                    <span class="required-txt">* Pflichtfeld</span>
 
-                                <span class="action-btn">
-                                    <button type="button" class="login-btn">ANMELDEN</button>
-                                    <a href="#">Passwort vergessen?</a>
-                                </span>
-                            </form>
-                            <hr>
+                                    <span class="action-btn">
+                                        <button type="button" class="login-btn">ANMELDEN</button>
+                                        <a href="#">Passwort vergessen?</a>
+                                    </span>
+                                </form>
+                                <hr>
 
-                            <!-- optional-login -->
-                            <div class="optional-login">
-                                <p>oder LOGIN mit</p>
-                                <span>
-                                    <a href="#" class="facebook round">
-                                        <i class="fa fa-google"></i>
-                                    </a>
-                                    <a href="#" class="google round">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#" class="apple round">
-                                        <i class="fa fa-apple"></i>
-                                    </a>
-                                </span>
+                                <!-- optional-login -->
+                                <div class="optional-login">
+                                    <p>oder LOGIN mit</p>
+                                    <span>
+                                        <a href="#" class="facebook round">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="#" class="google round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#" class="apple round">
+                                            <i class="fa fa-apple"></i>
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <hr>
+                                <div class="dropdown-foot">
+                                    <p>Noch kein Konto?</p>
+                                    <a href="#">JETZT REGISTRIEREN</a>
+                                </div>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                        </li>
+                        <li class="lang d-flex">
+                            <a class="lang-de" href="#">DE</a>
+                            <span class="seperator">|</span>
+                            <a class="lang-en" href="#">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
 
-                            <hr>
-                            <div class="dropdown-foot">
-                                <p>Noch kein Konto?</p>
-                                <a href="#">JETZT REGISTRIEREN</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-heart"></i> Wunschliste</a>
-                    </li>
-                    <li class="lang d-flex">
-                        <a class="lang-de" href="#">DE</a>
-                        <span class="seperator">|</span>
-                        <a class="lang-en" href="#">EN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #46b1e7 ">
-                            <img src="./img/icons.png" class="nav-icon" alt="">
-                            Ernährungsberatung</a>
-                    </li>
-                </ul>
-
-                <!-- Mobile version Top Nav -->
-                <nav class="nav d-flex justify-content-start align-items-center mobile-v">
-                    <a class="nav-link" href="#"> <i class="fa fa-user-o"></i></a>
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> </a>
-                    <a class="nav-link" href="#"><i class="far fa-heart"></i> </a>
-                    <span class="lang d-flex">
-                        <a class="lang-de" href="#">DE</a>
-                        <span class="seperator">|</span>
-                        <a class="lang-en" href="#">EN</a>
-                    </span>
-                    <a class="nav-link" href="#">
-                        <img src="./img/icons.png" class="nav-icon" alt="">
-                    </a>
-                </nav>
-            </div>
-
-            <!-- Top Social-Media-links -->
-            <div class="social-media-links">
-                <nav class="nav d-flex">
-                    <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
-                </nav>
+                <!-- Mobile version Nav -->
             </div>
         </div>
 
@@ -178,119 +167,130 @@
         <div class="shop py-5 py-sm-5 mt-4 mt-sm-4">
             <div class="container">
                 <div class="shop-wrapper d-flex justify-content-between">
-                    <!-- Filter -->
-                    <div class="shop-filter w-20">
-                        <form action="index.html" class="filter-form">
-                            <div class="radio-group d-flex justify-content-between">
-                                <label for="hund" class="radio-btn">
-                                    <input type="radio" id="hund" value="hund" name="name">HUND
+                    <!-- Filter start-->
+                    <div class="filter w-20">
+                        <div class="shop-filter mb-3">
+                            <form action="index.html" class="filter-form">
+                                <div class="radio-group d-flex justify-content-between">
+                                    <label for="hund" class="radio-btn">
+                                        <input type="radio" id="hund" value="hund" name="name">HUND
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label for="katze" class="radio-btn">
+                                        <input type="radio" id="katze" value="katze" name="name">KATZE
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <label for="hundkatze" class="radio-btn">
+                                    <input type="radio" name="name" id="hundkatze">HUND & KATZE
                                     <span class="checkmark"></span>
                                 </label>
-                                <label for="katze" class="radio-btn">
-                                    <input type="radio" id="katze" value="katze" name="name">KATZE
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <label for="hundkatze" class="radio-btn">
-                                <input type="radio" name="name" id="hundkatze">HUND & KATZE
-                                <span class="checkmark"></span>
-                            </label>
-                            <!-- CheckBox filter-->
-                            <div class="checbox-filter">
-                                <div class="checkbox">
-                                    <label for="barf">
-                                        <input type="checkbox" id="barf" name="barf">BARF
-                                        <span class="checkbox-check"></span>
-                                    </label>
-                                    <label for="bio">
-                                        <input type="checkbox" id="bio" name="bio">BIO
-                                        <span class="checkbox-check"></span>
-                                    </label>
-                                    <label for="vegan">
-                                        <input type="checkbox" id="vegan" name="vegan">
-                                        vegan
-                                        <span class="checkbox-check"></span>
-                                    </label>
-                                    <label for="zubehor">
-                                        <input type="checkbox" id="zubehor" name="zubehor">
-                                        Zubehör
-                                        <span class="checkbox-check"></span>
-                                    </label>
-                                </div>
-                                <!-- dropdown filter -->
-                                <div class="dropdown-filter py-2">
-                                    <div class="dropdown-filter-inner">
-                                        <h6 class="dropdown-filter-title">Hersteller</h6>
-                                        <div class="dropdown-content">
-                                            <label for="alleinfutter">
-                                                <input type="checkbox" id="alleinfutter" value="alleinfutter">Alleinfutter
-                                                (29)
-                                                <span class="checkbox-check"></span>
-                                            </label>
-                                            <label for="er">
-                                                <input type="checkbox" id="er" value="er">Ergänzungsfutter (25)
-                                                <span class="checkbox-check"></span>
-                                            </label>
+                                <!-- CheckBox filter-->
+                                <div class="checbox-filter">
+                                    <div class="checkbox">
+                                        <label for="barf">
+                                            <input type="checkbox" id="barf" name="barf">BARF
+                                            <span class="checkbox-check"></span>
+                                        </label>
+                                        <label for="bio">
+                                            <input type="checkbox" id="bio" name="bio">BIO
+                                            <span class="checkbox-check"></span>
+                                        </label>
+                                        <label for="vegan">
+                                            <input type="checkbox" id="vegan" name="vegan">
+                                            vegan
+                                            <span class="checkbox-check"></span>
+                                        </label>
+                                        <label for="zubehor">
+                                            <input type="checkbox" id="zubehor" name="zubehor">
+                                            Zubehör
+                                            <span class="checkbox-check"></span>
+                                        </label>
+                                    </div>
+                                    <!-- dropdown filter -->
+                                    <div class="dropdown-filter py-2">
+                                        <div class="dropdown-filter-inner">
+                                            <h6 class="dropdown-filter-title">Hersteller</h6>
+                                            <div class="dropdown-content">
+                                                <label for="alleinfutter">
+                                                    <input type="checkbox" id="alleinfutter"
+                                                        value="alleinfutter">Alleinfutter
+                                                    (29)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                                <label for="er">
+                                                    <input type="checkbox" id="er" value="er">Ergänzungsfutter (25)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- dropdown filter -->
+                                    <div class="dropdown-filter py-2">
+                                        <div class="dropdown-filter-inner">
+                                            <h6 class="dropdown-filter-title">Produktgruppe</h6>
+                                            <div class="dropdown-content">
+                                                <label for="d-0">
+                                                    <input type="checkbox" id="d-0" value="alleinfutter">Alleinfutter
+                                                    (29)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                                <label for="d0">
+                                                    <input type="checkbox" id="d0"
+                                                        value="Ergänzungsfutter">Ergänzungsfutter (25)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- dropdown filter -->
+                                    <div class="dropdown-filter py-2">
+                                        <div class="dropdown-filter-inner">
+                                            <h6 class="dropdown-filter-title">Alter</h6>
+                                            <div class="dropdown-content">
+                                                <label for="d-1">
+                                                    <input type="checkbox" id="d-1" value="alleinfutter">Alleinfutter
+                                                    <span class="checkbox-check"></span>
+                                                    (29)
+                                                </label>
+                                                <label for="d2">
+                                                    <input type="checkbox" id="d2"
+                                                        value="Ergänzungsfutter">Ergänzungsfutter (25)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- dropdown filter -->
+                                    <div class="dropdown-filter py-2">
+                                        <div class="dropdown-filter-inner">
+                                            <h6 class="dropdown-filter-title">Zutaten (Allergene)</h6>
+                                            <div class="dropdown-content">
+                                                <label for="d3">
+                                                    <input type="checkbox" id="d3" value="alleinfutter">Alleinfutter
+                                                    (29)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                                <label for="d4">
+                                                    <input type="checkbox" id="d4"
+                                                        value="Ergänzungsfutter">Ergänzungsfutter (25)
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- dropdown filter -->
-                                <div class="dropdown-filter py-2">
-                                    <div class="dropdown-filter-inner">
-                                        <h6 class="dropdown-filter-title">Produktgruppe</h6>
-                                        <div class="dropdown-content">
-                                            <label for="d-0">
-                                                <input type="checkbox" id="d-0" value="alleinfutter">Alleinfutter
-                                                (29)
-                                                <span class="checkbox-check"></span>
-                                            </label>
-                                            <label for="d0">
-                                                <input type="checkbox" id="d0" value="Ergänzungsfutter">Ergänzungsfutter (25)
-                                                <span class="checkbox-check"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dropdown filter -->
-                                <div class="dropdown-filter py-2">
-                                    <div class="dropdown-filter-inner">
-                                        <h6 class="dropdown-filter-title">Alter</h6>
-                                        <div class="dropdown-content">
-                                            <label for="d-1">
-                                                <input type="checkbox" id="d-1" value="alleinfutter">Alleinfutter
-                                                <span class="checkbox-check"></span>
-                                                (29)
-                                            </label>
-                                            <label for="d2">
-                                                <input type="checkbox" id="d2" value="Ergänzungsfutter">Ergänzungsfutter (25)
-                                                <span class="checkbox-check"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dropdown filter -->
-                                <div class="dropdown-filter py-2">
-                                    <div class="dropdown-filter-inner">
-                                        <h6 class="dropdown-filter-title">Zutaten (Allergene)</h6>
-                                        <div class="dropdown-content">
-                                            <label for="d3">
-                                                <input type="checkbox" id="d3" value="alleinfutter">Alleinfutter
-                                                (29)
-                                                <span class="checkbox-check"></span>
-                                            </label>
-                                            <label for="d4">
-                                                <input type="checkbox" id="d4" value="Ergänzungsfutter">Ergänzungsfutter (25)
-                                                <span class="checkbox-check"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="reset" class="dropdown-toggle-btn">Filter zurücksetzen</button>
-                            <button class="btn-orange d-none filter-btn my-3">Filter anwenden
-                            </button>
-                        </form>
+                                <button type="reset" class="reset-btn">Filter zurücksetzen</button>
+                                <button class="btn-orange d-none filter-btn my-3">Filter anwenden
+                                </button>
+                            </form>
+
+                        </div>
+                        <!-- filter toggle btn -->
+                        <span class="md-d-none my-5 btn-blue  filter-toggle">Filteroptionen</span>
                     </div>
+                    <!-- Filter end-->
+
                     <!-- Product -->
                     <div class="shop-product d-flex flex-wrap justify-content-between w-70">
                         <!-- Shop Product Gallery -->
@@ -298,9 +298,10 @@
                             <div class="shop-product-gallery-item">
                                 <div class="product">
                                     <div class="product-head">
-                                      <a href="#">
-                                        <img class="slick-slider-img" alt="Alt" data-lazy="./img/product-1.jpg" alt="">
-                                      </a>
+                                        <a href="#">
+                                            <img class="slick-slider-img" alt="Alt" data-lazy="./img/product-1.jpg"
+                                                alt="">
+                                        </a>
                                         <span class="wishlist">
                                             <i class="far fa-heart"></i>
                                         </span>
@@ -802,9 +803,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                               
+
+
+
                             </div>
                             <div class="shop-product-gallery-item">
                                 <div class="product">
@@ -1336,7 +1337,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
     <!--main-->
 
@@ -1370,10 +1371,10 @@
                             <a href="#">
                                 <i class="fa fa-file"></i> BIO-Zertifikat
                             </a>
-                            <a href="">Über uns</a>
+                            <a href="./ueberUns.html">Über uns</a>
                             <a href="">Qualität</a>
-                            <a href="">Kontakt</a>
-                            <a href="">Partner</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
                         </nav>
                     </div>
                     <div class="footer-navs">
@@ -1381,9 +1382,9 @@
                         <nav class="footer-nav-2">
                             <a href="#">Versandkosten</a>
                             <a href="">Zahlungsarten</a>
-                            <a href="./datenschutz-sicherheit.html" >Datenschutz &<br> Sicherheit</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
                             <a href="">AGBs</a>
-                            <a href="">Impressum</a>
+                            <a href="./impressum.html">Impressum</a>
                             <a href="./faq.html">FAQ</a>
                         </nav>
                     </div>

@@ -498,3 +498,7 @@ label {
 .btn-light-orange:hover{
     background: var(--orange) !important;
 }
+
+.md-d-none{
+    display: none !important;
+}

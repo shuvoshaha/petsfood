@@ -1,3 +1,9 @@
+@media screen and (min-width: 1300px) {
+    .container{
+        max-width: 1440px !important;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .desktop-v {
         justify-content: center !important;
@@ -15,7 +21,7 @@
     .process-step div p {
         width: 65% !important;
     }
-    
+
     .payment-gateway img {
         height: 23px !important;
 
@@ -280,9 +286,14 @@
         flex-direction: column !important;
     }
 
-    .shop-filter,
+    .filter,
     .shop-product {
         width: 100% !important;
+    }
+
+    .checkbox {
+
+        grid-template-columns: 1fr 1fr;
     }
 
     .shop {
@@ -328,7 +339,8 @@
         bottom: 106px !important;
         right: 16px !important;
     }
-
+    
+}
 
     @media screen and (max-width: 414px) {
 
@@ -349,5 +361,5 @@
             font-size: 17px !important;
         }
 
-
+    
     }
