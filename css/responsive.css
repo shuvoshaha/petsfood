@@ -1,5 +1,5 @@
-@media screen and (min-width: 1300px) {
-    .container{
+@media screen and (min-width: 1400px) {
+    .container {
         max-width: 1440px !important;
     }
 }
@@ -25,16 +25,90 @@
     .payment-gateway img {
         height: 23px !important;
 
+    }
 }
 
 
-@media screen and (min-width: 769px) {
-    .mobile-v {
+@media screen and (min-width: 993px) {
+
+    .mobile-main-nav {
         display: none !important;
     }
 }
 
 @media screen and (max-width: 992px) {
+    .top-nav {
+        display: none !important;
+    }
+
+    .desktop-main-nav {
+        display: none !important;
+    }
+
+    .mobile-main-nav {
+        display: block !important;
+    }
+
+    .mobile-main-nav .navbar {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        padding: 6px 7% 0 2% !important;
+        width: 100%;
+        background: #fff;
+    }
+
+    .brand-logo {
+        margin-bottom: 12px !important;
+    }
+
+    .mobile-main-nav .nav-item {
+        padding-left: 5rem;
+    }
+
+    .mobile-main-nav .navbar-nav {
+        margin-top: 1rem;
+    }
+
+    .mobile-main-nav .nav-item {
+        padding-left: 38% !important;
+        border-bottom: 1px solid #f1f1f1 !important;
+    }
+
+    .main {
+        margin-top: 4rem !important;
+    }
+
+    .mobile-hotline-roster {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: #8c9ea0;
+        font-weight: bold;
+        justify-content: CENTER;
+    }
+
+    .mobile-hotline-roster a {
+        margin: 0 4px;
+        text-decoration: underline !important;
+        color: #8c9ea0 !important;
+    }
+
+    .mobile-hotline-roster p {
+        margin-right: 5px !important;
+    }
+
+    .mobile-hotline-roster i:last-child {
+        margin-left: 5px !important ;
+        font-weight: bold;
+    }
+
+    .breadcum{
+        display: none !important;
+    }
+
+
+    /**/
     .login-section form {
         width: 100% !important;
     }
@@ -71,17 +145,14 @@
     .ordner-thumb img {
         height: unset !important;
     }
+
+    .desktop-main-nav {
+        display: block;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
-    .desktop-v {
-        display: none !important;
-    }
-
-    .mobile-v {
-        display: flex !important;
-    }
 
     .hero-overlay-box {
         margin: auto !important;
@@ -259,7 +330,9 @@
         height: 250px !important;
         margin-bottom: 1rem;
     }
+
 }
+
 
 @media screen and (max-width: 500px) {
     .payment-gateway img {
@@ -279,6 +352,10 @@
     .partner-logo img {
         width: 100% !important;
         height: auto !important;
+    }
+
+    .shop-product {
+        margin-left: 0 !important;
     }
 
 
@@ -329,6 +406,7 @@
     .feature img {
         width: 40px !important;
     }
+
     .shop .discount {
         top: unset !important;
         bottom: 106px !important;
@@ -339,27 +417,31 @@
         bottom: 106px !important;
         right: 16px !important;
     }
-    
+
 }
 
-    @media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
 
-        .pets-row {
-            grid-template-columns: 1fr !important;
-        }
-
-        footer {
-            text-align: center !important;
-        }
-
-        .ordner-content h2 {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        .h2-style {
-            font-size: 17px !important;
-        }
-
-    
+    .pets-row {
+        grid-template-columns: 1fr !important;
     }
+
+    footer {
+        text-align: center !important;
+    }
+
+    .ordner-content h2 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .h2-style {
+        font-size: 17px !important;
+    }
+
+    .mobile-main-nav .nav-item {
+        padding-left: 25% !important;
+    }
+
+
+}

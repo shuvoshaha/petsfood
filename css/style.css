@@ -260,7 +260,7 @@ body {
 }
 
 .social-links {
-    color: var(--linkColor);
+    color: #9bb7bb;
     font-size: 1rem;
     margin-left: 8px;
 }

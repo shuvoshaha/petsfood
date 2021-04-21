@@ -75,7 +75,7 @@ p {
     margin: 0 !important;
 }
 
-p a{
+p a {
     color: var(--te);
 }
 
@@ -140,6 +140,10 @@ button:focus {
     background-color: var(--linkHoverColor);
 }
 
+.breadcum {
+    display: flex;
+}
+
 .breadcum p {
     color: #7a9fa8;
     font-size: 13px;
@@ -156,6 +160,7 @@ button:focus {
     text-decoration: underline !important;
 }
 
+
 .breadcum a::after {
     content: '>';
     margin: 0 4px;
@@ -164,6 +169,10 @@ button:focus {
 
 .breadcum a:last-child::after {
     content: '';
+}
+
+.mobile-hotline-roster {
+    display: none;
 }
 
 /*
@@ -469,36 +478,37 @@ label {
     font-style: italic;
 }
 
-.text-orange{
+.text-orange {
     color: var(--medium-orange-2) !important;
 }
 
-.text-deep-orange{
-  color: var(--orange) !important;
+.text-deep-orange {
+    color: var(--orange) !important;
 }
 
-.text-color{
-    color: var(--text-color;)
+.text-color {
+    color: var(--text-color; )
 }
 
-.btn-black{
+.btn-black {
     background: #000 !important;
 }
 
-.btn-black:hover{
+.btn-black:hover {
     background: #020202 !important;
     color: #fff !important;
 }
 
-.btn-light-orange{
+.btn-light-orange {
     background: #ffe5a6 !important;
     color: var(--text-color) !important;
 }
 
-.btn-light-orange:hover{
+.btn-light-orange:hover {
     background: var(--orange) !important;
 }
 
-.md-d-none{
+
+.md-d-none {
     display: none !important;
 }

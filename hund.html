@@ -32,13 +32,13 @@
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
-                <div class="nav-wrapper  d-flex align-items-center justify-content-between">
+                <div class="nav-wrapper sm-d-none d-flex align-items-center justify-content-between">
                     <!-- Top Social-Media-links -->
-                    <div class="social-media-links">
+                    <div class="social-media-links ">
                         <nav class="nav d-flex">
                             <a href="#" class="social-links"><i class="fa fa-phone"></i>
                                 <span>+43 1 234 567 890</span></a>
-                            <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-envelope-o"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
@@ -47,7 +47,7 @@
                     <!-- Desktop version Nav-->
                     <ul class="nav d-flex justify-content-end align-items-center desktop-v">
                         <li class="nav-item" id="dropdown-popup">
-                            <a class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
+                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
                             <!-- dropdown -->
                             <div class="popup">
                                 <form action="index.html">
@@ -104,31 +104,81 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- Mobile version Nav -->
             </div>
-        </div>
+        </div><!-- Top nav end -->
 
-        <!-- Nav -->
-        <div class="main-nav mt-2">
+          <!-- Primary Nav mobile -->
+          <div class="mobile-main-nav d-none main-nav mt-2">
+
+                    <nav class="navbar navbar-expand-lg">
+                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.png" class="brand-logo" alt="">
+                    </a>
+
+                    <a href="#" class="shopping-cart">
+                        <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
+                        <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
+                    </a>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
+                            </li>    
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-active" href="./hund.html">Hund</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Katze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BARF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Zubehör</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./abo-info.html">ABO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                    <img src="./img/icons.png" class="nav-icon" alt="">
+                                    Ernährungsberatung</a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </nav>
+           
+         </div><!-- Primary Nav mobile end -->
+
+        <!-- Primary Nav desktop -->
+        <div class="desktop-main-nav main-nav mt-2">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html">
                         <img src="./img/logo.PNG" class="brand-logo" alt="">
                     </a>
-                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- <span class="fa fa-bars"></span> -->
-                        <span class="bar-1"></span>
-                        <span class="bar-2"></span>
-                        <span class="bar-3"></span>
-                    </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="./hund.html">Hund</a>
+                                <a class="nav-link nav-active" href="./hund.html">Hund</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Katze</a>
@@ -145,28 +195,37 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">ABO</a>
                             </li>
+                            
                         </ul>
                     </div>
                 </nav>
             </div>
-        </div>
-    </div>
+        </div><!-- Primary Nav destop end-->
+    </div><!-- Header end -->
 
     <!-- main -->
     <div class="main">
         <div class="container">
             <hr class="header-line">
             <!-- breadcrumbs -->
-            <div class="d-flex breadcum pt-1 pb-3">
+            <div class="breadcum pt-1 pb-3">
                 <p>Sie befinden sich hier: &nbsp;</p>
                 <a href="/index.html">Home</a>
                 <a href="/hund.html">Hund</a>
+            </div>
+            <!-- for mobile version -->
+            <div class="mobile-hotline-roster">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+431234567890">Hotline</a>
+                <p> Mo–Fr, 8–16 Uhr</p>|
+                <i class="fa fa-envelope-o"></i>
+
             </div>
         </div>
         <!-- Shop  Product-->
         <div class="shop py-5 py-sm-5 mt-4 mt-sm-4">
             <div class="container">
-                <div class="shop-wrapper d-flex justify-content-between">
+                <div class="shop-wrapper d-flex ">
                     <!-- Filter start-->
                     <div class="filter w-20">
                         <div class="shop-filter mb-3">
@@ -292,9 +351,9 @@
                     <!-- Filter end-->
 
                     <!-- Product -->
-                    <div class="shop-product d-flex flex-wrap justify-content-between w-70">
+                    <div class="shop-product d-flex flex-wrap justify-content-between w-70 ml-5">
                         <!-- Shop Product Gallery -->
-                        <div class="shop-product-gallery w-100">
+                        <div class="shop-product-gallery  w-100">
                             <div class="shop-product-gallery-item">
                                 <div class="product">
                                     <div class="product-head">
