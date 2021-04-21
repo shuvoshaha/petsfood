@@ -181,7 +181,6 @@
                     <!-- Filter -->
                     <div class="shop-filter w-20">
                         <form action="index.html" class="filter-form">
-                            <!-- Radio btn -->
                             <div class="radio-group d-flex justify-content-between">
                                 <label for="hund" class="radio-btn">
                                     <input type="radio" id="hund" value="hund" name="name">HUND
@@ -196,84 +195,100 @@
                                 <input type="radio" name="name" id="hundkatze">HUND & KATZE
                                 <span class="checkmark"></span>
                             </label>
-                            <!-- CheckBox -->
-                            <div class="checkbox">
-                                <label for="barf">
-                                    <input type="checkbox" id="barf" name="barf">BARF
-                                </label>
-                                <label for="bio">
-                                    <input type="checkbox" id="bio" name="bio">BIO
-                                </label>
-                                <label for="vegan">
-                                    <input type="checkbox" id="vegan" name="vegan">
-                                    vegan
-                                </label>
-                                <label for="zubehor">
-                                    <input type="checkbox" id="zubehor" name="zubehor">
-                                    Zubehör
-                                </label>
-                            </div>
-                            <!-- dropdown filter -->
-                            <div class="dropdown-filter py-2">
-                                <div class="dropdown-filter-inner">
-                                    <h6 class="dropdown-filter-title">Hersteller</h6>
-                                    <div class="dropdown-content">
-                                        <label for="alleinfutter">
-                                            <input type="checkbox" id="alleinfutter" value="alleinfutter">Alleinfutter
-                                            (29)
-                                        </label>
-                                        <label for="er">
-                                            <input type="checkbox" id="er" value="er">Ergänzungsfutter (25)
-                                        </label>
+                            <!-- CheckBox filter-->
+                            <div class="checbox-filter">
+                                <div class="checkbox">
+                                    <label for="barf">
+                                        <input type="checkbox" id="barf" name="barf">BARF
+                                        <span class="checkbox-check"></span>
+                                    </label>
+                                    <label for="bio">
+                                        <input type="checkbox" id="bio" name="bio">BIO
+                                        <span class="checkbox-check"></span>
+                                    </label>
+                                    <label for="vegan">
+                                        <input type="checkbox" id="vegan" name="vegan">
+                                        vegan
+                                        <span class="checkbox-check"></span>
+                                    </label>
+                                    <label for="zubehor">
+                                        <input type="checkbox" id="zubehor" name="zubehor">
+                                        Zubehör
+                                        <span class="checkbox-check"></span>
+                                    </label>
+                                </div>
+                                <!-- dropdown filter -->
+                                <div class="dropdown-filter py-2">
+                                    <div class="dropdown-filter-inner">
+                                        <h6 class="dropdown-filter-title">Hersteller</h6>
+                                        <div class="dropdown-content">
+                                            <label for="alleinfutter">
+                                                <input type="checkbox" id="alleinfutter" value="alleinfutter">Alleinfutter
+                                                (29)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                            <label for="er">
+                                                <input type="checkbox" id="er" value="er">Ergänzungsfutter (25)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- dropdown filter -->
-                            <div class="dropdown-filter py-2">
-                                <div class="dropdown-filter-inner">
-                                    <h6 class="dropdown-filter-title">Produktgruppe</h6>
-                                    <div class="dropdown-content">
-                                        <label for="d-0">
-                                            <input type="checkbox" id="d-0" value="alleinfutter">Alleinfutter
-                                            (29)
-                                        </label>
-                                        <label for="d0">
-                                            <input type="checkbox" id="d0" value="Ergänzungsfutter">Ergänzungsfutter (25)
-                                        </label>
+                                <!-- dropdown filter -->
+                                <div class="dropdown-filter py-2">
+                                    <div class="dropdown-filter-inner">
+                                        <h6 class="dropdown-filter-title">Produktgruppe</h6>
+                                        <div class="dropdown-content">
+                                            <label for="d-0">
+                                                <input type="checkbox" id="d-0" value="alleinfutter">Alleinfutter
+                                                (29)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                            <label for="d0">
+                                                <input type="checkbox" id="d0" value="Ergänzungsfutter">Ergänzungsfutter (25)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- dropdown filter -->
-                            <div class="dropdown-filter py-2">
-                                <div class="dropdown-filter-inner">
-                                    <h6 class="dropdown-filter-title">Alter</h6>
-                                    <div class="dropdown-content">
-                                        <label for="d-1">
-                                            <input type="checkbox" id="d-1" value="alleinfutter">Alleinfutter
-                                            (29)
-                                        </label>
-                                        <label for="d2">
-                                            <input type="checkbox" id="d2" value="Ergänzungsfutter">Ergänzungsfutter (25)
-                                        </label>
+                                <!-- dropdown filter -->
+                                <div class="dropdown-filter py-2">
+                                    <div class="dropdown-filter-inner">
+                                        <h6 class="dropdown-filter-title">Alter</h6>
+                                        <div class="dropdown-content">
+                                            <label for="d-1">
+                                                <input type="checkbox" id="d-1" value="alleinfutter">Alleinfutter
+                                                <span class="checkbox-check"></span>
+                                                (29)
+                                            </label>
+                                            <label for="d2">
+                                                <input type="checkbox" id="d2" value="Ergänzungsfutter">Ergänzungsfutter (25)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- dropdown filter -->
-                            <div class="dropdown-filter py-2">
-                                <div class="dropdown-filter-inner">
-                                    <h6 class="dropdown-filter-title">Zutaten (Allergene)</h6>
-                                    <div class="dropdown-content">
-                                        <label for="d3">
-                                            <input type="checkbox" id="d3" value="alleinfutter">Alleinfutter
-                                            (29)
-                                        </label>
-                                        <label for="d4">
-                                            <input type="checkbox" id="d4" value="Ergänzungsfutter">Ergänzungsfutter (25)
-                                        </label>
+                                <!-- dropdown filter -->
+                                <div class="dropdown-filter py-2">
+                                    <div class="dropdown-filter-inner">
+                                        <h6 class="dropdown-filter-title">Zutaten (Allergene)</h6>
+                                        <div class="dropdown-content">
+                                            <label for="d3">
+                                                <input type="checkbox" id="d3" value="alleinfutter">Alleinfutter
+                                                (29)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                            <label for="d4">
+                                                <input type="checkbox" id="d4" value="Ergänzungsfutter">Ergänzungsfutter (25)
+                                                <span class="checkbox-check"></span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <button type="reset" class="dropdown-toggle-btn">Filter zurücksetzen</button>
+                            <button class="btn-orange d-none filter-btn my-3">Filter anwenden
+                            </button>
                         </form>
                     </div>
                     <!-- Product -->
@@ -1296,9 +1311,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                               
                             </div>
                         </div>
                     </div>
@@ -1306,7 +1318,7 @@
             </div>
         </div>
         <!-- Garantee include -->
-        <div class="guarantee-liflet" style="top: 100% !important">
+        <div class="sm-d-none guarantee-liflet" style="top: 100% !important">
             <div class="container">
                 <div class="liflet-inner">
                     <img src="./img/badge.png" alt="">

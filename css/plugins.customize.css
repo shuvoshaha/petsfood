@@ -183,6 +183,9 @@ button.owl-next {
     .arrow {
         width: 50%;
     }
+    .shop-product-gallery .left-arrow {
+        left: 29% !important;
+    }
 }
 
 @media (max-width: 414px) {
@@ -210,4 +213,17 @@ button.owl-next {
         top: unset !important;
         bottom: -37px !important;
     }
+
+    .shop-product-gallery .left-arrow {
+        left: 0 !important;
+    }
+    .shop-product-gallery .right-arrow{
+        right: 0 !important;
+    }
+
+    .shop-product-gallery .slick-dots {
+        right: 50% !important;
+        transform: translateX(0) !important;
+}
+
 }

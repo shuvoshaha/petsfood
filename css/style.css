@@ -1444,17 +1444,15 @@ a {}
 }
 
 /*
-=================
-   Hand Page
-==================*/
+=====================
+   Hund Page
+=====================*/
 
 .shop {
     background: var(--light-orange);
 }
 
 .shop-wrapper {}
-
-.shop-filter {}
 
 /*
 =====Radio btn======*/
@@ -1468,6 +1466,7 @@ a {}
     color: var(--text-color);
     cursor: pointer;
     position: relative;
+    margin-right: 7px;
 }
 
 .radio-btn label {
@@ -1492,14 +1491,14 @@ a {}
     border-radius: 50%;
 }
 
-.radio-btn input:checked~.checkmark {
+.radio-btn input:checked ~ .checkmark {
     width: 10px;
     height: 10px;
     background: var(--text-color);
 }
 
 /*
-======CheckBox======*/
+======CheckBox Filter======*/
 
 .checkbox {
     padding: 6px 0;
@@ -1515,9 +1514,52 @@ a {}
     cursor: pointer;
 }
 
-.checkbox input {
-    margin-right: 8px;
+.checbox-filter input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 8px;
+  
 }
+
+.shop-filter label{
+    position: relative;
+    font-size: 13px;
+}
+
+
+.checbox-filter label .checkbox-check{ 
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid var(--text-color);
+}
+
+.checbox-filter .checkbox-check::before{
+    content: '';
+    position: absolute;
+    display: none;
+     
+}
+
+.checbox-filter input:checked
+~ .checkbox-check::before{
+    display: block;
+    left: 1px;
+    top: 2px;
+    border: none;
+    width: 7px;
+    height: 4.2px;
+    border-left: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+}
+
 
 /*
 ======dropdown filter======*/
@@ -1552,8 +1594,8 @@ a {}
     transform: translateY(-50%);
 }
 
-.dropdown-filter-title:focus .dropdown-filter-title::after {
-
+.dropdown-filter-title:active 
+.dropdown-filter-title::after {
     content: '\f108' !important;
     font-family: FontAwesome;
     font-size: 15px;
@@ -1569,6 +1611,7 @@ a {}
     max-height: 0;
     overflow: hidden;
     transition: var(--delay);
+    margin-top: 2px;
 }
 
 .dropdown-content label {
@@ -1592,6 +1635,13 @@ a {}
     outline: none;
     border: none;
     background: transparent;
+}
+.filter-btn{
+    padding: 5px 10px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+    color: var(--text-color);
 }
 
 /*
