@@ -107,66 +107,63 @@
             </div>
         </div><!-- Top nav end -->
 
-          <!-- Primary Nav mobile -->
-          <div class="mobile-main-nav d-none main-nav mt-2">
+        <!-- Primary Nav mobile -->
+        <div class="mobile-main-nav d-none main-nav mt-2">
+            <nav class="navbar navbar-expand-lg">
+                <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" class="brand-logo" alt="">
+                </a>
 
-                    <nav class="navbar navbar-expand-lg">
-                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="bar-1"></span>
-                        <span class="bar-2"></span>
-                        <span class="bar-3"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./img/logo.png" class="brand-logo" alt="">
-                    </a>
+                <a href="#" class="shopping-cart">
+                    <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
+                    <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
+                </a>
 
-                    <a href="#" class="shopping-cart">
-                        <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
-                        <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
-                    </a>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
-                            </li>    
-                            <li class="nav-item">
-                                <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-active" href="./hund.html">Hund</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Katze</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">BARF</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">BIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Zubehör</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./abo-info.html">ABO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" style="color: #46b1e7 ">
-                                    <img src="./img/icons.png" class="nav-icon" alt="">
-                                    Ernährungsberatung</a>
-                            </li>
-                        </ul>
-                    </div>
-                   
-                </nav>
-           
-         </div><!-- Primary Nav mobile end -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" href="./hund.html">Hund</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Katze</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BARF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Zubehör</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./abo-info.html">ABO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <!-- Primary Nav desktop -->
         <div class="desktop-main-nav main-nav mt-2">
@@ -195,13 +192,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">ABO</a>
                             </li>
-                            
                         </ul>
                     </div>
                 </nav>
             </div>
-        </div><!-- Primary Nav destop end-->
-    </div><!-- Header end -->
+        </div>
+    </div>
 
     <!-- main -->
     <div class="main">
@@ -219,7 +215,6 @@
                 <a href="tel:+431234567890">Hotline</a>
                 <p> Mo–Fr, 8–16 Uhr</p>|
                 <i class="fa fa-envelope-o"></i>
-
             </div>
         </div>
         <!-- Shop  Product-->
@@ -1398,7 +1393,7 @@
         </div>
 
     </div>
-    <!--main-->
+    <!--main end-->
 
     <!-- Payment method -->
     <div class="payment-method">
@@ -1419,15 +1414,15 @@
         <div class="container">
             <div class="rows">
                 <!-- Footer logo -->
-                <div class="footer-nav">
+                <div class="footer-nav order-3">
                     <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
                 </div>
-                <!-- Footer Nav -->
-                <div class="footer-nav footer-menu">
+                <!-- desktop Footer Nav -->
+                <div class="footer-nav footer-desktop-menu footer-menu order-2">
                     <div class="footer-navs">
                         <h3>healthy pet <span>shop</span></h3>
                         <nav class="footer-nav-2">
-                            <a href="#">
+                            <a href="#" class="menu-active">
                                 <i class="fa fa-file"></i> BIO-Zertifikat
                             </a>
                             <a href="./ueberUns.html">Über uns</a>
@@ -1448,8 +1443,31 @@
                         </nav>
                     </div>
                 </div>
+                <!-- mobile footer menu -->
+                <div class="mobile-footer footer-nav footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                            <a href="#">Versandkosten</a>
+                            <a href="">Kundenservice</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+
                 <!-- Newsletter -->
-                <div class="footer-nav">
+                <div class="footer-nav order-1">
                     <div class="newsletter">
                         <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
                         <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
@@ -1472,7 +1490,7 @@
         <i class="fa fa-angle-up"></i>
     </a>
 
-    <!-- JQuery JS -->
+   <!-- Javascript Library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Bootstrap JS -->
@@ -1483,5 +1501,4 @@
     <script src="./js/pet-script.js"></script>
 
 </body>
-
 </html>
