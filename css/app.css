@@ -516,4 +516,5 @@ label {
 
 hr.header-line {
     margin-top: 0.5rem !important;
+    border-top: unset !important;
 }

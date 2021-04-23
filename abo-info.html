@@ -27,8 +27,8 @@
 </head>
 
 <body>
-     <!-- Header -->
-     <div class="header">
+    <!-- Header -->
+    <div class="header">
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
@@ -42,12 +42,15 @@
                             <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
                         </nav>
                     </div>
-                    <!-- Desktop version Nav-->
+                    <!-- Desktop version top Nav-->
                     <ul class="nav d-flex justify-content-end align-items-center desktop-v">
                         <li class="nav-item" id="dropdown-popup">
-                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
+                            <a class="nav-link top-nav-link" href="./login.html">
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                                LOGIN </a>
                             <!-- dropdown -->
                             <div class="popup">
                                 <form action="index.html">
@@ -87,10 +90,15 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                            <a class="nav-link  top-nav-link" href="./cart.html">
+                                <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                                Warenkorb</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                            <a class="nav-link top-nav-link" href="./wishlist.html">
+                                <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                                Wunschliste
+                            </a>
                         </li>
                         <li class="lang d-flex">
                             <a class="lang-de" href="#">DE</a>
@@ -138,7 +146,7 @@
                             <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-active" href="./hund.html">Hund</a>
+                            <a class="nav-link" href="./hund.html">Hund</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Katze</a>
@@ -153,7 +161,7 @@
                             <a class="nav-link" href="#">Zubehör</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-active" href="./abo-info.html">ABO</a>
+                            <a class="nav-link" href="./abo-info.html">ABO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" style="color: #46b1e7 ">
@@ -162,10 +170,8 @@
                         </li>
                     </ul>
                 </div>
-
             </nav>
         </div>
-
         <!-- Primary Nav desktop -->
         <div class="desktop-main-nav main-nav mt-2">
             <div class="container">
@@ -191,14 +197,15 @@
                                 <a class="nav-link" href="#">Zubehör</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-active" href="#">ABO</a>
+                                <a class="nav-link" href="#">ABO</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-    </div>
+
+    </div><!-- Header End -->
 
     <!-- main -->
     <div class="main">
@@ -256,17 +263,17 @@
                                 <img src="./img/Step3-horizontal-line.png" alt="" class="img-step">
                             </div>
                             <div class="process-step">
-                               <a href="#">
-                                 <button class="btn-blue">JETZT EINLOGGEN
-                                    <br> oder REGISTRIEREN</button>
-                               </a>
+                                <a href="#">
+                                    <button class="btn-blue">JETZT EINLOGGEN
+                                        <br> oder REGISTRIEREN</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-              <!-- Futter-ABO -->
-              <div class="futter-abo py-5 gray-bg">
+            <!-- Futter-ABO -->
+            <div class="futter-abo py-5 gray-bg">
                 <div class="container">
                     <h3 class="n-text mb-4">Die Vorteile deines Futter-Abos
                     </h3>
@@ -276,7 +283,8 @@
                         </div>
                         <div class="ordner-content">
                             <h2 class="h2-style">FLEXIBEL</h2>
-                            <p class="p-style">Du kannst dein Futter-ABO <strong>jederzeit flexibel anpassen:</strong></p>
+                            <p class="p-style">Du kannst dein Futter-ABO <strong>jederzeit flexibel anpassen:</strong>
+                            </p>
                             <ul>
                                 <li>Futterauswahl</li>
                                 <li>Futtermenge</li>
@@ -294,7 +302,8 @@
                         <div class="ordner-content">
                             <h2 class="h2-style">VERLÄSSLICH</h2>
                             <p>
-                                Lege dein Abo an, bestimme das Lieferintervall und Die Zahlungsmethode. Das Futter für deinen Liebling wird nun verlässlich regelmäßig zu dir nach Hause geliefert.
+                                Lege dein Abo an, bestimme das Lieferintervall und Die Zahlungsmethode. Das Futter für
+                                deinen Liebling wird nun verlässlich regelmäßig zu dir nach Hause geliefert.
                             </p>
                         </div>
                     </div>
@@ -337,7 +346,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Gibt es eine Mindestlaufzeit?</button>
@@ -347,7 +356,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Kann ich das Abo pausieren?</button>
@@ -357,7 +366,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Kann ich dem Abo einmalig Produkte hinufügen?</button>
@@ -367,7 +376,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Wie lange vor dem Versand kann ich mein Abo verändern bzw.
@@ -378,7 +387,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Wie kann ich ein Abo anlegen?</button>
@@ -409,7 +418,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Gibt es eine Mindestlaufzeit?</button>
@@ -419,7 +428,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Kann ich das Abo pausieren?</button>
@@ -429,7 +438,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Kann ich dem Abo einmalig Produkte hinufügen?</button>
@@ -439,7 +448,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                             <!-- card -->
                             <div class="card">
                                 <button class="accordion">Wie lange vor dem Versand kann ich mein Abo verändern bzw.
@@ -450,7 +459,7 @@
                                     brunch.
                                 </div>
                             </div>
-    
+
                         </div>
                     </section>
                 </div>
@@ -468,86 +477,86 @@
                     <img src="./img/Amazon_Pay_logo-gray.png" alt="">
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
     <!--main-->
 
- <!-- Footer -->
- <footer class="py-5">
-    <div class="container">
-        <div class="rows">
-            <!-- Footer logo -->
-            <div class="footer-nav order-3">
-                <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
-            </div>
-            <!-- desktop Footer Nav -->
-            <div class="footer-nav footer-desktop-menu footer-menu order-2">
-                <div class="footer-navs">
-                    <h3>healthy pet <span>shop</span></h3>
-                    <nav class="footer-nav-2">
-                        <a href="#" class="menu-active">
-                            <i class="fa fa-file"></i> BIO-Zertifikat
-                        </a>
-                        <a href="./ueberUns.html">Über uns</a>
-                        <a href="">Qualität</a>
-                        <a href="./kontakt.html">Kontakt</a>
-                        <a href="./partner.html">Partner</a>
-                    </nav>
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav order-3">
+                    <img src="./img/Logo-round-footer.svg" class="footer-logo img-fluid" alt="">
+                    <p class="copytext">copyright 2021: pets fine food</p>
                 </div>
-                <div class="footer-navs">
-                    <h3>Kundenservice</h3>
-                    <nav class="footer-nav-2">
-                        <a href="#">Versandkosten</a>
-                        <a href="">Zahlungsarten</a>
-                        <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
-                        <a href="">AGBs</a>
-                        <a href="./impressum.html">Impressum</a>
-                        <a href="./faq.html">FAQ</a>
-                    </nav>
+                <!-- desktop Footer Nav -->
+                <div class="footer-nav footer-desktop-menu footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>pet fine food <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <img src="./img/file-certificate-icon.svg" height="16px" alt="">
+                                BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                        </nav>
+                    </div>
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-            <!-- mobile footer menu -->
-            <div class="mobile-footer footer-nav footer-menu order-2">
-                <div class="footer-navs">
-                    <h3>healthy pet <span>shop</span></h3>
-                    <nav class="footer-nav-2">
-                        <a href="#" class="menu-active">
-                            <i class="fa fa-file"></i> BIO-Zertifikat
-                        </a>
-                        <a href="./ueberUns.html">Über uns</a>
-                        <a href="">Qualität</a>
-                        <a href="./kontakt.html">Kontakt</a>
-                        <a href="./partner.html">Partner</a>
-                        <a href="#">Versandkosten</a>
-                        <a href="">Kundenservice</a>
-                        <a href="">Zahlungsarten</a>
-                        <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
-                        <a href="">AGBs</a>
-                        <a href="./impressum.html">Impressum</a>
-                        <a href="./faq.html">FAQ</a>
-                    </nav>
+                <!-- mobile footer menu -->
+                <div class="mobile-footer footer-nav footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                            <a href="#">Versandkosten</a>
+                            <a href="">Kundenservice</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Newsletter -->
-            <div class="footer-nav order-1">
-                <div class="newsletter">
-                    <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
-                    <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
-                    <form action="index.html" method="post">
-                        <input required type="email" name="email" class="text-center"
-                            placeholder="E-Mail Adresse hier eingeben!">
-                        <button class="newsletter-btn">Jetzt abonnieren</button>
-                    </form>
-                    <p class="my-3">Abmelden jederzeit möglich!</p>
-                    <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                <!-- Newsletter -->
+                <div class="footer-nav order-1">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="copytext">copyright 2021: pets fine food</p>
-    </div>
-</footer>
-
+    </footer>
 
 
     <!-- Scroll Top -->
@@ -564,7 +573,7 @@
     <script src="./js/slick.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/pet-script.js"></script>
-    
+
     <script>
         //accordion
         var accordion = document.getElementsByClassName('accordion');
@@ -590,4 +599,5 @@
         };
     </script>
 </body>
+
 </html>

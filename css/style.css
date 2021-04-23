@@ -1760,14 +1760,14 @@ Single Product Page
 .single-product-details {}
 
 .single-product-header h2 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--text-color);
 }
 
 .single-product-header img {
-    width: 40px;
-    margin-left: 8px;
+    width: 55px;
+    margin-left: 10px;
 }
 
 

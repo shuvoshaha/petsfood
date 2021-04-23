@@ -48,9 +48,9 @@
                     <!-- Desktop version top Nav-->
                     <ul class="nav d-flex justify-content-end align-items-center desktop-v">
                         <li class="nav-item" id="dropdown-popup">
-                            <a class="nav-link top-nav-link" href="./login.html"> 
-                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon" >
-                                 LOGIN </a>
+                            <a class="nav-link top-nav-link" href="./login.html">
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                                LOGIN </a>
                             <!-- dropdown -->
                             <div class="popup">
                                 <form action="index.html">
@@ -204,13 +204,13 @@
                 </nav>
             </div>
         </div>
-       
-    </div>
+
+    </div><!-- Header End -->
 
     <!-- Main -->
     <div class="main">
-         <div class="container">
-             <div class="orange-line"></div>
+        <div class="container">
+            <div class="orange-line"></div>
             <!-- for mobile version -->
             <div class="mobile-hotline-roster my-3">
                 <i class="fa fa-phone"></i>
@@ -218,7 +218,7 @@
                 <p> Mo–Fr, 8–16 Uhr</p>|
                 <i class="fa fa-envelope-o"></i>
             </div>
-         </div>
+        </div>
         <!-- Hero -->
         <div class="hero">
             <!-- Hero top text -->
@@ -321,7 +321,7 @@
                                     <span class="info">
                                         <i class="fa fa-info"></i>
                                     </span>
-                                   
+
                                 </div>
 
                                 <!-- Product-description -->
@@ -637,7 +637,7 @@
                     <h2>FUTTER ABO</h2>
                     <p>schnell, einfach, flexibel</p>
                 </div>
-    
+
                 <div class="overlay-body">
                     <div class="contents">
                         <span>1</span>
@@ -673,7 +673,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="overlay-btn">
                     <span>JETZT EINLOGGEN<br>oder REGISTRIEREN</span>
                 </div>
@@ -911,23 +911,22 @@
     <script src="./js/pet-script.js"></script>
     <script>
         // guarantee liflet
-    var grnd = document.getElementsByClassName('guarantee-liflet')
-    var height_to_top = grnd.offsetTop;
-    console.log(height_to_top)
-    
-    function lifflet() {
+        var grnd = document.getElementsByClassName('guarantee-liflet')
+        var height_to_top = grnd.offsetTop;
+        console.log(height_to_top)
 
-    if (window.pageYOffset >= 800) {
+        function lifflet() {
 
-    grnd.style.position = "fixed";
+            if (window.pageYOffset >= 800) {
 
-    } else {
+                grnd.style.position = "fixed";
 
-    grnd.style.position = "absolute";
-    }
+            } else {
 
-    }
+                grnd.style.position = "absolute";
+            }
 
+        }
     </script>
 
 </body>
