@@ -66,6 +66,13 @@ body {
 /*
 =========Top Nav=======*/
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
+
 .top-nav {
     position: relative;
     box-shadow: 0 2px 1px rgba(225, 225, 225, .9);
@@ -105,6 +112,20 @@ body {
 
 .lang-de {}
 
+.top-nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-icon {
+    height: 17px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.shopping-cart {
+    margin-bottom: 10px;
+}
 
 /*=======Dropdown======*/
 
@@ -276,8 +297,12 @@ body {
 /*
 ==========Main Nav========*/
 
+.desktop-main-nav ul.navbar-nav.ml-auto {
+    margin-bottom: -50px !important;
+}
+
 .brand-logo {
-    width: 200px;
+    width: 270px;
 }
 
 .navbar-brand {
@@ -323,6 +348,7 @@ body {
     min-height: 600px;
     background-size: cover;
     margin-bottom: 0 !important;
+    position: relative;
 }
 
 .hero-top-text {
@@ -330,6 +356,15 @@ body {
     background: #fbb722;
     text-align: center;
     max-width: 100%;
+}
+
+
+.hero-top-text-content img {
+    height: 25px;
+}
+
+.sm-img {
+    display: none;
 }
 
 .text {
@@ -340,7 +375,7 @@ body {
 
 .badge img {
     max-width: 100px;
-    margin-top: -30px;
+
 }
 
 
@@ -362,7 +397,7 @@ body {
 .overlay-head {}
 
 .overlay-head h2 {
-    font-size: clamp(2vw, 5vw, 30px);
+    font-size: clamp(2vw, 5vw, 26px);
     font-weight: 700;
     color: var(--text-color);
 }
@@ -414,18 +449,21 @@ body {
     height: 0 !important;
 }
 
-.overlay-main {}
 
 .overlay-main-text-icon {
+    align-items: center;
     display: flex;
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .o-icon {
     margin-right: 1rem;
-    font-size: 39px;
     margin-top: -10px;
     color: var(--text-color);
+}
+
+.o-icon img {
+    height: 38px;
 }
 
 .o-text p {
@@ -436,7 +474,7 @@ body {
 }
 
 .overlay-btn {
-    background: var(--text-color);
+    background: var(--btn-color);
     padding: 10px 45px;
     border-radius: 9px;
     cursor: pointer;
@@ -451,7 +489,7 @@ body {
     margin: 0 !important;
     font-weight: 600;
     color: #fff;
-    font-size: clamp(1vw, 5vw, 15px);
+    font-size: 17px;
 }
 
 
@@ -469,21 +507,23 @@ body {
     font-size: 22px;
     color: var(--text-color);
     font-weight: 700;
+    margin-bottom: 2.5rem !important;
 }
 
 .product {
     position: relative;
-    width: 250px;
+    width: 94%;
     background: #fff;
     padding: 1rem;
 }
 
 .product-head {
-    border-bottom: 2px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
+    position: relative;
 }
 
 .product-head img {
-    width: 232px;
+    width: 100%;
 }
 
 .wishlist {
@@ -514,21 +554,21 @@ body {
 
 .discount {
     position: absolute;
-    left: 13px;
+    left: 0;
     background: #fbb722;
     color: #fff;
     padding: 0px 10px;
     font-weight: 600;
-    top: 226px;
+    bottom: -1px;
 }
 
 .info {
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 2px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
     text-align: center;
-    top: 220px;
+    bottom: -1px;
     right: 0px;
 }
 
@@ -638,8 +678,20 @@ body {
     z-index: 1;
 }
 
+/*
+======= hero overlay box mobile version ============*/
+.hero-mobile-display-block {
+    background: var(--orange);
 
-/*Gaurantee include*/
+}
+
+.hero-mobile-display-block .hero-overlay-box {
+    margin: auto;
+}
+
+
+/*
+============ Gaurantee liflet =======*/
 .guarantee-liflet {
     width: 100px;
     background: #fff;
@@ -650,6 +702,7 @@ body {
     position: absolute;
     top: 35px;
     right: 10px;
+    /* z-index: 1000; */
 }
 
 .liflet-inner img {
@@ -677,10 +730,11 @@ body {
 
 
 /*
-========Pets display========*/
+======== Pets display========*/
 
-.pets-gallery {
+.pets-category {
     background: var(--gray-color);
+    padding: 7rem 0 !important;
 }
 
 .pets-row {
@@ -694,7 +748,7 @@ body {
     height: 250px;
     border-radius: 4px;
     z-index: -1;
-    border: 1px solid #cbd8dc;
+    border: 1px solid var(--img-border);
 }
 
 .pets-col h1 {
@@ -770,22 +824,22 @@ body {
 =======Testmonial==========*/
 
 .testmonial {
-    background: #f4f5f6;
-    padding: 1rem 0;
+    background: #fffbf2;
+    padding: 7rem 0 9rem 0 !important;
 }
 
 .testmonial h2 {
     font-size: 22px;
     color: var(--text-color);
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .client-testmonial {
     width: 98%;
     max-width: 100%;
     border: 1px solid var(--borderColor);
-    padding: 1rem;
+    padding: 2rem 3rem 2rem 3rem;
     display: FLEX;
     background: #fff;
     align-items: center;
@@ -837,7 +891,7 @@ body {
 ========Payment Method========*/
 
 .payment-method {
-    padding: 2rem 0;
+    padding: 5rem 0;
     background: #fff;
 }
 
@@ -911,7 +965,7 @@ footer {
 }
 
 .footer-nav-2 a:hover {
-    color: #fde2a7;
+    color: #fbcc64;
 }
 
 
@@ -919,7 +973,7 @@ footer {
 ========Newsletter========*/
 
 .newsletter {
-    padding: 1rem;
+    padding: 1.5rem;
     background: #206b78;
     width: 312px;
 }
@@ -984,7 +1038,8 @@ footer {
 .copytext {
     color: #fff;
     font-size: 14px;
-    padding-left: 3rem;
+    text-align: center;
+    margin-top: 14px !important;
 }
 
 /*=====================
@@ -1077,7 +1132,7 @@ footer {
 
 .lg-option-title {
     color: var(--text-color);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -1173,7 +1228,7 @@ footer {
 .register-inner {
     width: 350px;
     max-width: 100%;
-    padding: 2rem 0;
+    padding: 3rem 0 5rem 0;
 }
 
 .reg-social-option {}
@@ -1314,6 +1369,8 @@ a {}
 .topics-content h2 {
     font-size: 18px;
     color: var(--text-color);
+    padding: 2rem 0 0.5rem 1rem;
+    font-weight: 600;
 }
 
 .topics-content p {
@@ -1378,7 +1435,7 @@ a {}
     position: absolute;
     right: 0;
     bottom: 0;
-    border: 2px solid var(--input-color);
+    border: 1px solid var(--borderColor);
     border-radius: 28px;
     width: 400px;
     max-width: 100%;
@@ -1669,6 +1726,7 @@ a {}
 
 .shop-product-gallery .product {
     margin-bottom: 10px;
+    width: 250px !important;
 }
 
 /*
@@ -1873,7 +1931,9 @@ Single Product Page
 
 .checkout-row {}
 
-.checkout-form {}
+.checkout-form {
+    margin-right: 20px;
+}
 
 .checkout-step {}
 
@@ -1897,7 +1957,9 @@ Single Product Page
     font-size: 15px;
 }
 
-.step-2 {}
+.step-2 {
+    margin-left: 2rem !important;
+}
 
 .step-title {}
 
@@ -2133,7 +2195,7 @@ Single Product Page
 
 .bg-light-orange {
     background: #fffbf4;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 
@@ -2157,7 +2219,7 @@ Single Product Page
 
 .cart-product-list {
     background: #fef4de;
-    padding: 1rem;
+    padding: 1rem 3rem;
     height: 500px;
     overflow-y: auto;
 }
@@ -2202,7 +2264,7 @@ Single Product Page
 .edit-cart-link {
     background: #fffbf4;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .edit-cart-link a {
@@ -2874,6 +2936,7 @@ Single Product Page
 
 .cart-product-thumb {
     border: 1px solid var(--borderColor);
+    position: relative;
 }
 
 .cart-product-thumb img {
@@ -2888,8 +2951,7 @@ Single Product Page
 }
 
 .cart-product-details h3 {
-    font-size: 1rem;
-    width: 75%;
+    font-size: 20px;
 }
 
 .cart-product-details a:first-child {
@@ -2944,7 +3006,7 @@ Single Product Page
     display: grid;
     align-items: center;
     height: 450px;
-    padding: 0 3.3rem;
+    padding: 3rem;
 }
 
 .cart-product-subtotal h2 {

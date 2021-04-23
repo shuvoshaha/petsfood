@@ -3,17 +3,28 @@ const resbar = (x) => {
   x.classList.toggle('changed');
 }
 
+
 // Scroll Top
 const scroll = document.querySelector('.scroll-top');
+const header = document.querySelector('.header');
+const logo = document.querySelector('.brand-logo')
+
 window.onscroll = (e) => {
 
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    e.preventDefault();
+  if (document.body.scrollTop >= 40 || document.documentElement.scrollTop > 40) {
+
     scroll.style.display = "flex";
-  } else {
+    header.style.boxShadow = "0 2px 2px rgba(0,0,0,0.2)"
+    header.style.paddingBottom = "10px"
+  }
+
+  else {
     scroll.style.display = "none";
+    header.style.boxShadow = '';
   }
 }
+
+
 
 // Plugins Init
 // Product Slider
@@ -257,6 +268,7 @@ invoice.onclick = () => {
 diff_address.onclick = () => {
   address.style.maxHeight = address.scrollHeight + 'px';
 }
+
 
 
 

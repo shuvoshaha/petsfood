@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/plugins.customize.css">
 </head>
 
-<body>
+<body onscroll="lifflet()">
     <!-- Header -->
     <div class="header">
         <!-- Top Nav -->
@@ -42,12 +42,15 @@
                             <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
                         </nav>
                     </div>
-                    <!-- Desktop version Nav-->
+                    <!-- Desktop version top Nav-->
                     <ul class="nav d-flex justify-content-end align-items-center desktop-v">
                         <li class="nav-item" id="dropdown-popup">
-                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
+                            <a class="nav-link top-nav-link" href="./login.html"> 
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon" >
+                                 LOGIN </a>
                             <!-- dropdown -->
                             <div class="popup">
                                 <form action="index.html">
@@ -87,10 +90,15 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                            <a class="nav-link  top-nav-link" href="./cart.html">
+                                <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                                Warenkorb</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                            <a class="nav-link top-nav-link" href="./wishlist.html">
+                                <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                                Wunschliste
+                            </a>
                         </li>
                         <li class="lang d-flex">
                             <a class="lang-de" href="#">DE</a>
@@ -138,7 +146,7 @@
                             <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-active" href="./hund.html">Hund</a>
+                            <a class="nav-link" href="./hund.html">Hund</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Katze</a>
@@ -164,7 +172,6 @@
                 </div>
             </nav>
         </div>
-
         <!-- Primary Nav desktop -->
         <div class="desktop-main-nav main-nav mt-2">
             <div class="container">
@@ -197,28 +204,40 @@
                 </nav>
             </div>
         </div>
+       
     </div>
-
-    <!-- for mobile version -->
-    <!-- <div class="mobile-hotline-roster">
-        <i class="fa fa-phone"></i>
-        <a href="tel:+431234567890">Hotline</a>
-        <p> Mo–Fr, 8–16 Uhr</p>|
-        <i class="fa fa-envelope-o"></i>
-    </div> -->
 
     <!-- Main -->
     <div class="main">
+         <div class="container">
+             <div class="orange-line"></div>
+            <!-- for mobile version -->
+            <div class="mobile-hotline-roster my-3">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+431234567890">Hotline</a>
+                <p> Mo–Fr, 8–16 Uhr</p>|
+                <i class="fa fa-envelope-o"></i>
+            </div>
+         </div>
         <!-- Hero -->
         <div class="hero">
             <!-- Hero top text -->
             <div class="container">
-                <div class="hero-top-text">
-                    <span class="text">Biologisches, hochwertiges Futter
+                <div class="hero-top-text d-flex justify-content-center align-items-center">
+                    <div class="hero-top-text-content d-flex">
+                        <img src="./img/badge_prev_ui.png" class="sm-img" width="22px" alt="">
+                        <p class="text mr-1">Biologisches, hochwertiges Futter</p>
+                    </div>
+
+                    <div class="hero-top-text-content d-flex">
                         <img src="./img/badge_prev_ui.png" width="22px" alt="">
-                        nachhaltige Lieferung
-                        <img src="./img/badge_prev_ui.png" width="22px" alt="">österreichischer Online-Shop
-                    </span>
+                        <p class="text  mr-1">nachhaltige Lieferung</p>
+                    </div>
+
+                    <div class="hero-top-text-content d-flex">
+                        <img src="./img/badge_prev_ui.png" width="22px" alt="">
+                        <p class="text mr-1">österreichischer Online-Shop</p>
+                    </div>
                 </div>
 
                 <!-- Trusted badge -->
@@ -226,8 +245,8 @@
                     <img src="./img/badge.png" alt="">
                 </div>
 
-                <!-- hero overlay box -->
-                <div class="hero-overlay-box">
+                <!-- desktop-v hero overlay box -->
+                <div class="desktop-hero-overlay hero-overlay-box">
                     <div class="overlay-head">
                         <h2>FUTTER ABO</h2>
                         <p>schnell, einfach, flexibel</p>
@@ -241,21 +260,27 @@
                         </div>
                         <div class="overlay-main">
                             <div class="overlay-main-text-icon">
-                                <span class="o-icon"><i class="fa fa-user-o"></i></span>
+                                <span class="o-icon">
+                                    <img src="./img/login-step-1-icon.svg" alt="">
+                                </span>
                                 <div class="o-text">
                                     <p class="o-txt-1">Registrieren <br>oder login</p>
                                 </div>
                             </div>
 
                             <div class="overlay-main-text-icon">
-                                <span class="o-icon"><i class="fa fa-hand-pointer"></i></span>
+                                <span class="o-icon">
+                                    <img src="./img/hand-step-2-icon.svg" alt="">
+                                </span>
                                 <div class="o-text">
                                     <p>Futter <br> auswählen</p>
                                 </div>
                             </div>
 
                             <div class="overlay-main-text-icon">
-                                <span class="o-icon"><i class="fa fa-shopping-bag"></i></span>
+                                <span class="o-icon">
+                                    <img src="./img/shopping-bag-icon.svg" alt="">
+                                </span>
                                 <div class="o-text">
                                     <p>im Warenkorb <br> als Abo bestellen</p>
                                 </div>
@@ -264,7 +289,7 @@
                     </div>
 
                     <div class="overlay-btn">
-                        <span>JETZT EINLOGGEN<br>oder REGISTRIEREN</span>
+                        <span>JETZT EINLOGGEN oder REGISTRIEREN</span>
                     </div>
                 </div>
             </div>
@@ -272,7 +297,7 @@
 
         <!-- Product section -->
         <div class="product-section">
-            <h2 class="text-center mb-3">Aktuell im Angebot</h2>
+            <h2 class="text-center">Aktuell im Angebot</h2>
             <div class="container">
                 <div class="product-gallery">
                     <!-- Product Slider -->
@@ -296,6 +321,7 @@
                                     <span class="info">
                                         <i class="fa fa-info"></i>
                                     </span>
+                                   
                                 </div>
 
                                 <!-- Product-description -->
@@ -604,8 +630,58 @@
             </div>
         </div>
 
-        <!-- Pets display -->
-        <div class="pets-gallery py-5">
+        <!-- hero overlay box mobile version -->
+        <div class="hero-mobile-display-block py-3 d-none">
+            <div class="hero-overlay-box">
+                <div class="overlay-head">
+                    <h2>FUTTER ABO</h2>
+                    <p>schnell, einfach, flexibel</p>
+                </div>
+    
+                <div class="overlay-body">
+                    <div class="contents">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="overlay-main">
+                        <div class="overlay-main-text-icon">
+                            <span class="o-icon">
+                                <img src="./img/login-step-1-icon.svg" alt="">
+                            </span>
+                            <div class="o-text">
+                                <p class="o-txt-1">Registrieren <br>oder login</p>
+                            </div>
+                        </div>
+
+                        <div class="overlay-main-text-icon">
+                            <span class="o-icon">
+                                <img src="./img/hand-step-2-icon.svg" alt="">
+                            </span>
+                            <div class="o-text">
+                                <p>Futter <br> auswählen</p>
+                            </div>
+                        </div>
+
+                        <div class="overlay-main-text-icon">
+                            <span class="o-icon">
+                                <img src="./img/shopping-bag-icon.svg" alt="">
+                            </span>
+                            <div class="o-text">
+                                <p>im Warenkorb <br> als Abo bestellen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="overlay-btn">
+                    <span>JETZT EINLOGGEN<br>oder REGISTRIEREN</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pets category -->
+        <div class="pets-category">
             <div class="container">
                 <div class="pets-row">
                     <div class="pets-col">
@@ -655,7 +731,7 @@
         </div>
 
         <!-- Pets help section -->
-        <div class="pet-help-section py-2">
+        <!-- <div class="pet-help-section py-2">
             <div class="container">
                 <div class="pet-help-row">
                     <img src="./img/pet-4.png" alt="">
@@ -669,10 +745,10 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <!-- Testmonial -->
-        <div class="testmonial py-5">
+        <div class="testmonial">
             <h2 class="text-center">Stimmen über uns</h2>
             <div class="container">
                 <div class="row">
@@ -748,15 +824,17 @@
             <div class="rows">
                 <!-- Footer logo -->
                 <div class="footer-nav order-3">
-                    <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                    <img src="./img/Logo-round-footer.svg" class="footer-logo img-fluid" alt="">
+                    <p class="copytext">copyright 2021: pets fine food</p>
                 </div>
                 <!-- desktop Footer Nav -->
                 <div class="footer-nav footer-desktop-menu footer-menu order-2">
                     <div class="footer-navs">
-                        <h3>healthy pet <span>shop</span></h3>
+                        <h3>pet fine food <span>shop</span></h3>
                         <nav class="footer-nav-2">
                             <a href="#" class="menu-active">
-                                <i class="fa fa-file"></i> BIO-Zertifikat
+                                <img src="./img/file-certificate-icon.svg" height="16px" alt="">
+                                BIO-Zertifikat
                             </a>
                             <a href="./ueberUns.html">Über uns</a>
                             <a href="">Qualität</a>
@@ -814,7 +892,6 @@
                     </div>
                 </div>
             </div>
-            <p class="copytext">copyright 2021: pets fine food</p>
         </div>
     </footer>
 
@@ -832,6 +909,26 @@
     <script src="./js/slick.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/pet-script.js"></script>
+    <script>
+        // guarantee liflet
+    var grnd = document.getElementsByClassName('guarantee-liflet')
+    var height_to_top = grnd.offsetTop;
+    console.log(height_to_top)
+    
+    function lifflet() {
+
+    if (window.pageYOffset >= 800) {
+
+    grnd.style.position = "fixed";
+
+    } else {
+
+    grnd.style.position = "absolute";
+    }
+
+    }
+
+    </script>
 
 </body>
 

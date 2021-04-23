@@ -72,13 +72,13 @@ button.owl-next {
 }
 
 .left-arrow {
-    left: -25px;
+    left: -3%;
     top: 50%;
 }
 
 .right-arrow {
     top: 50%;
-    right: -5px;
+    right: -2%;
 }
 
 /*

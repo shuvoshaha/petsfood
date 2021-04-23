@@ -9,7 +9,7 @@
     --placeholder-color: #7a9fa8;
     --input-color: #cbd8dc;
     --nav-active: #fbb722 !important;
-    --footer-active: #fde2a7 !important;
+    --footer-active: #fbcc64 !important;
     --hr-color: #9fb9c0;
 
     --btn-color: #054a54;
@@ -94,7 +94,7 @@ button:focus {
 
 
 .navbar {
-    padding: .5rem 0 !important;
+    padding: 1rem 0 !important;
 }
 
 /*
@@ -107,7 +107,7 @@ button:focus {
 
 .header-line {
     background: var(--orange);
-    height: 0.5px;
+    height: 1px;
 }
 
 .page-title {
@@ -195,6 +195,7 @@ button:focus {
     font-size: 26px;
     font-weight: 700;
     transition: var(--delay);
+    z-index: 1100;
 }
 
 .scroll-top:hover {
@@ -211,7 +212,7 @@ button:focus {
 }
 
 .hr-color {
-    background: var(--hr-color);
+    background: var(--borderColor);
 }
 
 .head-line {
@@ -386,7 +387,7 @@ label {
         width: 62px;
         border: 1px solid var(--borderColor);
         padding: 3px;
-        margin-bottom: 3px;
+        margin-bottom: 1rem;
     }
 
     .image-list img:hover {
@@ -511,4 +512,8 @@ label {
 
 .md-d-none {
     display: none !important;
+}
+
+hr.header-line {
+    margin-top: 0.5rem !important;
 }
