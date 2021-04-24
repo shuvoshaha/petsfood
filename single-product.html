@@ -28,8 +28,8 @@
 
 <body>
     <!-- Header -->
-       <!-- Header -->
-       <div class="header">
+    <!-- Header -->
+    <div class="header">
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
@@ -49,9 +49,9 @@
                     <!-- Desktop version top Nav-->
                     <ul class="nav d-flex justify-content-end align-items-center desktop-v">
                         <li class="nav-item" id="dropdown-popup">
-                            <a class="nav-link top-nav-link" href="./login.html"> 
-                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon" >
-                                 LOGIN </a>
+                            <a class="nav-link top-nav-link" href="./login.html">
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                                LOGIN </a>
                             <!-- dropdown -->
                             <div class="popup">
                                 <form action="index.html">
@@ -205,7 +205,7 @@
                 </nav>
             </div>
         </div>
-       
+
     </div>
 
 
@@ -230,7 +230,7 @@
             </div>
         </div>
 
-        <!-- Single Product -->
+        <!-- desktop-v Single Product -->
         <div class="single-product pt-3">
             <div class="container">
                 <div class="single-product-wrapper d-flex justify-content-between">
@@ -323,25 +323,22 @@
                     <h1>Produktdetails</h1>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="Produktbeschreibung" data-toggle="tab"
-                                href="#Produktbeschreibung" role="tab" aria-controls="home"
-                                aria-selected="true">Produktbeschreibung</a>
+                            <a class="nav-link active" data-toggle="tab"
+                                href="#Produktbeschreibung">Produktbeschreibung</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="Fütterung" data-toggle="tab" href="#Fütterung" role="tab"
-                                aria-controls="profile" aria-selected="false">Fütterung</a>
+                            <a class="nav-link" data-toggle="tab" href="#Fütterung">Fütterung</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="Zutaten" data-toggle="tab" href="#Zutaten" role="tab"
-                                aria-controls="contact" aria-selected="false">Zutaten</a>
+                            <a class="nav-link" data-toggle="tab" href="#Zutaten">Zutaten</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="Analyse" data-toggle="tab" href="#Analyse" role="tab"
-                                aria-controls="contact" aria-selected="false">Analyse</a>
+                            <a class="nav-link" data-toggle="tab" href="#Analyse" >Analyse</a>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!-- product tab -->
+                    <div class="tab-content" >
+                        <div class="container tab-pane active" id="Produktbeschreibung">
                             <p>
                                 Für die ausreichende Deckung des Eiweißbedarfs sorgen u.a. Linsen und Erbsen. Diese
                                 wertvollen Proteinquellen verfügen über ein optimales Aminosäureprofil für Hunde und
@@ -370,7 +367,7 @@
                                 noch tiefergehende, fachliche Fragen, besucht gerne unser Ernährungs-ABC.
                             </p>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="Fütterung">
                             <p>
                                 haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
                                 master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
@@ -379,13 +376,13 @@
                                 quis cardigan american apparel, butcher voluptate nisi qui.
                             </p>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="Zutaten">
                             <p>
                                 Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown
                                 aliqua, retro synth
                             </p>
                         </div>
-                        <div class="tab-pane fade" id="Analyse-tab" role="tabpanel" aria-labelledby="Analyse-tab">
+                        <div class="tab-pane fade" id="Analyse">
                             <p>
                                 you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
                                 retro synth master cleanse. Mustache cliche tempor, williamsburg
@@ -396,6 +393,221 @@
             </div>
         </div><!-- Single Product -->
 
+        <!-- mobile-v Single Product -->
+        <div class="d-none mobile-v-single-product">
+            <div class="container">
+                <div class="m-product-wrapper">
+                    <h2>Dog‘s Love Junior Huhn</h2>
+                    <!-- product gallery -->
+                    <div class="single-product-thumb w-100">
+                        <div class="grid product">
+                            <div class="column-xs-12 column-md-7">
+                                <div class="m-product-gallery product-gallery">
+                                    <div class="product-image position-relative">
+                                        <img class="active" src="./img/product-1.jpg">
+                                    </div>
+                                    <ul class="image-list">
+                                        <li class="image-item"><img src="./img/product-1.jpg"></li>
+                                        <li class="image-item"><img src="./img/product-2.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wish button -->
+                        <button class="m-wish-btn product-wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <!-- product feature -->
+                        <div class="m-product-feature">
+                            <img src="./img/bio.png" alt="">
+                            <img src="./img/glutenfrei.png" alt="">
+                            <img src="./img/regional.png" alt="">
+                            <img src="./img/vegan.png" alt="">
+                        </div>
+                    </div>
+                    <!-- product short description -->
+                    <div class="m-product-description">
+                        <p>
+                            Dog‘s Love Junior Huhn ist ein vollwertiges Alleinfuttermittel für Welpen mit
+                            alternativer Proteinquelle.
+                            Es ist die gesunde Abwechslung für jeden Hundenapf – für alle Weltverbesserer unter den
+                            Vierbeinern!
+                            Mehr Infos siehe <span class="underline">
+                                <a href="#m-product-f-description">Produktdetails weiter unten!</a>
+                            </span>
+                        </p>
+                        <span class="stock-status">AUF LAGER</span>
+                    </div>
+                    <!-- discount & price -->
+                    <div class="m-discoumt-price">
+                        <p class="product-discount">–10%</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>€ 14,99 <small><del class="prev-price">€ 17,99</del></small></h3>
+
+                        </div>
+                    </div>
+                    <div class="orange-line"></div>
+                    <!-- proudct weight -->
+                    <span class="m-product-weight d-flex align-items-center">
+                        <div class="weight mt-0 d-flex">
+                            <span class="weight-active">300 g</span>
+                            <span>600g</span>
+                            <span>900g</span>
+                        </div>
+                        <p class="p-style">Packungsgröße</p>
+                    </span>
+                    <!-- product quantity & cart button -->
+                    <div class="m-product-quantity single-product-footer">
+                        <div class="product-quantity">
+                            <form action="">
+                                <div class="mb-4 d-flex">
+                                    <div class="select-indicator">
+                                        <select name="" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <span class="product-number ml-3">Anzahl</span>
+                                </div>
+                                <button class="btn-blue add-to-cart mb-4">
+                                    <i class="fa fa-shopping-bag"></i>
+                                    IN DEN WARENKORB
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- product full description -->
+            <div class="m-product-f-description" id="m-product-f-description">
+                <h2 class="text-center h2-style">Produktdetails</h2>
+                <div class="m-des-accordion">
+                    <label for="pfd-1" class="m-des-btn text-center">
+                        <input type="checkbox" id="pfd-1" name="pfd-des">
+                        <span class="ms-btn">Produktbeschreibung</span>
+                        <div class="m-des-panel">
+                            <p>
+                                Für die ausreichende Deckung des
+                                Eiweißbedarfs sorgen u.a. Linsen
+                                und Erbsen. Diese wertvollen Proteinquellen verfügen über ein optimales
+                                Aminosäureprofil für Hunde und
+                                stärken damit die Muskeln deines
+                                Vierbeiners. Die zugesetzten Algen
+                                stellen die essentiellen Omega 3-
+                                und -6 Fettsäuren bereit. Sie führen
+                                zu einem weichen und gesunden
+                                Fell und guter Haut – super für lange
+                                Kuschelstunden mit deinem treuen
+                                Begleiter. Eine richtige Super-Zutat
+                                also! Unser GREEN CRUNCH Trockenfutter beinhaltet darüber hinaus ein
+                                angepasstes Mineralpulver, welches
+                                weitere essentielle Nährstoffe, wie
+                                z.B. Vitamin B12, Taurin und Carnitin
+                                liefert. Für weitere wichtige Nährstoffe sorgen so allerlei gesundes
+                                Obst und Gemüse wie z.B. Kürbis,
+                                Karotten und Blaubeeren.
+                            </p>
+
+                        </div>
+                    </label>
+                </div>
+                <div class="m-des-accordion">
+                    <label for="pfd-2" class="m-des-btn text-center">
+                        <input type="checkbox" id="pfd-2" name="pfd-des">
+                        <span class="ms-btn">Fütterung</span>
+                        <div class="m-des-panel">
+                            <p>
+                                Für die ausreichende Deckung des
+                                Eiweißbedarfs sorgen u.a. Linsen
+                                und Erbsen. Diese wertvollen Proteinquellen verfügen über ein optimales
+                                Aminosäureprofil für Hunde und
+                                stärken damit die Muskeln deines
+                                Vierbeiners. Die zugesetzten Algen
+                                stellen die essentiellen Omega 3-
+                                und -6 Fettsäuren bereit. Sie führen
+                                zu einem weichen und gesunden
+                                Fell und guter Haut – super für lange
+                                Kuschelstunden mit deinem treuen
+                                Begleiter. Eine richtige Super-Zutat
+                                also! Unser GREEN CRUNCH Trockenfutter beinhaltet darüber hinaus ein
+                                angepasstes Mineralpulver, welches
+                                weitere essentielle Nährstoffe, wie
+                                z.B. Vitamin B12, Taurin und Carnitin
+                                liefert. Für weitere wichtige Nährstoffe sorgen so allerlei gesundes
+                                Obst und Gemüse wie z.B. Kürbis,
+                                Karotten und Blaubeeren.
+                            </p>
+
+                        </div>
+                    </label>
+                </div>
+                <div class="m-des-accordion">
+                    <label for="pfd-3" class="m-des-btn text-center">
+                        <input type="checkbox" id="pfd-3" name="pfd-des">
+                        <span class="ms-btn">Zutaten</span>
+                        <div class="m-des-panel">
+                            <p>
+                                Für die ausreichende Deckung des
+                                Eiweißbedarfs sorgen u.a. Linsen
+                                und Erbsen. Diese wertvollen Proteinquellen verfügen über ein optimales
+                                Aminosäureprofil für Hunde und
+                                stärken damit die Muskeln deines
+                                Vierbeiners. Die zugesetzten Algen
+                                stellen die essentiellen Omega 3-
+                                und -6 Fettsäuren bereit. Sie führen
+                                zu einem weichen und gesunden
+                                Fell und guter Haut – super für lange
+                                Kuschelstunden mit deinem treuen
+                                Begleiter. Eine richtige Super-Zutat
+                                also! Unser GREEN CRUNCH Trockenfutter beinhaltet darüber hinaus ein
+                                angepasstes Mineralpulver, welches
+                                weitere essentielle Nährstoffe, wie
+                                z.B. Vitamin B12, Taurin und Carnitin
+                                liefert. Für weitere wichtige Nährstoffe sorgen so allerlei gesundes
+                                Obst und Gemüse wie z.B. Kürbis,
+                                Karotten und Blaubeeren.
+                            </p>
+
+                        </div>
+                    </label>
+                </div>
+                <div class="m-des-accordion">
+                    <label for="pfd-4" class="m-des-btn text-center">
+                        <input type="checkbox" id="pfd-4" name="pfd-des">
+                        <span class="ms-btn">Analyse</span>
+                        <div class="m-des-panel">
+                            <p>
+                                Für die ausreichende Deckung des
+                                Eiweißbedarfs sorgen u.a. Linsen
+                                und Erbsen. Diese wertvollen Proteinquellen verfügen über ein optimales
+                                Aminosäureprofil für Hunde und
+                                stärken damit die Muskeln deines
+                                Vierbeiners. Die zugesetzten Algen
+                                stellen die essentiellen Omega 3-
+                                und -6 Fettsäuren bereit. Sie führen
+                                zu einem weichen und gesunden
+                                Fell und guter Haut – super für lange
+                                Kuschelstunden mit deinem treuen
+                                Begleiter. Eine richtige Super-Zutat
+                                also! Unser GREEN CRUNCH Trockenfutter beinhaltet darüber hinaus ein
+                                angepasstes Mineralpulver, welches
+                                weitere essentielle Nährstoffe, wie
+                                z.B. Vitamin B12, Taurin und Carnitin
+                                liefert. Für weitere wichtige Nährstoffe sorgen so allerlei gesundes
+                                Obst und Gemüse wie z.B. Kürbis,
+                                Karotten und Blaubeeren.
+                            </p>
+
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </div>
 
         <!-- contact-option -->
         <div class="contact-option text-center">
@@ -406,10 +618,11 @@
                     service@petsfinefood.com
                 </a>
                 <a href="tel:+43 1 2345 67 89">
-                    <i class="fas fa-mobile"></i>
+                    <i class="fas fa-mobile-alt"></i>
                     +43 1 2345 67 89
                 </a>
                 <span>
+                    <a href="#"><i class="fab fa-whatsapp-square"></i></a>
                     <a href="#"><i class="fa fa-facebook-square"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
@@ -417,7 +630,7 @@
             </div>
         </div>
     </div>
-    <!--main-->
+    <!--main end-->
 
     <!-- Payment method -->
     <div class="payment-method">
@@ -433,82 +646,82 @@
         </div>
     </div>
 
- <!-- Footer -->
- <footer class="py-5">
-    <div class="container">
-        <div class="rows">
-            <!-- Footer logo -->
-            <div class="footer-nav order-3">
-                <img src="./img/Logo-round-footer.svg" class="footer-logo img-fluid" alt="">
-                <p class="copytext">copyright 2021: pets fine food</p>
-            </div>
-            <!-- desktop Footer Nav -->
-            <div class="footer-nav footer-desktop-menu footer-menu order-2">
-                <div class="footer-navs">
-                    <h3>pet fine food <span>shop</span></h3>
-                    <nav class="footer-nav-2">
-                        <a href="#" class="menu-active">
-                            <img src="./img/file-certificate-icon.svg" height="16px" alt="">
-                            BIO-Zertifikat
-                        </a>
-                        <a href="./ueberUns.html">Über uns</a>
-                        <a href="">Qualität</a>
-                        <a href="./kontakt.html">Kontakt</a>
-                        <a href="./partner.html">Partner</a>
-                    </nav>
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav order-3">
+                    <img src="./img/Logo-round-footer.svg" class="footer-logo img-fluid" alt="">
+                    <p class="copytext">copyright 2021: pets fine food</p>
                 </div>
-                <div class="footer-navs">
-                    <h3>Kundenservice</h3>
-                    <nav class="footer-nav-2">
-                        <a href="#">Versandkosten</a>
-                        <a href="">Zahlungsarten</a>
-                        <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
-                        <a href="">AGBs</a>
-                        <a href="./impressum.html">Impressum</a>
-                        <a href="./faq.html">FAQ</a>
-                    </nav>
+                <!-- desktop Footer Nav -->
+                <div class="footer-nav footer-desktop-menu footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>pet fine food <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <img src="./img/file-certificate-icon.svg" height="16px" alt="">
+                                BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                        </nav>
+                    </div>
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-            <!-- mobile footer menu -->
-            <div class="mobile-footer footer-nav footer-menu order-2">
-                <div class="footer-navs">
-                    <h3>healthy pet <span>shop</span></h3>
-                    <nav class="footer-nav-2">
-                        <a href="#" class="menu-active">
-                            <i class="fa fa-file"></i> BIO-Zertifikat
-                        </a>
-                        <a href="./ueberUns.html">Über uns</a>
-                        <a href="">Qualität</a>
-                        <a href="./kontakt.html">Kontakt</a>
-                        <a href="./partner.html">Partner</a>
-                        <a href="#">Versandkosten</a>
-                        <a href="">Kundenservice</a>
-                        <a href="">Zahlungsarten</a>
-                        <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
-                        <a href="">AGBs</a>
-                        <a href="./impressum.html">Impressum</a>
-                        <a href="./faq.html">FAQ</a>
-                    </nav>
+                <!-- mobile footer menu -->
+                <div class="mobile-footer footer-nav footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                            <a href="#">Versandkosten</a>
+                            <a href="">Kundenservice</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Newsletter -->
-            <div class="footer-nav order-1">
-                <div class="newsletter">
-                    <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
-                    <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
-                    <form action="index.html" method="post">
-                        <input required type="email" name="email" class="text-center"
-                            placeholder="E-Mail Adresse hier eingeben!">
-                        <button class="newsletter-btn">Jetzt abonnieren</button>
-                    </form>
-                    <p class="my-3">Abmelden jederzeit möglich!</p>
-                    <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                <!-- Newsletter -->
+                <div class="footer-nav order-1">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- Scroll Top -->
     <a href="#" class="scroll-top">
@@ -540,7 +753,21 @@
 
         productImages.forEach(image => image.addEventListener("click", changeImage));
         navItem.addEventListener('click', toggleNavigation);
+
+        // Checkout diff address 
+        var invoice = document.querySelector('#invoice-address');
+        var diff_address = document.querySelector('#diff-address');
+        var address = document.querySelector('.diff-address-info');
+
+        invoice.onclick = () => {
+            address.style.maxHeight = 0;
+        }
+
+        diff_address.onclick = () => {
+            address.style.maxHeight = address.scrollHeight + 'px';
+        }
     </script>
 
 </body>
+
 </html>

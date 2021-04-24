@@ -64,6 +64,16 @@
 }
 
 @media screen and (max-width: 991px) {
+    /*
+    =============== single product page =========*/
+    .single-product{
+        display: none !important;
+    }
+
+    .mobile-v-single-product{
+        display: block !important;
+    }
+
     .hero-top-text {
         flex-direction: column;
     }
@@ -457,6 +467,9 @@
 @media screen and (max-width: 767px) {
 
     body {
+        background: var(--gray-color) !important;
+    }
+    .header{
         background: var(--gray-color) !important;
     }
 

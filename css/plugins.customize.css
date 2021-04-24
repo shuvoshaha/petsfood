@@ -151,6 +151,7 @@ button.owl-next {
 .nav-tabs .nav-link {
     color: var(--text-color);
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .nav-tabs .nav-item {

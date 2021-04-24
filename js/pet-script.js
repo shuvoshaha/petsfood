@@ -11,7 +11,7 @@ const logo = document.querySelector('.brand-logo')
 
 window.onscroll = (e) => {
 
-  if (document.body.scrollTop >= 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop >= 20 || document.documentElement.scrollTop > 20) {
 
     scroll.style.display = "flex";
     header.style.boxShadow = "0 2px 2px rgba(0,0,0,0.2)"
@@ -256,18 +256,7 @@ for (i = 0; i < filter_title.length; i++) {
   });
 }
 
-// Checkout diff address 
-var invoice = document.querySelector('#invoice-address');
-var diff_address = document.querySelector('#diff-address');
-var address = document.querySelector('.diff-address-info');
 
-invoice.onclick = () => {
-  address.style.maxHeight = 0;
-}
-
-diff_address.onclick = () => {
-  address.style.maxHeight = address.scrollHeight + 'px';
-}
 
 
 

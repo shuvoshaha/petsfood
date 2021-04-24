@@ -101,8 +101,10 @@ button:focus {
 =======Login Page=======*/
 
 .lg-line {
-    background: var(--btn-color);
+    background: var(--borderColor);
     height: 1px;
+    border-top: 0 !important;
+    margin: 2rem 0;
 }
 
 .header-line {
