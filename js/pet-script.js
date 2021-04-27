@@ -257,6 +257,60 @@ for (i = 0; i < filter_title.length; i++) {
 }
 
 
+  // Checkout diff address 
+  var invoice = document.getElementById('invoice-address');
+  var diff_address = document.getElementById('#diff-address');
+  var address = document.getElementsByName('diff-address-info');
+
+  invoice.onclick = () => {
+      address.style.maxHeight = 0;
+  }
+
+  diff_address.onclick = () => {
+      address.style.maxHeight = address.scrollHeight + 'px';
+  }
+
+// account page panel
+var myacc_btn = document.querySelectorAll('.m-myacc-btn');
+
+for (let myacc_i = 0; myacc_i <= myacc_btn.length; myacc_i++) {
+  myacc_btn[myacc_i].addEventListener('click', function () {
+
+    var myacc_panel = this.nextElementSibling;
+
+    if (myacc_panel.style.maxHeight) {
+      myacc_panel.style.maxHeight = '';
+
+    } else {
+
+      myacc_panel.style.maxHeight = myacc_panel.scrollHeight + 'px';
+
+    }
+  });
+};
+
+// single product gallery
+
+const activeImage = document.querySelector(".product-image .active");
+const productImages = document.querySelectorAll(".image-list img");
+const navItem = document.querySelector('a.toggle-nav');
+
+function changeImage(e) {
+    activeImage.src = e.target.src;
+}
+
+function toggleNavigation() {
+    this.nextElementSibling.classList.toggle('active');
+}
+
+productImages.forEach(image => image.addEventListener("click", changeImage));
+navItem.addEventListener('click', toggleNavigation);
+
+
+
+
+
+
 
 
 

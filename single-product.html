@@ -487,33 +487,33 @@
                 <h2 class="text-center h2-style">Produktdetails</h2>
                 <div class="m-des-accordion">
                     <label for="pfd-1" class="m-des-btn text-center">
-                        <input type="checkbox" id="pfd-1" name="pfd-des">
                         <span class="ms-btn">Produktbeschreibung</span>
-                        <div class="m-des-panel">
-                            <p>
-                                Für die ausreichende Deckung des
-                                Eiweißbedarfs sorgen u.a. Linsen
-                                und Erbsen. Diese wertvollen Proteinquellen verfügen über ein optimales
-                                Aminosäureprofil für Hunde und
-                                stärken damit die Muskeln deines
-                                Vierbeiners. Die zugesetzten Algen
-                                stellen die essentiellen Omega 3-
-                                und -6 Fettsäuren bereit. Sie führen
-                                zu einem weichen und gesunden
-                                Fell und guter Haut – super für lange
-                                Kuschelstunden mit deinem treuen
-                                Begleiter. Eine richtige Super-Zutat
-                                also! Unser GREEN CRUNCH Trockenfutter beinhaltet darüber hinaus ein
-                                angepasstes Mineralpulver, welches
-                                weitere essentielle Nährstoffe, wie
-                                z.B. Vitamin B12, Taurin und Carnitin
-                                liefert. Für weitere wichtige Nährstoffe sorgen so allerlei gesundes
-                                Obst und Gemüse wie z.B. Kürbis,
-                                Karotten und Blaubeeren.
-                            </p>
-
-                        </div>
                     </label>
+                    <input type="checkbox" id="pfd-1" name="pfd-des">
+                    <div class="m-des-panel">
+                        <p>
+                            Für die ausreichende Deckung des
+                            Eiweißbedarfs sorgen u.a. Linsen
+                            und Erbsen. Diese wertvollen Proteinquellen verfügen über ein optimales
+                            Aminosäureprofil für Hunde und
+                            stärken damit die Muskeln deines
+                            Vierbeiners. Die zugesetzten Algen
+                            stellen die essentiellen Omega 3-
+                            und -6 Fettsäuren bereit. Sie führen
+                            zu einem weichen und gesunden
+                            Fell und guter Haut – super für lange
+                            Kuschelstunden mit deinem treuen
+                            Begleiter. Eine richtige Super-Zutat
+                            also! Unser GREEN CRUNCH Trockenfutter beinhaltet darüber hinaus ein
+                            angepasstes Mineralpulver, welches
+                            weitere essentielle Nährstoffe, wie
+                            z.B. Vitamin B12, Taurin und Carnitin
+                            liefert. Für weitere wichtige Nährstoffe sorgen so allerlei gesundes
+                            Obst und Gemüse wie z.B. Kürbis,
+                            Karotten und Blaubeeren.
+                        </p>
+
+                    </div>
                 </div>
                 <div class="m-des-accordion">
                     <label for="pfd-2" class="m-des-btn text-center">
@@ -738,36 +738,5 @@
     <!-- Custom JS -->
     <script src="./js/pet-script.js"></script>
 
-    <script>
-        const activeImage = document.querySelector(".product-image .active");
-        const productImages = document.querySelectorAll(".image-list img");
-        const navItem = document.querySelector('a.toggle-nav');
-
-        function changeImage(e) {
-            activeImage.src = e.target.src;
-        }
-
-        function toggleNavigation() {
-            this.nextElementSibling.classList.toggle('active');
-        }
-
-        productImages.forEach(image => image.addEventListener("click", changeImage));
-        navItem.addEventListener('click', toggleNavigation);
-
-        // Checkout diff address 
-        var invoice = document.querySelector('#invoice-address');
-        var diff_address = document.querySelector('#diff-address');
-        var address = document.querySelector('.diff-address-info');
-
-        invoice.onclick = () => {
-            address.style.maxHeight = 0;
-        }
-
-        diff_address.onclick = () => {
-            address.style.maxHeight = address.scrollHeight + 'px';
-        }
-    </script>
-
 </body>
-
 </html>

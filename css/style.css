@@ -1411,7 +1411,7 @@ a {}
 }
 
 .contact-option-list {
-    width: 40%;
+    width: 55%;
     margin: 1rem auto 0;
     display: flex;
     justify-content: space-between;
@@ -1727,7 +1727,7 @@ a {}
 
 .shop-product-gallery .product {
     margin-bottom: 10px;
-    width: 250px !important;
+    width: 250px;
 }
 
 /*
@@ -2052,7 +2052,7 @@ Single Product Page
     margin-top: 5rem;
 }
 
-.m-product-f-description .m-des-accordion label input[type="checkbox"] {
+.m-product-f-description .m-des-accordion input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
 }
@@ -2386,6 +2386,7 @@ Single Product Page
     color: var(--text-color);
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /*
@@ -2394,12 +2395,6 @@ Single Product Page
 .checkout-cart-info {
     margin-top: 2.7rem;
 }
-
-.bg-light-orange {
-    background: #fffbf4;
-    padding: 3rem;
-}
-
 
 .checkout-cart-info h2 {
     color: var(--orange);
@@ -2491,9 +2486,9 @@ Single Product Page
 
 
 /*
-=================
+===========================================
   Payment Page
-=================
+===========================================
 */
 
 .c-img {
@@ -2512,13 +2507,67 @@ Single Product Page
     color: var(--text-color);
 }
 
-.c-indicator::after {
+.form-checkout-step{
+    width: 100%;
+    overflow: hidden;
+  
+}
+
+.form-checkout-step form{
+    display: flex;
+    width: 200%;
+    
+}
+
+.form-step {
+    width: 100%;
+    transition: 0.2s;
+    
+}
+.form-step-1 {
+    
+}
+.form-step-2 {
+   
+}
+
+.form-step-1-inner{
+    width: 70%;
+}
+
+/* .payment-gateway-method input {
+    appearance: none;
+    -webkit-appearance: none;
+} */
+
+.credit-card-payment {
+    padding-top: 0;
+}
+
+.p-g {
+    position: relative;
+}
+
+.payment-gateway-method{
+    width: 40%;
+}
+
+.payment-gateway-method .c-indicator {
+    position: absolute;
+    margin-right: 15px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+}
+
+.payment-gateway-method .c-indicator::after {
     content: '';
     position: absolute;
     display: none;
 }
 
-.payment-gateway-method input:checked~.c-indicator::after {
+.checkout-form input:checked~.payment-gateway-method .c-indicator::after {
     display: block;
     width: 5px;
     height: 7px;
@@ -2529,11 +2578,21 @@ Single Product Page
     top: 1px;
 }
 
-.payment-gatway-info {
+.payment-gateway-info {
     /* max-height: 0;
     overflow: hidden; */
+    width: 80%;
     transition: var(--delay);
     display: none;
+
+}
+
+.payment-gateway-info input {
+    margin-bottom: 1rem;
+}
+
+.checkout-form  input[type=radio]:checked~.payment-gateway-info {
+    display: block !important;
 }
 
 .for-credit {
@@ -2613,9 +2672,9 @@ Single Product Page
 
 
 /*
-=======================
+===========================================
     Ordner Page
-=======================
+===========================================
 */
 
 .ordner-list {
@@ -2670,9 +2729,9 @@ Single Product Page
 
 
 /*
-===================
+=================================
     Wishlist Page
-===================*/
+=================================*/
 
 .wishlists {
     background: var(--light-orange);
@@ -2686,7 +2745,9 @@ Single Product Page
 /*
 ========= Left Section =========*/
 
-.wishlist-left {}
+.wishlist-left {
+    width: 65%;
+}
 
 .wishlist-thumb {
     border: 1px solid var(--borderColor);
@@ -2713,6 +2774,13 @@ Single Product Page
     height: 122px;
 }
 
+.wishlist-left .w-price h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0 !important;
+}
+
 /*
 ======== Basic info =========*/
 
@@ -2723,7 +2791,7 @@ Single Product Page
 }
 
 .wishlist-basic-info h4 {
-    font-size: 14px;
+    font-size: 20px !important;
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 1rem;
@@ -2732,9 +2800,10 @@ Single Product Page
 .wishlist-basic-info h4 a {
     text-decoration: none !important;
     transition: var(--delay);
-    width: 265px !important;
+    width: 100% !important;
     display: inline-block;
     text-align: left;
+    font-size: 20px;
 }
 
 .wishlist-basic-info h4 a:hover {
@@ -2764,15 +2833,19 @@ Single Product Page
 
 .wishlist-right-head {}
 
-.w-product-feature {}
+.w-product-feature {
+    margin-left: auto;
+}
 
 
 .w-product-feature img {
-    height: 38px;
-    margin-left: 5px;
+    height: 47px;
+    /* margin-left: 0; */
 }
 
-.w-trash {}
+.w-trash {
+    align-items: center;
+}
 
 .w-trash p {
     font-size: 14px;
@@ -2808,7 +2881,7 @@ Single Product Page
 }
 
 .w-archive-price-btn {
-    /* margin: 10px 0; */
+    margin: 0;
     align-items: center;
 }
 
@@ -3237,12 +3310,32 @@ Single Product Page
  ===========================
 */
 
+/*
+=========== desktop-v ==========*/
+
 .myaccount .tab-content {
     padding: 15px 7px;
     background: #fff;
 }
 
-.myaccount .tab-content address {}
+/*
+========== address tab ==============*/
+.myaccount h3 {
+    font-size: 20px;
+}
+
+.myaccount .account-address p {
+    padding: 1rem 0 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.myaccount .account-address address {}
+
+.myaccount .tab-content address {
+    font-size: 15px;
+    color: var(--text-color);
+}
 
 .subscription-history-section {}
 
@@ -3262,13 +3355,9 @@ Single Product Page
     margin-bottom: 1rem;
 }
 
-.subscription-history table {}
-
 .subscription-history table tr {
     text-align: center;
 }
-
-.subscription-history table tr:last-child {}
 
 .subscription-history table tr:nth-child(even) {
     background: #f4f5f6;
@@ -3291,7 +3380,7 @@ Single Product Page
 }
 
 .subscription-history table tr td {
-    font-size: 13px;
+    font-size: 15px;
     border-right: 2px solid #fff;
     color: var(--text-color);
     padding: 2px 0 14px 0;
@@ -3312,22 +3401,33 @@ Single Product Page
     margin: auto;
     border-radius: 12px;
     margin-top: 3px;
+    font-weight: normal !important;
+    color: #fff;
 }
 
-.inactive .subscription-history table tr {}
-
-.inactive .subscription-history table tr:nth-child(odd) {
-    background: var(--gray) !important;
+.inactive table tr:nth-child(odd) {
+    background: #ccc !important;
 }
 
-.inactive .subscription-history table tr:nth-child(even) {}
+.inactive table tr:nth-child(even) {
+    background: #f2f2f2;
+}
 
-.inactive table tr td {}
+.inactive table tr td {
+    color: #808080;
+}
 
-.inactive .subscription-history tr td a {}
+.inactive table tr td strong {
+    color: #808080 !important;
+}
 
-/*
-*/
+.inactive tr td a {}
+
+.inactive-btn {
+    background: #808080 !important;
+    color: #fff !important;
+}
+
 
 .myaccount .contact-option {
     background: var(--white);
@@ -3335,7 +3435,7 @@ Single Product Page
 }
 
 .myaccount .contact-option-list {
-    width: 50%;
+    /* width: 52%; */
 }
 
 /*
@@ -3406,4 +3506,230 @@ Single Product Page
     font-size: 1rem;
     border-radius: 10px;
     color: #fff;
+}
+
+/*
+========== mobile-v ============*/
+
+.m-myacc-accordion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.accordion-tab {
+    margin: auto;
+    width: 100%;
+}
+
+.accordion-tab .contact-option {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-tab input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.accordion-tab label {
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid var(--orange);
+    border-top: 1px solid var(--orange);
+    border-right: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
+    width: 80%;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.accordion-tab label i {
+    margin-right: 8px;
+}
+
+.accordion-tab label::after {
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'FontAwesome';
+}
+
+
+.accordion-body {
+    display: none;
+    margin-top: -26px;
+    background: #fff;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+.accordion-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.accordion-body p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.accordion-body address {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.accordion-body .subscription-history {
+    margin-bottom: 0 !important;
+}
+
+.accordion-tab input[type="checkbox"]:checked .accordion-tab label {
+    border-bottom: none !important;
+}
+
+.accordion-tab input[type="checkbox"]:checked .accordion-tab label::after {
+    content: '\f106';
+    position: absolute;
+    right: 10px;
+    font-family: FontAwesome;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accordion-tab input[type="checkbox"]:checked~.accordion-body {
+    display: block !important;
+}
+
+/*
+========= subscription =======*/
+
+.subs-tab {}
+
+.subs-tab h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.subs-tab label {
+    padding: 4px;
+    font-size: 16px;
+    background: var(--p-bg);
+    color: #fff;
+    border: none;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+.subs-tab input {}
+
+.subs-body {
+    display: none;
+    margin-top: -24px;
+}
+
+.subs-tab input:checked~.subs-body {
+    display: block !important;
+    margin-bottom: 2rem;
+}
+
+.subs-body table tr th {
+    border: unset !important;
+    text-align: left;
+    padding: 4px;
+}
+
+.subs-body table tr td {
+    border: unset !important;
+    text-align: left;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.sub-btn {
+    text-align: center !important;
+}
+
+.sub-btn button {
+    padding: 5px !important;
+}
+
+.subs-tab .subscription-history table tr td a {
+    text-align: right;
+}
+
+/*
+======= Inactive subscription history ========*/
+
+.deactive-tab {}
+
+.deactive-tab label {
+    flex-direction: column;
+    background: #ccc;
+    padding: 1rem;
+    justify-content: flex-start !important;
+}
+
+.deactive-tab .subs-body {}
+
+.deactive-tab .subs-body input[type="checkbox"]:checked~.deactive-tab label button {
+    display: none !important;
+}
+
+.deactive-tab .subs-body table {}
+
+.deactive-tab .subs-body table tr:nth-child(odd) {
+    background: #a6aaaa;
+}
+
+.activation-btn {
+    padding: 7px;
+    color: #fff;
+    width: 75%;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+/*
+======= product history ==========*/
+.product-purchase-history {
+    margin-top: 3rem;
+}
+
+.product-purchase-history {}
+
+.product-purchase-history .subscription-history {
+    margin-bottom: -10px !important;
+}
+
+.product-purchase-history label {
+    background: var(--orange);
+}
+
+.product-purchase-history table tr:nth-child(odd) {
+    background: #fee9bd;
+}
+
+.product-purchase-history table tr:nth-child(even) {
+    background: #fffbf4;
+}
+
+.product-purchase-history table tr td a {
+    text-align: left !important;
 }

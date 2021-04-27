@@ -1907,3 +1907,116 @@ input[type=radio] {
   float:left;
 }
  
+.list1{
+  display: none;
+}
+
+.dj input[type="radio"]{
+  appearance: none;
+}
+
+.list{
+  position: relative;
+}
+
+.list2 label{
+  position: relative;
+}
+
+.list2 label::after{
+  content: '+';
+
+}
+
+ .checke{
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  position: absolute;
+}
+
+.checke::before{
+  content: '';
+  display: none;
+
+}
+
+ .dj input[type="radio"]:checked ~ .checke::before{
+  display: block;
+  width: 7px;
+  height: 5px;
+  background: blue;
+  left: 0;
+  top: 1px;
+  position: absolute;
+}
+
+.dj input[type="radio"]:checked ~ .list1{
+  display: block !important;
+}
+
+.box{
+  display: none;
+}
+
+
+/*
+=========== multi form ===========
+*/
+
+.multi-form{
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 1px 2px #000;
+  position: relative;
+ 
+}
+
+.multi-form-wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+
+.multi-form-wrapper form{
+
+  width: 400%;
+  display: flex;
+  margin: auto;
+ 
+}
+
+.multi-form-wrapper form h3{
+  font-size: 1rem;
+}
+
+.multi-form-wrapper .step{
+  padding: 1rem;
+  transition: 0.2s;
+  width: 25%;
+  
+  
+}
+
+.multi-form-wrapper form input{
+  width: 100%;
+  margin: 10px auto;
+}
+
+
+
+.multi-form-wrapper .step-1{
+
+}
+
+.multi-form-wrapper .step-2{
+
+}
+
+.multi-form-wrapper .step-3{
+
+}
+
+.color-active{
+  color: var(--orange)
+}

@@ -211,6 +211,13 @@
     <div class="main">
         <div class="container">
             <hr class="header-line">
+            <!-- for mobile version -->
+            <div class="mobile-hotline-roster">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+431234567890">Hotline</a>
+                <p> Mo–Fr, 8–16 Uhr</p>|
+                <i class="fa fa-envelope-o"></i>
+            </div>
         </div>
         <!-- Checkout -->
         <div class="checkout">
@@ -220,7 +227,7 @@
                     <div class="checkout-form w-60">
                         <div class="checkout-step d-flex">
                             <span class="step step-1">
-                                <span class="step-number bg-orange ">1</span>
+                                <span class="step-number bg-orange">1</span>
                                 <span class="step-title orange-text">Daten eingeben</span>
                             </span>
                             <span class="step step-2  ml-3">
@@ -230,99 +237,235 @@
                         </div>
                         <div class="orange-line my-3"></div>
                         <!-- checkout input form -->
-                        <form action="index.html" class="checkout-input-form w-70 mt-5">
-                            <div class="user-basic-info">
-                                <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
-                                <input type="text" name="lname" autocomplete="off" placeholder="Nachname*">
-                                <input type="email" name="email" autocomplete="off" placeholder="E-Mail*">
-                            </div>
-                            <span class="guest-order-info">
-                                Sie können Ihre Bestellung als Gast fortsetzen und nach dem Bestellprozess optional
-                                ein Kundenkonto erstellen.
-                            </span>
-                            <span class="new-acc d-flex">
-                                Oder:
-                                <a href="#">JETZT EINLOGGEN</a>
-                            </span>
-                            <!-- billing-address -->
-                            <div class="billing-address my-4">
-                                <h2 class="mb-3 h2-style">Rechnungsadresse</h2>
-                                <input type="text" placeholder="Straße*">
-                                <input type="text" placeholder="Adresszusatz">
-                                <div class="billing-form-group d-flex justify-content-between align-items-center">
-                                    <input type="text" placeholder="Hausnummer">
-                                    <input type="text" placeholder="Stiege">
-                                    <input type="text" placeholder="Tür">
-                                </div>
-                                <input type="text" placeholder="Stadt*">
-                                <input type="text" placeholder="PLZ**">
-                            </div>
-                            <!-- deliver-address -->
-                            <div class="deliver-address mb-3 d-flex align-items-center justify-content-between">
-                                <h2 class="h2-style">Lieferadresse</h2>
-                                <p class="p-style">Infos zu den <a href="#">Lieferkosten</a></p>
-                            </div>
-                            <!-- address option -->
-                            <div class="address-option d-flex align-items-center justify-content-between">
-                                <label for="invoice-address">
-                                    <input checked type="radio" id="invoice-address" name="invoice-add">
-                                    <span class="c-indicator checkout-indicator"></span>
-                                    wie Rechnungsadresse
-                                </label>
-                                <label for="diff-address">
-                                    <input type="radio" id="diff-address" name="invoice-add">
-                                    <span class="c-indicator checkout-indicator"></span>
-                                    abweichende Lieferadresse
-                                </label>
-                            </div>
-                            <!-- optional shipping address -->
-                            <div class="diff-address-info">
-                                <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
-                                <input type="text" name="lname" autocomplete="off" placeholder="Nachname**">
-                                <input type="text" placeholder="Straße*">
-                                <input type="text" placeholder="Adresszusatz">
-                                <div class="diff-address-form-group">
-                                    <input type="text" placeholder="Hausnummer">
-                                    <input type="text" placeholder="Stiege">
-                                    <input type="text" placeholder="Tür">
-                                </div>
-                                <input type="text" placeholder="Stadt*">
-                                <input type="text" placeholder="PLZ**">
-                            </div>
-                            <!-- subscription -->
-                            <div class="subscription-option ">
-                                <div class="d-flex justify-content-between align-items-center mt-5">
-                                    <h2 class="h2-style">Als Abo bestellen</h2>
-                                    <p class="p-style">
-                                        Infos rund ums
-                                        <a href="#">Abo</a>
-                                    </p>
-                                </div>
-                                <label for="subscription" class="subscription-label mb-5 mt-2">
-                                    <input type="checkbox" id="subscription" name="subscription">
-                                    <span class="c-indicator sub-indicator"></span>
-                                    JA
-                                </label>
-                            </div>
-                            <!-- Coupon -->
-                            <div class="coupon mb-5">
-                                <h2 class="h2-style mb-2">Gutschein- oder Rabattcode</h2>
-                                <div class="d-flex  align-items-center justify-content-between">
-                                    <input class="coupon-entry" placeholder="Hier eingeben*" type="text" name="coupon">
-                                    <button class="btn-blue coupon-btn">Einlösen</button>
-                                </div>
-                            </div>
+                        <div class="form-checkout-step">
+                            <form action="" class="checkout-input-form  mt-5">
+                                <!-- step 1 -->
+                                <div class="form-step form-step-1">
+                                    <div class="form-step-1-inner">
+                                        <div class="user-basic-info">
+                                            <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
+                                            <input type="text" name="lname" autocomplete="off" placeholder="Nachname*">
+                                            <input type="email" name="email" autocomplete="off" placeholder="E-Mail*">
+                                        </div>
+                                        <span class="guest-order-info">
+                                            Sie können Ihre Bestellung als Gast fortsetzen und nach dem Bestellprozess
+                                            optional
+                                            ein Kundenkonto erstellen.
+                                        </span>
+                                        <span class="new-acc d-flex">
+                                            Oder:
+                                            <a href="#">JETZT EINLOGGEN</a>
+                                        </span>
+                                        <!-- billing-address -->
+                                        <div class="billing-address my-4">
+                                            <h2 class="mb-3 h2-style">Rechnungsadresse</h2>
+                                            <input type="text" placeholder="Straße*">
+                                            <input type="text" placeholder="Adresszusatz">
+                                            <div
+                                                class="billing-form-group d-flex justify-content-between align-items-center">
+                                                <input type="text" placeholder="Hausnummer">
+                                                <input type="text" placeholder="Stiege">
+                                                <input type="text" placeholder="Tür">
+                                            </div>
+                                            <input type="text" placeholder="Stadt*">
+                                            <input type="text" placeholder="PLZ**">
+                                        </div>
+                                        <!-- deliver-address -->
+                                        <div
+                                            class="deliver-address mb-3 d-flex align-items-center justify-content-between">
+                                            <h2 class="h2-style">Lieferadresse</h2>
+                                            <p class="p-style">Infos zu den <a href="#">Lieferkosten</a></p>
+                                        </div>
+                                        <!-- address option -->
+                                        <div class="address-option d-flex align-items-center justify-content-between">
+                                            <label for="invoice-address">
+                                                <input checked type="radio" id="invoice-address" name="invoice-add">
+                                                <span class="c-indicator checkout-indicator"></span>
+                                                wie Rechnungsadresse
+                                            </label>
+                                            <label for="diff-address">
+                                                <input type="radio" id="diff-address" name="invoice-add">
+                                                <span class="c-indicator checkout-indicator"></span>
+                                                abweichende Lieferadresse
+                                            </label>
+                                        </div>
+                                        <!-- optional shipping address -->
+                                        <div class="diff-address-info">
+                                            <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
+                                            <input type="text" name="lname" autocomplete="off" placeholder="Nachname**">
+                                            <input type="text" placeholder="Straße*">
+                                            <input type="text" placeholder="Adresszusatz">
+                                            <div class="diff-address-form-group">
+                                                <input type="text" placeholder="Hausnummer">
+                                                <input type="text" placeholder="Stiege">
+                                                <input type="text" placeholder="Tür">
+                                            </div>
+                                            <input type="text" placeholder="Stadt*">
+                                            <input type="text" placeholder="PLZ**">
+                                        </div>
+                                        <!-- subscription -->
+                                        <div class="subscription-option ">
+                                            <div class="d-flex justify-content-between align-items-center mt-5">
+                                                <h2 class="h2-style">Als Abo bestellen</h2>
+                                                <p class="p-style">
+                                                    Infos rund ums
+                                                    <a href="#">Abo</a>
+                                                </p>
+                                            </div>
+                                            <label for="subscription" class="subscription-label mb-5 mt-2">
+                                                <input type="checkbox" id="subscription" name="subscription">
+                                                <span class="c-indicator sub-indicator"></span>
+                                                JA
+                                            </label>
+                                        </div>
+                                        <!-- Coupon -->
+                                        <div class="coupon mb-5">
+                                            <h2 class="h2-style mb-2">Gutschein- oder Rabattcode</h2>
+                                            <div class="d-flex  align-items-center justify-content-between">
+                                                <input class="coupon-entry" placeholder="Hier eingeben*" type="text"
+                                                    name="coupon">
+                                                <button class="btn-blue coupon-btn">Einlösen</button>
+                                            </div>
+                                        </div>
 
-                            <label for="newsletter-entry" class="newsletter-label">
-                                <input type="checkbox" id="newsletter-entry">
-                                <span class="c-indicator newsletter-indicator"></span>
-                                Anmeldung zum Newsletter
-                            </label>
+                                        <label for="newsletter-entry" class="newsletter-label">
+                                            <input type="checkbox" id="newsletter-entry">
+                                            <span class="c-indicator newsletter-indicator"></span>
+                                            Anmeldung zum Newsletter
+                                        </label>
 
-                            <div class="checkout-btn mt-3 mb-5">
-                                <button class="btn-orange btn-checkout-submit">WEITER</button>
-                            </div>
-                        </form>
+                                        <div class="checkout-btn mt-3 mb-5">
+                                            <btn id="form-next-1" class="btn-orange btn-checkout-submit">WEITER</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- step 2 -->
+                                <div class="form-step form-step-2">
+                                    <div class="payment-gateway-method">
+                                        <!-- credit card -->
+                                        <div class="credit-card-payment p-g">
+                                            <div class="d-flex">
+                                                <label for="credit-card" id="show-pay">
+
+                                                    Kreditkarte
+                                                    <img class="c-img ml-3" src="./img/Visa_logo.png" alt="">
+                                                    <img class="c-img ml-2" src="./img/Mastercard-logo-grau.png" alt="">
+                                                </label>
+
+
+                                            </div>
+                                            <!-- payment mathod user info -->
+                                            <div class="payment-gatway-info mt-3">
+                                                <input type="text" name="fname" autocomplete="off"
+                                                    placeholder="Vorname*">
+                                                <input type="text" name="lname" autocomplete="off"
+                                                    placeholder="Nachname**">
+                                                <div class="payment-form-group d-flex justify-content-between w-100 ">
+                                                    <input type="text" name="email" autocomplete="off"
+                                                        placeholder="Kartennummer*">
+                                                    <input type="text" name="email" autocomplete="off"
+                                                        placeholder="CVV*">
+                                                </div>
+                                                <span class="card-type">
+                                                    <span class="p-style">Kartentyp</span>
+                                                    <span class="card-img-bg">
+                                                        <img class="c-img" src="./img/Visa_logo.png" alt="">
+                                                    </span>
+                                                    <span class="card-img-bg">
+                                                        <img class="c-img" src="./img/Mastercard-logo-grau.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="card-expiry">
+                                                    <p class="p-style mt-2 mb-1">Gültig bis</p>
+                                                    <span class="expiry-form">
+                                                        <div class="expiry-indicator">
+                                                            <select name="month" id="">
+                                                                <option>Monat*</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                            </select>
+                                                        </div>
+                                                        <span class="expiry-indicator">
+                                                            <select name="year" id="">
+                                                                <option>Jahr*</option>
+                                                                <option value="22">21</option>
+                                                                <option value="22">22</option>
+                                                            </select>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <button name="pay-btn" class="btn-orange pay-btn mt-3">Zahlungspflichtig
+                                                    bestellen</button>
+                                            </div>
+                                        </div>
+                                        <!-- paypal -->
+                                        <div class="paypal p-g">
+                                            <div class="d-flex">
+                                                <label for="paypal">
+                                                    <input type="radio" class="c-in" id="paypal" name="payment-method">
+                                                    <span class="c-indicator"></span>
+                                                    Pay Pal
+                                                </label>
+                                                <img class="c-img ml-2" src="./img/PayPal-grau.png" alt="">
+                                            </div>
+                                            <!-- payment mathod user info -->
+                                            <div class="payment-gatway-info for-paypal">
+                                                <p>paypal</p>
+                                            </div>
+                                        </div>
+                                        <!-- direct back -->
+                                        <div class="direk p-g">
+                                            <div class="d-flex">
+                                                <label for="drik">
+                                                    <input type="radio" class="c-in" id="drik" name="payment-method">
+                                                    <span class="c-indicator"></span>
+                                                    Direktüberweisung
+                                                </label>
+                                                <img class="c-img ml-3" src="./img/SepaLogo.png" alt="">
+                                            </div>
+                                            <div class="payment-gatway 3"></div>
+                                        </div>
+                                        <!-- amazon -->
+                                        <div class="amazon p-g">
+                                            <div class="d-flex align-items-center">
+                                                <label for="amazon">
+                                                    <input type="radio" class="c-in" id="amazon" name="payment-method">
+                                                    <span class="c-indicator"></span>
+                                                    Amazon Pay
+                                                </label>
+                                                <img class="c-img ml-3" src="./img/Amazon_Pay_logo-gray_30.png">
+                                            </div>
+                                            <div class="payment-gatway"></div>
+                                        </div>
+                                        <!-- kauf -->
+                                        <div class="kauf p-g">
+                                            <div class="d-flex align-items-center">
+                                                <label for="kauf">
+                                                    <input type="radio" class="c-in" id="kauf" name="payment-method">
+                                                    <span class="c-indicator"></span>
+                                                    Kauf auf Rechnung
+                                                </label>
+                                                <img class="ml-3" src="./img/kaufaufrechnung_30.png" width="56px"
+                                                    height="15px" alt="">
+                                            </div>
+                                            <div class="payment-gatway"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-none mobile-v-pvci product-deliver-cost-info p-style">
+                            <p class="mt-3">
+                                *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht
+                                von 59 kg betragen die Lieferkosten € 4,50 pro Lieferung.
+                                Ab einem Bestellwert von € 50,– ist die Lieferung gratis, ausgenommen das
+                                Liefergewicht übersteigt 60 kg. In diesem Fall muss über
+                                einen speziellen Lieferservice geliefert werden und es fallen pro Lieferung € 12,–
+                                an.
+                                HIER mehr Infos zu den Lieferkosten
+                            </p>
+                            <a href="#">HIER mehr Infos zu den Lieferkosten</a>
+                        </div>
                     </div>
                     <!-- Cart added product info -->
                     <div class="checkout-cart-info w-40">
@@ -353,7 +496,6 @@
                             </div>
 
                         </div>
-                        <!-- <div class="orange-line mt-2"></div> -->
                         <!-- cart product -->
                         <div class="cart-product-list">
                             <p class="p-style pt-3"><strong>6 Artikel</strong> im Warenkorb</p>
@@ -444,7 +586,7 @@
                         <div class="edit-cart-link">
                             <a href="#" class="text-center">Warenkorb ansehen und bearbeiten</a>
                         </div><!-- cart product end -->
-                        <div class="product-deliver-cost-info p-style">
+                        <div class="desktop-v-pvci product-deliver-cost-info p-style">
                             <p class="mt-3">
                                 *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht
                                 von 59 kg betragen die Lieferkosten € 4,50 pro Lieferung.
@@ -561,7 +703,17 @@
     <a href="#" class="scroll-top">
         <i class="fa fa-angle-up"></i>
     </a>
+    <script>
+        var step_1 = document.querySelector('.form-step-1');
+        var step_2 = document.querySelector('.form-step-2');
+        var next_btn = document.getElementById('form-next-1');
 
+        next_btn.addEventListener('click', function (e) {
+            e.preventDefault()
+            step_1.style.marginLeft = "-100%"
+        });
+
+    </script>
     <!-- JQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

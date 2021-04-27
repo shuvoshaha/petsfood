@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pets food">
+    <meta name="description" content="pets fine food">
+    <title>Pets fine food</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Plugins Customize CSS -->
+    <link rel="stylesheet" href="./css/plugins.customize.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Top Nav -->
+        <div class="top-nav d-flex align-items-center">
+            <div class="container">
+                <div class="nav-wrapper sm-d-none d-flex align-items-center justify-content-between">
+                    <!-- Top Social-Media-links -->
+                    <div class="social-media-links ">
+                        <nav class="nav d-flex">
+                            <a href="#" class="social-links"><i class="fa fa-phone"></i>
+                                <span>+43 1 234 567 890</span></a>
+                            <a href="#" class="social-links"><i class="fa fa-envelope-o"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
+                        </nav>
+                    </div>
+                    <!-- Desktop version top Nav-->
+                    <ul class="nav d-flex justify-content-end align-items-center desktop-v">
+                        <li class="nav-item" id="dropdown-popup">
+                            <a class="nav-link top-nav-link" href="./login.html">
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                                LOGIN </a>
+                            <!-- dropdown -->
+                            <div class="popup">
+                                <form action="index.html">
+                                    <input type="text" required name="email" autocomplete="off"
+                                        placeholder="Benutzername*" />
+                                    <input type="password" required name="password" placeholder="Passwort*" />
+                                    <span class="required-txt">* Pflichtfeld</span>
+
+                                    <span class="action-btn">
+                                        <button type="button" class="login-btn">ANMELDEN</button>
+                                        <a href="#">Passwort vergessen?</a>
+                                    </span>
+                                </form>
+                                <hr>
+
+                                <!-- optional-login -->
+                                <div class="optional-login">
+                                    <p>oder LOGIN mit</p>
+                                    <span>
+                                        <a href="#" class="facebook round">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="#" class="google round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#" class="apple round">
+                                            <i class="fa fa-apple"></i>
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <hr>
+                                <div class="dropdown-foot">
+                                    <p>Noch kein Konto?</p>
+                                    <a href="#">JETZT REGISTRIEREN</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav-link" href="./cart.html">
+                                <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                                Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link top-nav-link" href="./wishlist.html">
+                                <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                                Wunschliste
+                            </a>
+                        </li>
+                        <li class="lang d-flex">
+                            <a class="lang-de" href="#">DE</a>
+                            <span class="seperator">|</span>
+                            <a class="lang-en" href="#">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- Top nav end -->
+
+        <!-- Primary Nav mobile -->
+        <div class="mobile-main-nav d-none main-nav mt-2">
+            <nav class="navbar navbar-expand-lg">
+                <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" class="brand-logo" alt="">
+                </a>
+
+                <a href="#" class="shopping-cart">
+                    <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
+                    <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hund.html">Hund</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Katze</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BARF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Zubehör</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./abo-info.html">ABO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Primary Nav desktop -->
+        <div class="desktop-main-nav main-nav mt-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.PNG" class="brand-logo" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link nav-active" href="./hund.html">Hund</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Katze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BARF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Zubehör</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div><!-- Header End -->
+
+    <!-- main -->
+    <div class="main">
+        <div class="container">
+            <hr class="header-line">
+
+            <!-- breadcrumbs -->
+            <div class="d-flex breadcum pt-1 pb-3">
+                <p>Sie befinden sich hier:</p>
+                <a href="/index.html">Home</a>
+                <a href="/privacy.html">Datenschutz&Sicherheit</a>
+            </div>
+            <!-- for mobile version -->
+            <div class="mobile-hotline-roster">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+431234567890">Hotline</a>
+                <p> Mo–Fr, 8–16 Uhr</p>|
+                <i class="fa fa-envelope-o"></i>
+            </div>
+            <h2 class="page-title privacy-title pt-3">Datenschutz & Sicherheit</h2>
+            <hr class="head-line hr-color w-100">
+
+            <!-- content -->
+            <div class="topics-list">
+                <p class="topics py-3">Hier finden Sie Antworten zu folgenden Themen:</p>
+                <ul class="mb-4">
+                    <li><a href="#cookies">1. Was sind Cookies?</a></li>
+                    <li><a href="#speichern">2. Welche Cookies & Daten speichern wir?</a></li>
+                    <li><a href="#verwendung">3. Weitergabe und Verwendung der Daten</a></li>
+                    <li><a href="#analytics">4. Google Analytics</a></li>
+                    <li><a href="#ontaktaufnahme">5. Zustimmung zur Kontaktaufnahme und Weitergabe Ihrer Daten zu
+                            Werbezwecken</a></li>
+                    <li><a href="#social-sharing">6. Social Sharing</a></li>
+                    <li><a href="#facebook-connect">7. Social Logins (Facebook-Connect“, „Google Sign In“ und „Sign in
+                            with Twitter)</a></li>
+                    <li><a href="#bezahlservices">8. Links zu anderen Websites und Bezahlservices</a></li>
+                    <li><a href="#widerruf">9. Änderung und Widerruf</a></li>
+                    <li><a href="#kontakt">Information und Kontakt</a></li>
+                </ul>
+            </div>
+            <!-- vertical-line -->
+            <hr class="head-line hr-color w-100">
+
+            <!-- topics description -->
+            <div class="topics-des mt-4">
+                <section class="topics-content">
+                    <h2 class="topics-des-title">DATENSCHUTZ & COOKIES</h2>
+                    <p>(Stand 29.03.2021)</p>
+                </section>
+                <section class="topics-content" id="cookies">
+                    <h2>1. Was sind Cookies?</h2>
+                    <p>
+                        Ein „Cookie“ ist eine Folge von Textzeichen, die über unseren Web Server an die Cookie-Datei
+                        Ihres Browsers auf die Festplatte Ihres Computers übermittelt wird. Unserer Website
+                        wird auf diese Weise ermöglicht, Sie wiederzuerkennen, wenn eine (erneute) Verbindung zwischen
+                        unserem Web Server und Ihrem Browser hergestellt wird. Der Hauptzweck eines
+                        Cookies ist die Erkennung der Besucher der Website, zudem die analytische Auswertung von
+                        nichtpersonenbezogenen Daten, um Informationen über Zeit, geografische Lage und
+                        Nutzung unserer Website zu gewinnen. Wir verwenden daher auf unserer Website sowohl sogenannte
+                        „Session Cookies“, die nur temporär bis zum Verlassen unserer Website gespeichert werden, als
+                        auch sogenannte „dauerhafte bzw. tracking Cookies“, die für längere Zeit in der Cookie-Datei
+                        Ihres Browsers verweilen, um bei einer Rückkehr auf die Website Informationen an den Server zu
+                        übermitteln.</p>
+                </section>
+                <section class="topics-content" id="speichern">
+                    <h2>2. Welche Cookies & Daten speichern wir?</h2>
+                    <p>
+                        Wir speichern Cookies ausschließlich zu dem Zweck, einerseits anhand von (nicht-)
+                        personenbezogenen Daten eine Messung und Optimierung des Nutzerverhaltens auf unserer
+                        Website zu ermöglichen und andererseits Ihr Erlebnis auf unserer Website zu verbessern und
+                        Ihnen wiederholte Bestellungen zu erleichtern. Dabei speichern wir einerseits sogenannte
+                        „First Party Cookies“, als auch sogenannte „Third Party Cookies“, die nicht von uns, sondern
+                        von einer dritten Seite, deren Dienste wir in Anspruch nehmen, gesetzt werden.
+                        Im folgenden erhalten Sie einen Überblick über die First und Third Party Cookies, die wir
+                        standardmäßig durch unsere Website setzen:
+                    </p>
+                    <p>
+                        a. Das von uns zu Analysezwecken verwendete Tool ist „Google Analytics“ (siehe Punkt 4). Konkret
+                        wenden wir folgende Analytics-Cookies in der Standardkonfiguration an und speichern diese für
+                        die Dauer von einigen Tagen bis zu 3 Jahren:
+                    </p>
+                    <ul>
+                        <li>_ga</li>
+                        <li>_gat</li>
+                    </ul>
+                    <p>
+                        Diese Cookies werden von Google Analytics gesetzt und ermöglichen uns, die Nutzung unserer
+                        Website zu überwachen und das Nutzererlebnis zu verbessern. Mit deren Hilfe werden Daten
+                        über die Nutzung unserer Website erfasst, die wir zur Erstellung von Berichten und zur
+                        Verbesserung der Website verwenden. Gesammelt werden anonyme Daten wie
+                        die Besucheranzahl, die von einem Nutzer zuletzt besuchte Website und die von ihm auf
+                        unserer Website aufgerufenen Seiten
+                    </p>
+                    <p>
+                        b. Zudem speichern wir folgende Cookies während Ihres Besuchs auf unserer Website:
+                    </p>
+                    <ul>
+                        <li>JSESSIONID</li>
+                    </ul>
+                    <p>
+                        Dieses Cookie identifiziert für uns Ihre aktuelle Session-ID auf unserem Server. Wir setzen
+                        es, sobald Sie unsere Seite aufrufen und löschen es wieder, sobald Sie die Seite verlassen.
+                        Es ermöglicht uns, Nutzdaten wie Ihre User-ID und Ihren Warenkorbinhalt temporär zu
+                        speichern, um einen Einkauf in unserem Webshop zu ermöglichen.
+                    </p>
+                    <ul>
+                        <li>cookieconsent_dismissed</li>
+                    </ul>
+                    <p>
+                        Dieses Cookie ermöglicht uns die Implementierung des Informations- und Zustimmungsbuttons für
+                        die gegenständliche Datenschutzerklärung. Es hält fest, ob Sie unserer Datenschutzerklärung und
+                        sohin der Speicherung von Cookies zustimmen. Wir speichern dieses Cookie für den Fall Ihrer
+                        Zustimmung für die Dauer eines Jahres.
+                    </p>
+                    <ul>
+                        <li>ecpageLoginTimeout</li>
+                    </ul>
+                    <p>
+                        Dieses Cookie setzen wir, sobald Sie unsere Seite aufrufen und löschen es wieder, sobald Sie die
+                        Seite verlassen.
+                    </p>
+                    <ul>
+                        <li>ecpageLoginExit</li>
+                    </ul>
+                    <p>
+                        Dieses Cookie wird einen Tag lang gespeichert.
+                    </p>
+                    <p>
+                        c. Erfasste Daten im Bestellvorgang
+                    </p>
+                    <p>
+                        Von uns werden auch diejenigen Daten erfasst und gespeichert, die Sie uns selbst dadurch
+                        mitteilen, dass Sie einen Account registrieren bzw. Daten während des Bestellvorgangs
+                        in unsere Eingabemasken einfügen oder auf sonstige Art und Weise aktiv mit unserer Website
+                        interagieren.
+                    </p>
+                    <p>
+                        Dabei handelt es sich auch um personenbezogene Daten, die Rückschlüsse auf Ihre Identität
+                        zulassen. Wir speichern während des Bestellvorgangs folgende Daten:
+                    </p>
+                    <ul>
+                        <li>Ihre E-Mailadresse</li>
+                        <li>Ihren Namen</li>
+                        <li>Ihr Land </li>
+                        <li>Ihren Geburtstag</li>
+                        <li>Ihre Telefonnummer</li>
+                        <li>Ihre Adresse</li>
+                        <li>Ihr selbstgewähltes Passwort</li>
+                        <li>Ihre Bestellhistorie, dies beinhaltet sämtliche Details über Art, Umfang und Preis Ihrer
+                        </li>
+
+                    </ul>
+                    <p class="margin-top-less">
+                        bisherigen Bestellungen sowie die während dieser Bestellungen gesammelten Treuepunkte
+                    </p>
+                    <p>
+                        d. Konversionsmessung mit dem Besucheraktions-Pixel von Facebook
+                    </p>
+                    <p>
+                        Mit Ihrer Einwilligung, welche Sie wie folgte erteilt haben „Ich bin mit der Verwendung des
+                        Besucheraktions-Pixels von Facebook einverstanden“ setzen wir innerhalb unseres
+                        Internetauftritts den “Besucheraktions-Pixel” der Facebook Inc. 1601 S. California Ave, Palo
+                        Alto, CA 94304, USA (“Facebook”) ein. So kann das Verhalten von Nutzern nachverfolgt
+                        werden, nachdem diese durch Klick auf eine Facebook-Werbeanzeige auf die Website des
+                        Anbieters weitergeleitet wurden. Dieses Verfahren dient dazu, die Wirksamkeit der
+                        Facebook-Werbeanzeigen für statistische und Marktforschungszwecke auszuwerten und kann dazu
+                        beitragen, zukünftige Werbemaßnahmen zu optimieren.
+                    </p>
+                    <p>
+                        Die erhobenen Daten sind für uns anonym, bieten uns also keine Rückschlüsse auf die
+                        Identität der Nutzer. Allerdings werden die Daten von Facebook gespeichert und verarbeitet,
+                        sodass eine Verbindung zum jeweiligen Nutzerprofil möglich ist und Facebook die Daten für
+                        eigene Werbezwecke, entsprechend der Facebook- Datenverwendungsrichtlinie verwenden kann.
+                        Wenn Sie nicht möchten, dass Facebook die über unseren Webauftritt gesammelten Daten Ihrem
+                        Facebook-Konto zuordnet, müssen Sie sich vor Ihrem Besuch unserer Website bei Facebook
+                        abmelden. Zweck und Umfang der Datenerhebung sowie die weitere Verarbeitung und Nutzung der
+                        Daten durch Facebook als auch Ihre diesbezüglichen
+                        Rechte und Möglichkeiten in den Einstellungen zum Schutz ihrer Privatsphäre entnehmen Sie
+                        bitte den Datenschutzhinweisen von Facebook: <a
+                            href="https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a>.
+                    </p>
+                    <p>
+                        Sie können Facebook sowie dessen Partnern das Schalten von Werbeanzeigen auf und außerhalb
+                        von Facebook ermöglichen. Es kann ferner zu diesen Zwecken ein Cookie auf
+                        Ihrem Rechner gespeichert werden. Eine Einwilligung in den Einsatz des
+                        Besucheraktions-Pixels darf nur von Nutzern, die älter als 13 Jahre alt sind, erklärt
+                        werden. Falls Sie jünger sind, bitten wir Sie, Ihre Erziehungsberechtigten um Erlaubnis zu
+                        fragen. Diese personenbezogenen Daten im Sinne des österreichischen Datenschutzgesetzes
+                        nutzen wir ausschließlich zum in dieser Datenschutzerklärung angegebenen Zweck.
+                    </p>
+
+                </section>
+                <section class="topics-content" id="verwendung">
+                    <h2>3. Weitergabe und Verwendung der Daten</h2>
+                    <p>
+                        Die von Ihnen bereit gestellten Daten sind zur Vertragserfüllung bzw. zur Durchführung
+                        vorvertraglicher Maßnahmen erforderlich. Ohne diese Daten können wir den Vertrag mit
+                        Ihnen nicht abschließen. Nach Abbruch des Einkaufsvorganges werden die bei uns gespeicherten
+                        Daten gelöscht. Im Falle eines Vertragsabschlusses werden sämtliche Daten aus
+                        dem Vertragsverhältnis bis zum Ablauf der steuerrechtlichen Aufbewahrungsfrist (7 Jahre)
+                        gespeichert.
+                    </p>
+                    <p>
+                        Die Daten Name, Anschrift, gekaufte Waren und Kaufdatum werden darüber hinaus gehend bis zum
+                        Ablauf der Produkthaftung (10 Jahre) gespeichert. Die Datenverarbeitung erfolgt auf Basis der
+                        gesetzlichen Bestimmungen des § 96 Abs 3 TKG sowie des Art 6 Abs 1 lit a (Einwilligung) und/oder
+                        lit b (notwendig zur Vertragserfüllung) der DSGVO.
+                    </p>
+                    <p>
+                        a. Die von Ihnen übermittelten Daten werden von uns für die nachstehend angegebenen Zwecke
+                        an in dieser Erklärung angegebene Dritte weitergegeben. Darüber hinaus können
+                        wir Ihre Daten auch dann an Dritte weitergegeben, wenn dies notwendig ist, um einen
+                        gerichtlichen oder behördlichen Auftrag zu erfüllen oder wenn dies von Ihnen selbst
+                        gewünscht wird. Dies umfasst die Weitergabe an unsere Versandpartner und externe
+                        Dienstleister
+                    </p>
+                    <p>
+                        b. Wir bewahren Ihre Daten – sofern nicht an anderer Stelle dieser Datenschutzerklärung für
+                        bestimmte Datensätze etwas anderes bestimmt wird – solange auf, als dies für unsere
+                        Geschäftszwecke bzw. allenfalls aufgrund rechtlicher Bestimmungen notwendig ist.
+                    </p>
+                    <p>
+                        c. Die personenbezogenen Daten, die Sie uns übermitteln, nutzen wir einerseits zu dem Zweck,
+                        Ihre Erfahrung während des Aufenthalts auf unserer Website zu verbessern, andererseits zur
+                        Verwaltung, zur Abwicklung Ihrer Bestellungen in unserem Webshop, zur Fehlerbehebung und um
+                        Ihnen – jeweils nur bei separater Zustimmung – Marketingmaterial,
+                        Newsletter oder sonstige Informationen zuzusenden. Zudem verwenden wir Ihre Daten, um –
+                        siehe Punkt d. – das Nutzerverhalten auf unserer Website zu erfassen und auszuwerten.
+                    </p>
+
+                </section>
+                <section class="topics-content" id="analytics">
+                    <p>
+                        Wir verwenden Google Analytics, einen Webanalysedienst der Google Inc., 1600 Amphitheatre
+                        Parkway, Mountain View, CA 94043, USA. Dieser Dienst verwendet sog. „Cookies“
+                        (s.o.) Die durch Cookies erzeugten Informationen über Ihre Benutzung dieser Website werden
+                        in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
+                    </p>
+                    <p>
+                        Sofern auf dieser Website die IP-Anonymisierung aktiviert wird, wird Ihre IP-Adresse von
+                        Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen
+                        Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vorweg gekürzt. Nur in
+                        bestimmten Fällen wird die volle IP-Adresse an einen Server von Google in den USA
+                        oder einem sonstigen Drittstaat übertragen und dort gekürzt.
+                    </p>
+                    <p>
+                        In unserem Auftrag benutzt Google diese Informationen, um Ihre Nutzung unserer Website
+                        auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um
+                        weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber
+                        dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von
+                        Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google
+                        zusammengeführt.
+                    </p>
+                    <p>
+                        Die Speicherung der von Google Analytics benötigten Cookies kann durch eine entsprechende
+                        Einstellung Ihrer Browser-Software verhindert werden; allerdings kann dies dazu
+                        führen, dass Sie gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich
+                        nutzen können. Die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der
+                        Website bezogenen Daten (inkl. Ihrer IP-Adresse) sowie deren Übermittlung und Verarbeitung
+                        durch Google können Sie verhindern, indem sie das unter dem folgenden Link verfügbare
+                        Browser-Plugin herunterladen und installieren: <a
+                            href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>
+                    </p>
+                    <p>
+                        Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter
+                        <a
+                            href="http://www.google.com/analytics/terms/de.html">http://www.google.com/analytics/terms/de.html</a>
+                        bzw. unter
+                        <a href="https://www.google.de/intl/de/policies/">https://www.google.de/intl/de/policies/</a>.
+                        Sie können die Erfassung durch Google Analytics
+                        verhindern, indem Sie auf folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, das
+                        die zukünftige Erfassung Ihrer
+                        Daten beim Besuch dieser Website verhindert. Beachten Sie jedoch, dass einige Websites
+                        eventuell nicht ordnungsgemäß funktionieren, wenn Sie Cookies nicht akzeptieren.
+                    </p>
+                    <p>
+                        Sollten Sie weiterführende Informationen zu Art, Umfang und Zweck der von Google erhobenen
+                        Daten informieren wollen, empfehlen wir Ihnen, deren Datenschutzbestimmungen
+                        zu lesen.
+                    </p>
+                </section>
+                <section class="topics-content" id="ontaktaufnahme">
+                    <h2>5. Zustimmung zur Kontaktaufnahme und Weitergabe Ihrer Daten zu Werbezwecken</h2>
+                    <p>
+                        Mit Ihrer Zustimmung zu dieser Datenschutzerklärung räumen Sie uns auch das Recht ein, Sie auf
+                        elektronischem Wege unter der von Ihnen angegebenen E-Mailadresse, Telefonnummer oder auf dem
+                        Postweg zu kontaktieren, um Sie über unsere Aktivitäten zu informieren und Werbematerial zu
+                        übermitteln.
+                    </p>
+                    <p>
+                        Diese Zustimmung können Sie jederzeit postalisch unter service@petsfinefood.at oder per
+                        Telefon unter +43 123 456 789 widerrufen. An diese Kontaktmöglichkeit können Sie
+                        gegebenenfalls auch Anfragen in Verbindung mit Ihrem jederzeitigem Recht auf kostenlose
+                        Auskunft, Berichtigung, Sperrung und Löschung Ihrer gespeicherten Daten. Dieses Recht ist
+                        nur insofern eingeschränkt, als wir die Löschung Ihrer Daten zur Wahrung unserer Ansprüche
+                        aussetzen können.
+                    </p>
+                    <p>
+                        Wir geben Ihre Daten nicht zu Werbezwecken an Dritte weiter. Eine Weitergabe der Daten an
+                        Dritte erfolgt nur an Dienstleistungserbringer, die von uns mit der Abwicklung der
+                        angeführten Verwendungszwecke beauftragt werden, insbesondere – wenn Sie unseren Newsletter
+                        abonnieren – an MailChimp, registrierte Marke von „The Rocket Science Group“,
+                        675 Ponce de Leon Ave NE, Suite 5000, Atlanta, GA 30308, die mit dem Versand des Newsletters
+                        beauftragt ist. Mit unserem Newsletter informieren wir Sie über Angebote und neue
+                        Produkte oder Marken. Selbstverständlich wahren wir auch in diesem Zusammenhang Ihre
+                        Privatsphäre und lassen Ihnen unseren Newsletter nur dann zukommen, wenn Sie dies
+                        ausdrücklich wünschen. Sie können diesen auch jederzeit durch anklicken des „Abmelden“ –
+                        Links abbestellen, der sich in jedem Newsletter befindet.
+                    </p>
+                </section>
+                <section class="topics-content" id="social-sharing">
+                    <p>
+                        a. Umfang der Verarbeitung personenbezogener Daten
+                    </p>
+                    <p>
+                        Als „Social Sharing“ bezeichnet man das Teilen von Inhalten im Internet mit Kontakten aus
+                        sozialen Netzwerken wie Facebook, Twitter oder Google. Wenn Sie Websites (auch mobil)
+                        von Petsfinefood aufrufen, die eine solche Schaltfläche („Widget“) enthalten, haben Sie die
+                        Möglichkeit, einen selbstbestimmten Hinweistext sowie eine Kurz-URL der besuchten Seite an
+                        Ihre Kontakte aus sozialen Netzwerken bei Facebook, Twitter oder Google zu versenden. Wenn
+                        Sie mit dem Widget interagieren, zum Beispiel den „Teilen“-Button betätigen,
+                        sowie einen Kommentar abgeben, wird die entsprechende Information von Ihrem Browser direkt
+                        an das jeweilig gewählte soziale Netzwerk übermittelt und dort gespeichert. Wenn
+                        Sie nicht möchten, dass die Webseiten von Petsfinefood Daten über Sie sammeln, müssen Sie
+                        sich vor Ihrem Besuch der Websites aus Ihren Social-Media-Konten ausloggen.
+                    </p>
+                    <p>
+                        b. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
+                    </p>
+                    <p>
+                        Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des Nutzers
+                        Art. 6 Abs. 1 lit. a DSGVO. Zugleich ist zusätzliche Rechtsgrundlage für die Verarbeitung der
+                        personenbezogenen Daten der Nutzer Art. 6 Abs. 1 lit. f DSGVO.
+                    </p>
+                    <p>
+                        c. Zweck der Datenverarbeitung
+                    </p>
+                    <p>
+                        Die Verarbeitung der personenbezogenen Daten der Nutzer ermöglicht uns, die Interaktion
+                        zwischen den verschiedenen Websites kundenorientiert zu gestalten. In diesen Zwecken liegt
+                        unser berechtigtes Interesse in der Verarbeitung der Daten nach Art. 6 Abs. 1 lit. f DSGVO.
+                        Durch die Anonymisierung der IP-Adresse wird dem Interesse der Nutzer am
+                        Schutz ihrer personenbezogenen Daten hinreichend Rechnung getragen.
+                    </p>
+                    <p>
+                        d. Dauer der Speicherung
+                    </p>
+                    <p>
+                        Die Daten werden gelöscht, sobald sie für unsere Aufzeichnungszwecke nicht mehr benötigt werden.
+                    </p>
+                    <p>
+                        e. Widerspruchs- und Beseitigungsmöglichkeit
+                    </p>
+                    <p>
+                        Wenn Sie nicht möchten, dass soziale Netzwerke über den Petsfinefood Internetauftritt oder
+                        die mobilen Applikationen von Petsfinefood Daten über Sie sammeln, müssen Sie sich
+                        vor Ihrem Besuch des FeinenFutter Internetauftritts oder der mobilen Applikationen von
+                        Petsfinefood aus Ihren Social-Media-Konten ausloggen.
+                    </p>
+                </section>
+                <section class="topics-content" id="facebook-connect">
+                    <h2>7. Social Logins (Facebook-Connect“, „Google Sign In“ und „Sign in with Twitter)</h2>
+                    <p>
+                        a. Umfang der Verarbeitung personenbezogener Daten
+                    </p>
+                    <p>
+                        Wenn Sie von der Möglichkeit des Social Login über das soziale Netzwerk Facebook Gebrauch
+                        machen, werden von diesem sozialen Netzwerk folgende Daten an uns übermittelt:
+                    </p>
+                    <ul class="bullet-less ml-0">
+                        <li>E-Mail-Adresse</li>
+                        <li>Name</li>
+                        <li>Geschlecht</li>
+                        <li>Profilbildlink</li>
+                        <li>ID</li>
+                        <li>Geburtsdatum</li>
+                        <li>Diese Daten werden bei uns gespeichert und nach Maßgabe dieser Datenschutzerklärung genutzt.
+                            Petsfinefood gibt an soziale Netzwerke keine Daten weiter</li>
+                    </ul>
+                    <p>
+                        b. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
+                    </p>
+                    <p>
+                        Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des
+                        Nutzers Art. 6 Abs. 1 lit. a DSGVO. Schließlich ist auch zusätzliche Rechtsgrundlage für die
+                        Verarbeitung der personenbezogenen Daten der Nutzer Art. 6 Abs. 1 lit. f DSGVO
+                    </p>
+                    <p>
+                        c. Zweck der Datenverarbeitung
+                    </p>
+                    <p>
+                        Die Nutzung der Daten ist zum einen für das Bereithalten bestimmter Inhalte und Leistungen
+                        auf unserer Website, zum anderen zur Erfüllung eines Vertrages mit dem Nutzer oder
+                        zur Durchführung vorvertraglicher Maßnahmen erforderlich. In diesen Zwecken liegt unser
+                        berechtigtes Interesse in der Verarbeitung der Daten nach Art. 6 Abs. 1 lit. f DSGVO.
+                        Durch die Anonymisierung der IP-Adresse wird dem Interesse der Nutzer am Schutz ihrer
+                        personenbezogenen Daten hinreichend Rechnung getragen.
+                    </p>
+                    <p>
+                        d. Dauer der Speicherung
+                    </p>
+                    <p>
+                        Die Daten werden gelöscht, sobald sie für unsere Aufzeichnungszwecke nicht mehr benötigt werden.
+                    </p>
+                    <p>
+                        e. Widerspruchs- und Beseitigungsmöglichkeit
+                    </p>
+                    <p>
+                        Als Nutzer haben sie jederzeit die Möglichkeit, die Registrierung aufzulösen. Die über Sie
+                        gespeicherten Daten können Sie jederzeit abändern lassen. Loggen Sie sich hierzu einfach
+                        in Ihr Kundenkonto ein oder wenden sich mit Ihrer Anfrage an den Kundenservice unter
+                        service@petsfinefood.at .
+                    </p>
+                    <p>
+                        Sind die Daten zur Erfüllung eines Vertrages oder zur Durchführung vorvertraglicher Maßnahmen
+                        erforderlich, ist eine vorzeitige Löschung der Daten nur möglich, soweit nicht vertragliche oder
+                        gesetzliche Verpflichtungen einer Löschung entgegenstehen.
+                    </p>
+                    <p>
+                        Weitere Informationen zu „Facebook-Connect“, „Google Sign In“ und „Sign in with Twitter“ und den
+                        Privatsphäre-Einstellungen entnehmen Sie bitte den nachfolgenden Datenschutzhinweisen und den
+                        Nutzungsbedingungen.
+                    </p>
+                    <p>
+                        Facebook-Connect: <a href=" https://www.facebook.com/privacy/explanation">
+                            https://www.facebook.com/privacy/explanation</a><br>
+                        Google Sign In: <a
+                            href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a><br>
+                        Sign in with Twitter: <a
+                            href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a>
+                    </p>
+                </section>
+                <section class="topics-content" id="bezahlservices">
+                    <h2>8. Links zu anderen Websites und Bezahlservices</h2>
+                    <p>
+                        a. Auf unserer Website setzen wir Links zu anderen Websites; dies erfolgt lediglich zu
+                        Informationszwecken. Diese Websites stehen nicht unter unserer Kontrolle und fallen daher
+                        nicht unter die Bestimmungen dieser Datenschutzerklärung. Sollten Sie einen Link aktivieren
+                        ist es möglich, dass der Betreiber dieser Website Daten über Sie erhebt und diese gemäß
+                        seiner Datenschutzerklärung, die von unserer abweichen kann, verwendet.
+                    </p>
+                    <p>
+                        b. Wenn Sie in unserem Webshop Bestellungen tätigen, werden Sie je nach gewählter
+                        Zahlungsart auf die Website eines Bezahlservices weitergeleitet, der möglicherweise Daten
+                        über Sie erhebt. Wir kooperieren mit folgenden Bezahlservices:
+                    </p>
+                    <ul>
+                        <li>Paypal</li>
+                    </ul>
+                    <p>
+                        Dies ist ein Service der PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal,
+                        L-2449 Luxemburg. Deren AGB finden Sie unter <a
+                            href="https://www.paypal.com/at/webapps/mpp/ua/">https://www.paypal.com/at/webapps/mpp/ua/</a>
+                        useragreement-full , deren Datenschutzbestimmungen unter
+                        <a
+                            href="https://www.paypal.com/at/webapps/mpp/ua/privacy-full">https://www.paypal.com/at/webapps/mpp/ua/privacy-full</a>.
+                        Bitte vergewissern Sie sich, dass Sie
+                        mit den Nutzungs- und
+                        Datenschutzbestimmungen dieses Dienstleisters einverstanden sind, bevor Sie diesen Service
+                        nutzen.
+                    </p>
+                    <ul>
+                        <li>Wirecard</li>
+                    </ul>
+                    <p>
+                        Wirecard prüft und bewertet Ihre Datenangaben und pflegt bei berechtigtem Interesse und
+                        Anlass einen Datenaustausch mit anderen Unternehmen und Wirtschaftsauskunfteien.
+                        Ihre Personenangaben werden in Übereinstimmung mit den geltenden Datenschutzbestimmungen und
+                        entsprechend den Angaben in den Datenschutzbestimmungen von Wirecard behandelt: Datenschutz
+                        von Wirecard
+                    </p>
+                </section>
+                <section class="topics-content" id="widerruf">
+                    <h2>9. Änderung und Widerruf</h2>
+                    <p>
+                        Sie können Ihre Zustimmung zu dieser Datenschutzerklärung jederzeit widerrufen. Danach ist
+                        jede weitere Verwendung Ihrer Daten unzulässig und diese sind von uns zu löschen;
+                        zudem ist es dann unzulässig, Sie auf elektronischem Wege unter der von Ihnen angegebenen
+                        E-Mailadresse zu kontaktieren
+                    </p>
+                    <p>
+                        Sie können die uns übermittelten Daten auch zu jedem Zeitpunkt per Mail oder Telefon abändern.
+                    </p>
+                    <p>
+                        10. Ihre Rechte als Betroffener
+                    </p>
+                    <p>
+                        Nach der geltenden Rechtslage haben Sie betreffend Ihrer personenbezogenen Daten das Recht
+                    </p>
+                    <p>
+                        a. auf Auskunft, Berichtigung oder Löschung, Einschränkung der Verarbeitung und
+                        Datenübertragbarkeit.
+                    </p>
+                    <p>
+                        b. sofern Ihre Daten auf Grundlage unseres berechtigten Interesses verarbeitet werden, aus
+                        Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit der Verarbeitung
+                        Sie betreffender Daten zu widersprechen; dies gilt insbesondere für die Verarbeitung von
+                        Daten zum Zwecke der Direktwerbung.
+                    </p>
+                    <p>
+                        c. eine erteilte Einwilligung zur Verarbeitung Ihrer Daten mit Wirkung für die Zukunft zu
+                        widerrufen, wenn die Verarbeitung auf Ihrer Einwilligung basiert
+                    </p>
+                    <p>
+                        d. auf Beschwerde, welches bei der zuständigen Aufsichtsbehörde (in Österreich: Österreichische
+                        Datenschutzbehörde) geltend gemacht werden kann.
+                    </p>
+                </section>
+                <section class="topics-content" id="kontakt">
+                    <h2>Information und Kontakt</h2>
+                    <p>
+                        Wenn Sie Auskünfte über die zu Ihrer Person gespeicherten Daten, deren Herkunft, Empfänger
+                        und den Zweck der Speicherung wünschen, oder sonstige Fragen, Anmerkungen
+                        oder Anfragen zu der von uns betriebenen Website haben, kontaktieren Sie uns bitte an der
+                        unten angeführten Adresse.
+                    </p>
+                    <p>
+                        Pets fine food GmbH <br>
+                        Aspettengasse 19 <br>
+                        2380 Perchtoldsdorf, Österreich
+                    </p>
+                    <p>
+                        Telefon: +43 123 456 789 <br>
+                        E-Mail: service@petsfinefood.com
+                    </p>
+                </section>
+            </div>
+        </div>
+        <!-- contact-option -->
+           
+             <div class="contact-option text-center">
+                <h2 class="text-center">Wir wollen dir mehr Service bieten, also ruf gerne an oder schreib uns!</h2>
+                <div class="contact-option-list auto">
+                    <a href="mailto:service@petsfinefood.com">
+                        <i class="fa fa-envelope-o"></i>
+                        service@petsfinefood.com
+                    </a>
+                    <a href="tel:+43 1 2345 67 89">
+                        <i class="fas fa-mobile-alt"></i>
+                        +43 1 2345 67 89
+                    </a>
+                    <span>
+                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    </span>
+                </div>
+            </div>
+
+        <!--main-->
+        <!-- Payment method -->
+    <div class="payment-method">
+        <div class="container">
+            <div class="payment-gateway">
+                <img src="./img/Visa_logo.png" alt="">
+                <img src="./img/SepaLogo-s.png" alt="">
+                <img src="./img/PayPal-grau.png" alt="">
+                <img src="./img/Mastercard-logo-s.png" alt="">
+                <img src="./img/kaufaufrechnung.png" class="" alt="">
+                <img src="./img/Amazon_Pay_logo-gray.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav order-3">
+                    <img src="./img/Logo-round-footer.svg" class="footer-logo img-fluid" alt="">
+                    <p class="copytext">copyright 2021: pets fine food</p>
+                </div>
+                <!-- desktop Footer Nav -->
+                <div class="footer-nav footer-desktop-menu footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>pet fine food <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <img src="./img/file-certificate-icon.svg" height="16px" alt="">
+                                BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                        </nav>
+                    </div>
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+                <!-- mobile footer menu -->
+                <div class="mobile-footer footer-nav footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                            <a href="#">Versandkosten</a>
+                            <a href="">Kundenservice</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-nav order-1">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/pet-script.js"></script>
+
+</body>
+
+</html>

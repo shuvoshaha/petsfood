@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pets food">
+    <meta name="description" content="pets fine food">
+    <title>Pets fine food</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Plugins Customize CSS -->
+    <link rel="stylesheet" href="./css/plugins.customize.css">
+</head>
+
+<body>
+       <!-- Header -->
+       <div class="header">
+        <!-- Top Nav -->
+        <div class="top-nav d-flex align-items-center">
+            <div class="container">
+                <div class="nav-wrapper sm-d-none d-flex align-items-center justify-content-between">
+                    <!-- Top Social-Media-links -->
+                    <div class="social-media-links ">
+                        <nav class="nav d-flex">
+                            <a href="#" class="social-links"><i class="fa fa-phone"></i>
+                                <span>+43 1 234 567 890</span></a>
+                            <a href="#" class="social-links"><i class="fa fa-envelope-o"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
+                        </nav>
+                    </div>
+                    <!-- Desktop version top Nav-->
+                    <ul class="nav d-flex justify-content-end align-items-center desktop-v">
+                        <li class="nav-item" id="dropdown-popup">
+                            <a class="nav-link top-nav-link" href="./login.html"> 
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon" >
+                                 LOGIN </a>
+                            <!-- dropdown -->
+                            <div class="popup">
+                                <form action="index.html">
+                                    <input type="text" required name="email" autocomplete="off"
+                                        placeholder="Benutzername*" />
+                                    <input type="password" required name="password" placeholder="Passwort*" />
+                                    <span class="required-txt">* Pflichtfeld</span>
+
+                                    <span class="action-btn">
+                                        <button type="button" class="login-btn">ANMELDEN</button>
+                                        <a href="#">Passwort vergessen?</a>
+                                    </span>
+                                </form>
+                                <hr>
+
+                                <!-- optional-login -->
+                                <div class="optional-login">
+                                    <p>oder LOGIN mit</p>
+                                    <span>
+                                        <a href="#" class="facebook round">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="#" class="google round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#" class="apple round">
+                                            <i class="fa fa-apple"></i>
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <hr>
+                                <div class="dropdown-foot">
+                                    <p>Noch kein Konto?</p>
+                                    <a href="#">JETZT REGISTRIEREN</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav-link" href="./cart.html">
+                                <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                                Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link top-nav-link" href="./wishlist.html">
+                                <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                                Wunschliste
+                            </a>
+                        </li>
+                        <li class="lang d-flex">
+                            <a class="lang-de" href="#">DE</a>
+                            <span class="seperator">|</span>
+                            <a class="lang-en" href="#">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- Top nav end -->
+
+        <!-- Primary Nav mobile -->
+        <div class="mobile-main-nav d-none main-nav mt-2">
+            <nav class="navbar navbar-expand-lg">
+                <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" class="brand-logo" alt="">
+                </a>
+
+                <a href="#" class="shopping-cart">
+                    <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
+                    <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hund.html">Hund</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Katze</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BARF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Zubehör</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./abo-info.html">ABO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Primary Nav desktop -->
+        <div class="desktop-main-nav main-nav mt-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.PNG" class="brand-logo" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link nav-active" href="./hund.html">Hund</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Katze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BARF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Zubehör</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="container">
+            <hr class="header-line">
+            <!-- breadcrumbs -->
+            <div class="d-flex breadcum pt-1 pb-3">
+                <p>Sie befinden sich hier: &nbsp;</p>
+                <a href="/index.html">Home</a>
+                <a href="/cart.html">Warenkorb</a>
+            </div>
+
+            <h2 class="page-title text-upper pt-3 pb-4">WARENKORB</h2>
+        </div>
+
+        <!-- cart -->
+        <div class="cart  w-100 gray-bg">
+            <div class="container">
+                <h3 class="p-style d-cart-product-counter py-3 o"><strong>6 Artikel</strong> im Warenkorb</h3>
+                <!-- ribon -->
+               
+                <div class="cart-inner  d-flex justify-content-between w-100">
+                    <!--  mobile-v cart product subtotal price -->
+                    <div class="mobile-v-subtotal d-none w-100">
+                        <div class="cart-product-subtotal w-100 bg-light-orange">
+                            <div>
+                                <h2>ÜBERBLICK</h2>
+                                <div class="orange-line my-2"></div>
+                                <div class="sub-total d-flex justify-content-between align-items-center p-style">
+                                    <p>Zwischensumme</p>
+                                    <p><strong>€ 142,70</strong></p>
+                                </div>
+                                <div class="shipping-cost d-flex justify-content-between align-items-center my-2 p-style">
+                                    <p>Standardversand*</p>
+                                    <p><strong>€ 4,50</strong></p>
+                                </div>
+                                <div class="mst-vat d-flex justify-content-between align-items-center p-style">
+                                    <p>MwSt. <strong>20%</strong></p>
+                                    <p><strong>€ 19,16</strong></p>
+                                </div>
+    
+                                <div class="orange-line my-2"></div>
+    
+                                <div class="total-price d-flex justify-content-between align-items-center p-style">
+                                    <div>
+                                        <p>Gesamtbetrag</p>
+                                        <p>inkl. MwSt.</p>
+                                    </div>
+                                    <h3><strong>€ 172,70</strong></h3>
+                                </div>
+                                <div class="cart-btn-d-block mt-4 mb-2">
+                                    <button class="btn-blue">ZUR KASSE</button>
+                                    <button class="btn-orange mt-2">ALS ABO BESTELLEN</button>
+                                </div>
+                                <p class="p-style text-center">Infos rund ums Abo <a href="#" class="underline">HIER</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product list-->
+                    <div class="cart-archive-product-list mr-3 w-70">
+                        <!-- mobile-v product counter -->
+                        <h3 class="p-style d-none m-cart-product-counter py-3 o"><strong>6 Artikel</strong> im Warenkorb</h3>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-1.jpg" alt="">
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Dog‘s Love – Welpenfutter</a>
+                                        </h3>
+                                        <a href="#" class="d-details-link underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="cart-product-variable d-flex align-items-center">
+                                       <div class="d-flex">
+                                            <p class="p-style mr-2">Packungsgröße</p>
+                                            <div class="cart-indicator ml-2">
+                                                <select name="weight" id="">
+                                                    <option value="300">300g</option>
+                                                    <option value="600">600g</option>
+                                                    <option value="900">900g</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                      <div class="d-flex">
+                                            <p class="p-style mx-2">Anzahl</p>
+                                            <div class="cart-indicator quantity-select">
+                                                <select name="quantity" id="">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                      </div>
+                                        <a href="#" class="m-details-link d-none underline details-link">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                        <img src="./img/glutenfrei.png" alt="">
+                                        <img src="./img/regional.png" alt="">
+                                        <img src="./img/vegan.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-4.jpg" alt="">
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Royal Cannin – LECKER
+                                                BISSEN für besonders sensible
+                                                Hunde mit Pferdefleisch</a>
+                                        </h3>
+                                        <a href="#" class="d-details-link underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="cart-product-variable d-flex align-items-center">
+                                       <div class="d-flex">
+                                            <p class="p-style mr-2">Packungsgröße</p>
+                                            <div class="cart-indicator ml-2">
+                                                <select name="weight" id="">
+                                                    <option value="300">300g</option>
+                                                    <option value="600">600g</option>
+                                                    <option value="900">900g</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                      <div class="d-flex">
+                                            <p class="p-style mx-2">Anzahl</p>
+                                            <div class="cart-indicator quantity-select">
+                                                <select name="quantity" id="">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                      </div>
+                                        <a href="#" class="m-details-link d-none underline details-link">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                        <img src="./img/glutenfrei.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-2.jpg" alt="">
+                                    <span class="d-none discount">-10%</span>
+                                    <span class=" d-none info">
+                                        <i class="fa fa-info"></i>
+                                    </span>
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Dog‘s Love – Welpenfutter</a>
+                                        </h3>
+                                        <a href="#" class="d-details-link underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="cart-product-variable d-flex align-items-center">
+                                       <div class="d-flex">
+                                            <p class="p-style mr-2">Packungsgröße</p>
+                                            <div class="cart-indicator ml-2">
+                                                <select name="weight" id="">
+                                                    <option value="300">300g</option>
+                                                    <option value="600">600g</option>
+                                                    <option value="900">900g</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                      <div class="d-flex">
+                                            <p class="p-style mx-2">Anzahl</p>
+                                            <div class="cart-indicator quantity-select">
+                                                <select name="quantity" id="">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                      </div>
+                                        <a href="#" class="m-details-link d-none underline details-link">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/bio.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style text-italic"><del>€ 12,50</del></p>
+                                    <span class="product-discount">–10%</span>
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-archive-product  d-flex mb-3">
+                            <div class="cart-product-section-1 d-flex">
+                                <div class="cart-product-thumb">
+                                    <img src="./img/product-1.jpg" alt="">
+                                </div>
+                                <div class="cart-product-details">
+                                    <div>
+                                        <h3>
+                                            <a href="#">Dog‘s Love – Welpenfutter</a>
+                                        </h3>
+                                        <a href="#" class="d-details-link underline details-link">DETAILS</a>
+                                    </div>
+                                    <div class="cart-product-variable d-flex align-items-center">
+                                       <div class="d-flex">
+                                            <p class="p-style mr-2">Packungsgröße</p>
+                                            <div class="cart-indicator ml-2">
+                                                <select name="weight" id="">
+                                                    <option value="300">300g</option>
+                                                    <option value="600">600g</option>
+                                                    <option value="900">900g</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                      <div class="d-flex">
+                                            <p class="p-style mx-2">Anzahl</p>
+                                            <div class="cart-indicator quantity-select">
+                                                <select name="quantity" id="">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                      </div>
+                                        <a href="#" class="m-details-link d-none underline details-link">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product-section-2">
+                                <div class="cart-archive-right-head d-flex justify-content-between">
+                                    <div class="c-product-feature mr-3">
+                                        <img src="./img/glutenfrei.png" alt="">
+                                        <img src="./img/regional.png" alt="">
+                                        <img src="./img/vegan.png" alt="">
+                                    </div>
+                                    <button class="c-trash-btn"><i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="c-archive-price ml-auto">
+                                    <p class="p-style"><strong>€ 12,50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- back to shop page link -->
+                        <p class="p-style text-center my-5">
+                            <a href="#" class="underline">
+                               <strong>Zurück zum SHOP</strong>
+                            </a></p>
+                    </div>
+                    <!--  desktop cart product subtotal price -->
+                    <div class="cart-archive-subtotal-section  w-30 position-relative">
+                        <div class="ribon">
+                            <p class="mb-2">Für die Gesundheit- meines besten Freundes</p>
+                            <p class="text-orange">biologisches Futter, nachhaltig geliefert</p>
+                        </div>
+                        <div class="desktop-v-subtotal cart-product-subtotal w-100 bg-light-orange">
+                            <div>
+                                <h2>ÜBERBLICK</h2>
+                                <div class="orange-line my-2"></div>
+                                <div class="sub-total d-flex justify-content-between align-items-center p-style">
+                                    <p>Zwischensumme</p>
+                                    <p><strong>€ 142,70</strong></p>
+                                </div>
+                                <div class="shipping-cost d-flex justify-content-between align-items-center my-2 p-style">
+                                    <p>Standardversand*</p>
+                                    <p><strong>€ 4,50</strong></p>
+                                </div>
+                                <div class="mst-vat d-flex justify-content-between align-items-center p-style">
+                                    <p>MwSt. <strong>20%</strong></p>
+                                    <p><strong>€ 19,16</strong></p>
+                                </div>
+    
+                                <div class="orange-line my-2"></div>
+    
+                                <div class="total-price d-flex justify-content-between align-items-center p-style">
+                                    <div>
+                                        <p>Gesamtbetrag</p>
+                                        <p>inkl. MwSt.</p>
+                                    </div>
+                                    <h3><strong>€ 172,70</strong></h3>
+                                </div>
+                                <div class="cart-btn-d-block mt-4 mb-2">
+                                    <button class="btn-blue">ZUR KASSE</button>
+                                    <button class="btn-orange mt-2">ALS ABO BESTELLEN</button>
+                                </div>
+                                <p class="p-style text-center">Infos rund ums Abo <a href="#" class="underline">HIER</a></p>
+                            </div>
+                        </div>
+                        <div class="product-deliver-cost-info mt-3">
+                            <p class="p-style text-italic">
+                                *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht von 59 kg betragen die
+                                Lieferkosten € 4,50
+                                pro Lieferung.
+                                Ab einem Bestellwert von € 50,– ist die Lieferung gratis,
+                                ausgenommen das Liefergewicht übersteigt 60 kg. In diesem Fall muss über einen
+                                speziellen Lieferservice geliefert
+                                werden und es fallen pro Lieferung € 12,– an
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--main-->
+
+     <!-- Footer -->
+     <footer class="py-5">
+        <div class="container">
+            <div class="rows">
+                <!-- Footer logo -->
+                <div class="footer-nav order-3">
+                    <img src="./img/footer-logo.png" class="footer-logo img-fluid" alt="">
+                </div>
+                <!-- desktop Footer Nav -->
+                <div class="footer-nav footer-desktop-menu footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>pet fine food <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                        </nav>
+                    </div>
+                    <div class="footer-navs">
+                        <h3>Kundenservice</h3>
+                        <nav class="footer-nav-2">
+                            <a href="#">Versandkosten</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+                <!-- mobile footer menu -->
+                <div class="mobile-footer footer-nav footer-menu order-2">
+                    <div class="footer-navs">
+                        <h3>healthy pet <span>shop</span></h3>
+                        <nav class="footer-nav-2">
+                            <a href="#" class="menu-active">
+                                <i class="fa fa-file"></i> BIO-Zertifikat
+                            </a>
+                            <a href="./ueberUns.html">Über uns</a>
+                            <a href="">Qualität</a>
+                            <a href="./kontakt.html">Kontakt</a>
+                            <a href="./partner.html">Partner</a>
+                            <a href="#">Versandkosten</a>
+                            <a href="">Kundenservice</a>
+                            <a href="">Zahlungsarten</a>
+                            <a href="./datenschutz-sicherheit.html">Datenschutz &<br> Sicherheit</a>
+                            <a href="">AGBs</a>
+                            <a href="./impressum.html">Impressum</a>
+                            <a href="./faq.html">FAQ</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-nav order-1">
+                    <div class="newsletter">
+                        <h2> <i class="fa fa-envelope"></i> Newsletter</h2>
+                        <h4>Jetzt kostenlos die besten Angebote und Aktionen per E-Mail erhalten.</h4>
+                        <form action="index.html" method="post">
+                            <input required type="email" name="email" class="text-center"
+                                placeholder="E-Mail Adresse hier eingeben!">
+                            <button class="newsletter-btn">Jetzt abonnieren</button>
+                        </form>
+                        <p class="my-3">Abmelden jederzeit möglich!</p>
+                        <p>Mit der Anmeldung akzeptieren Sie unsere Datenschutzbestimmungen</p>
+                    </div>
+                </div>
+            </div>
+            <p class="copytext">copyright 2021: pets fine food</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/pet-script.js"></script>
+
+</body>
+</html>
