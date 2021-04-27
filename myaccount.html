@@ -594,12 +594,12 @@
             <div class=" m-myacc-accordion">
                 <!-- address -->
                 <div class="accordion-tab">
+                    <input type="checkbox" name="acc-acordian" id="acc-address">
                     <label for="acc-address">
                         Startseite
 
                     </label>
-                    <input type="checkbox" name="acc-acordian" id="acc-address">
-                    <!-- accordion body-->
+                    <!-- accordion panel-->
                     <div class="accordion-body">
                         <h3>Willkommen!</h3>
                         <p>Maxima Mustermann</p>
@@ -634,13 +634,13 @@
                 </div>
                 <!-- subscription -->
                 <div class="accordion-tab">
+                    <input type="checkbox" class="c-class" name="acc-acordian" id="acc-subscription">
                     <label for="acc-subscription">
                         Bestellungen /
                         <img src="./img/repeat-icon.png" height="18px" alt="">
                         Abo
                     </label>
-                    <input type="checkbox" class="c-class" name="acc-acordian" id="acc-subscription">
-                    <!-- accordion -->
+                    <!-- accordion panel -->
                     <div class="accordion-body subs-tab">
                         <h3>ABO</h3>
                         <div class="subscription-history">
@@ -1077,12 +1077,12 @@
                 </div>
                 <!-- location -->
                 <div class="accordion-tab">
+                    <input type="checkbox" name="acc-acordian" id="acc-location">
                     <label for="acc-location">
                         <i class="fas fa-map-marker"></i>
                         Meine Adresse
                     </label>
-                    <input type="checkbox" name="acc-acordian" id="acc-location">
-                    <!-- accordion -->
+                    <!-- accordion panel -->
                     <div class="accordion-body">
                         <h3> Meine Adresse</h3>
                         <p>Maxima Mustermann</p>
@@ -1117,12 +1117,12 @@
                 </div>
                 <!-- password -->
                 <div class="accordion-tab">
+                    <input type="checkbox" name="acc-acordian" class="account-password" id="acc-password">
                     <label for="acc-password">
                         <i class="fas fa-key"></i>
                         Passwort
                     </label>
-                    <input type="checkbox" name="acc-acordian" class="account-password" id="acc-password">
-                    <!-- accordion -->
+                    <!-- accordion panel -->
                     <div class="accordion-body">
                         <h3>Kennwort ändern</h3>
                         <div class="password-change-form mt-5 w-100">
@@ -1145,6 +1145,17 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- mobile-v social link -->
+        <div class="d-none m-social-media-links ">
+            <nav class="nav d-flex justify-content-center">
+                <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-envelope-o"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
+            </nav>
         </div>
     </div>
     <!--main end-->
@@ -1235,7 +1246,6 @@
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/slick.min.js"></script>
-
     <!-- Custom JS -->
     <script src="./js/pet-script.js" charset="utf-8"></script>
 

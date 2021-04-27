@@ -64,6 +64,12 @@
 
 @media screen and (max-width: 991px) {
 
+    /*
+==========  mobile-v social link ===========*/
+    .m-social-media-links {
+        display: block !important;
+    }
+
     /* ============ my account page =========== */
     .myaccount {
         display: none !important;
@@ -336,22 +342,23 @@
         text-align: center;
     }
 
-    .form-step-1-inner{
+    .form-step-1-inner {
         width: 100% !important;
     }
-    .payment-gateway-method{
+
+    .payment-gateway-method {
         width: 50% !important;
     }
 
-    .mobile-v-pvci{
+    .mobile-v-pvci {
         display: block !important;
     }
 
-    .bg-light-orange{
+    .bg-light-orange {
         padding: 1rem !important;
     }
 
-    .desktop-v-pvci{
+    .desktop-v-pvci {
         display: none !important;
     }
 
@@ -597,6 +604,8 @@
 
 @media screen and (max-width: 767px) {
 
+
+
     body {
         background: var(--gray-color) !important;
     }
@@ -773,9 +782,84 @@
         display: none !important;
     }
 
+    /*
+    ================ hund page =============
+    */
+    .shop-wrapper {
+        flex-direction: column !important;
+    }
+
+    .filter,
+    .shop-product {
+        width: 100% !important;
+    }
+
+    .checkbox {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .shop {
+        padding: 1rem 0 4rem !important;
+    }
+
+    .guarantee-liflet {
+        display: none !important;
+    }
+
+    .sm-d-none {
+        display: none !important;
+    }
+
+    .shop-filter {
+        padding: 1rem 0 !important;
+        margin-bottom: 1rem;
+        height: 100px;
+        overflow: hidden;
+        transition: var(--delay);
+    }
+
+    .filter-btn {
+        display: block !important;
+    }
+
+    .reset-btn {
+        width: 100%;
+    }
+
+    .product {
+        width: 100% !important;
+    }
+
+    .product-head img {
+        width: 100% !important;
+    }
+
+    .feature img {
+        width: 40px !important;
+    }
+
+    .shop-product {
+        margin-left: 0 !important;
+    }
+
+    .filter-toggle {
+        display: block !important;
+    }
+
+    .hund-line {
+        display: block !important;
+        height: 1px;
+        background: var(--borderColor);
+        margin: 1rem 0;
+        ;
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {
+
+
 
 
     /* ====== checkout page =======*/
@@ -807,11 +891,11 @@
         padding-left: 1rem;
     }
 
-    .edit-cart-link{
+    .edit-cart-link {
         padding: 2rem !important;
     }
 
-    
+
 
     /*========== homoe page=============*/
 
@@ -885,7 +969,7 @@
         display: block !important;
     }
 
-    .reset-btn{
+    .reset-btn {
         width: 100%;
     }
 
@@ -922,8 +1006,6 @@
     .right-task img {
         width: 200px !important;
         height: 200px !important;
-        margin-top: -67px;
-
     }
 
     /* ========= cart page =============*/

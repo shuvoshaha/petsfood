@@ -1516,8 +1516,6 @@ a {}
 /*
 =====Radio btn======*/
 
-
-
 .radio-btn {
     background: #fff;
     width: 100%;
@@ -1708,11 +1706,12 @@ a {}
 
 .filter-toggle {
     padding: 5px 10px;
-    width: 100%;
+    max-width: 100%;
     font-weight: bold;
     border-radius: 8px;
     color: white;
-    cursor: pointer;
+    display: block;
+    text-align: center;
 }
 
 /*
@@ -1818,11 +1817,9 @@ Single Product Page
     border: 1px solid var(--borderColor);
 }
 
-
 .product-weight-wishlist .weight span {
     margin-right: 16px !important;
 }
-
 
 /*
 ====== Single Product footer========
@@ -2040,18 +2037,6 @@ Single Product Page
     font-size: 26px;
 }
 
-.product-quantity {}
-
-
-.product-quantity .add-to-cart {
-    /* padding: 7px 42px; */
-    /* font-size: 18px; */
-}
-
-.m-product-f-description .m-des-accordion {
-    margin-top: 5rem;
-}
-
 .m-product-f-description .m-des-accordion input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -2059,11 +2044,7 @@ Single Product Page
 
 .m-product-f-description .m-des-accordion label {
     display: flex;
-    flex-direction: column;
     position: relative;
-}
-
-.m-product-f-description .m-des-accordion label span {
     background: var(--medium-orange-1);
     padding: 1rem;
     width: 85%;
@@ -2071,16 +2052,29 @@ Single Product Page
     font-weight: 600;
     color: var(--text-color);
     margin-top: 1px;
-    position: absolute;
-    top: -57px;
+    justify-content: center;
+    margin: auto;
+}
+
+.m-des-accordion input[type="checkbox"]:checked~label {
+    background: var(--gray-color);
+    border-top: 1px solid var(--orange);
+    border-right: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
 
 }
 
-.ms-btn::after {
+.m-des-accordion label::after {
     content: '\f107';
     font-family: FontAwesome;
-    float: right;
     font-size: 18px;
+    position: absolute;
+    right: 20px;
+}
+
+.m-des-accordion input[type="checkbox"]:checked~label::after {
+    content: '\f106';
+    font-family: FontAwesome;
 }
 
 .m-product-f-description .m-degs-btn {
@@ -2105,22 +2099,12 @@ Single Product Page
 .m-product-f-description .m-des-accordion input[type="checkbox"]:checked~.m-des-panel {
     max-height: 100% !important;
     padding: 2rem 2rem;
+    margin-top: -1px;
     background: var(--gray-color);
     border-bottom: 1px solid var(--orange);
     border-top: 1px solid var(--orange);
 }
 
-.m-product-f-description .m-des-accordion input[type="checkbox"]:checked~.ms-btn {
-    background: var(--gray-color);
-    border-top: 1px solid var(--orange);
-    border-right: 1px solid var(--orange);
-    border-left: 1px solid var(--orange);
-}
-
-.m-product-f-description .m-des-accordion input[type="checkbox"]:checked~.ms-btn::after {
-    content: '\f106';
-    font-family: FontAwesome;
-}
 
 
 /*
@@ -3568,10 +3552,9 @@ Single Product Page
     font-family: 'FontAwesome';
 }
 
-
 .accordion-body {
     display: none;
-    margin-top: -26px;
+    margin-top: -1px;
     background: #fff;
     padding: 1rem;
     width: 100%;
@@ -3602,11 +3585,11 @@ Single Product Page
     margin-bottom: 0 !important;
 }
 
-.accordion-tab input[type="checkbox"]:checked .accordion-tab label {
-    border-bottom: none !important;
+.accordion-tab input[type="checkbox"]:checked~label {
+    border-bottom: 1px solid #fff !important;
 }
 
-.accordion-tab input[type="checkbox"]:checked .accordion-tab label::after {
+.accordion-tab input[type="checkbox"]:checked~label::after {
     content: '\f106';
     position: absolute;
     right: 10px;
@@ -3640,9 +3623,6 @@ Single Product Page
     justify-content: flex-start;
     width: 100%;
 }
-
-
-.subs-tab input {}
 
 .subs-body {
     display: none;
@@ -3680,9 +3660,7 @@ Single Product Page
 }
 
 /*
-======= Inactive subscription history ========*/
-
-.deactive-tab {}
+======= Deactive subscription history ========*/
 
 .deactive-tab label {
     flex-direction: column;
@@ -3690,8 +3668,6 @@ Single Product Page
     padding: 1rem;
     justify-content: flex-start !important;
 }
-
-.deactive-tab .subs-body {}
 
 .deactive-tab .subs-body input[type="checkbox"]:checked~.deactive-tab label button {
     display: none !important;
@@ -3717,8 +3693,6 @@ Single Product Page
     margin-top: 3rem;
 }
 
-.product-purchase-history {}
-
 .product-purchase-history .subscription-history {
     margin-bottom: -10px !important;
 }
@@ -3737,4 +3711,16 @@ Single Product Page
 
 .product-purchase-history table tr td a {
     text-align: left !important;
+}
+
+/*
+==========  mobile-v social link ===========*/
+.m-social-media-links {
+    padding: 2rem 0;
+    background: #e6ebed;
+}
+
+.m-social-media-links a {
+    font-size: 26px;
+    margin-left: 1rem;
 }

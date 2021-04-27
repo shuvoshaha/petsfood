@@ -223,7 +223,7 @@
         <div class="checkout">
             <div class="container">
                 <div class="checkout-row d-flex justify-content-between mt-5">
-                   <!-- step counter -->
+                    <!-- step counter -->
                     <div class="checkout-form w-60">
                         <div class="checkout-step d-flex">
                             <span class="step step-1">
@@ -352,15 +352,18 @@
                                             </label>
                                             <input type="radio" id="credit-card" name="payment-method" class="pgs">
                                             <span class="c-indicator"></span>
-        
+
                                             <!-- payment mathod user info -->
                                             <div class="payment-gateway-info">
-                                                <input type="text" name="fname" autocomplete="off" placeholder="Vorname*">
-                                                <input type="text" name="lname" autocomplete="off" placeholder="Nachname**">
+                                                <input type="text" name="fname" autocomplete="off"
+                                                    placeholder="Vorname*">
+                                                <input type="text" name="lname" autocomplete="off"
+                                                    placeholder="Nachname**">
                                                 <div class="payment-form-group d-flex justify-content-between w-100 ">
                                                     <input type="text" name="email" autocomplete="off"
                                                         placeholder="Kartennummer*">
-                                                    <input type="text" name="email" autocomplete="off" placeholder="CVV*">
+                                                    <input type="text" name="email" autocomplete="off"
+                                                        placeholder="CVV*">
                                                 </div>
                                                 <span class="card-type">
                                                     <span class="p-style">Kartentyp</span>
@@ -402,7 +405,7 @@
                                             </label>
                                             <input type="radio" id="paypal" name="payment-method" class="pgs">
                                             <span class="c-indicator"></span>
-        
+
                                             <!-- payment mathod user info -->
                                             <div class="payment-gateway-info for-paypal">
                                                 <a href="#">
@@ -436,24 +439,25 @@
                                         </div>
                                         <!-- kauf -->
                                         <div class="kauf p-g">
-        
+
                                             <label class="d-flex" for="kauf">
                                                 Kauf auf Rechnung
-                                                <img class="ml-3" src="./img/kaufaufrechnung_30.png" width="56px" height="15px"
-                                                    alt="">
+                                                <img class="ml-3" src="./img/kaufaufrechnung_30.png" width="56px"
+                                                    height="15px" alt="">
                                             </label>
                                             <input type="radio" id="kauf" name="payment-method" class="pgs">
                                             <span class="c-indicator"></span>
                                             <!-- payment mathod user info -->
-        
+
                                             <div class="payment-gatway">
-                                                 <!-- pay button here -->
+                                                <!-- pay button here -->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
+                        <!-- mobile-v cost info -->
                         <div class="d-none mobile-v-pvci product-deliver-cost-info p-style">
                             <p class="mt-3">
                                 *) Bis zu einem Bestellwert von € 49,99 und einem Maximalgewicht
@@ -604,22 +608,36 @@
                 <div class="orange-line my-3"></div>
             </div>
         </div>
-    </div>
-    <!--main-->
 
-    <!-- Payment method -->
-    <div class="payment-method">
-        <div class="container">
-            <div class="payment-gateway">
-                <img src="./img/Visa_logo.png" alt="">
-                <img src="./img/SepaLogo-s.png" alt="">
-                <img src="./img/PayPal-grau.png" alt="">
-                <img src="./img/Mastercard-logo-s.png" alt="">
-                <img src="./img/kaufaufrechnung.png" class="" alt="">
-                <img src="./img/Amazon_Pay_logo-gray.png" alt="">
+        <!-- mobile-v social link -->
+        <div class="m-social-media-links ">
+            <nav class="nav d-flex justify-content-center">
+                <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-envelope-o"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
+            </nav>
+        </div>
+        <!-- Payment method -->
+        <div class="payment-method">
+            <div class="container">
+                <div class="payment-gateway">
+                    <img src="./img/Visa_logo.png" alt="">
+                    <img src="./img/SepaLogo-s.png" alt="">
+                    <img src="./img/PayPal-grau.png" alt="">
+                    <img src="./img/Mastercard-logo-s.png" alt="">
+                    <img src="./img/kaufaufrechnung.png" class="" alt="">
+                    <img src="./img/Amazon_Pay_logo-gray.png" alt="">
+                </div>
             </div>
         </div>
+
     </div>
+    <!--main end-->
+
+
 
     <!-- Footer -->
     <!-- Footer -->
@@ -712,7 +730,6 @@
             e.preventDefault()
             step_1.style.marginLeft = "-100%"
         });
-
     </script>
     <!-- JQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
