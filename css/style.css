@@ -2496,42 +2496,41 @@ Single Product Page
 }
 
 .p-g {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
     border-bottom: 1px solid var(--borderColor);
 }
-
-.payment-gateway-method {}
 
 .payment-gateway-method label {
     font-size: 13px;
     color: var(--text-color);
+    margin-left: 18px;
+    position: absolute;
+    left: 5px;
+    top: 0;
 }
 
-.form-checkout-step{
+.form-checkout-step {
     width: 100%;
     overflow: hidden;
-  
 }
 
-.form-checkout-step form{
+.form-checkout-step form {
     display: flex;
     width: 200%;
-    
 }
 
 .form-step {
     width: 100%;
     transition: 0.2s;
-    
-}
-.form-step-1 {
-    
-}
-.form-step-2 {
-   
+
 }
 
-.form-step-1-inner{
+.form-step-1 {}
+
+.form-step-2 {}
+
+.form-step-1-inner {
     width: 70%;
 }
 
@@ -2548,8 +2547,12 @@ Single Product Page
     position: relative;
 }
 
-.payment-gateway-method{
+.payment-gateway-method {
     width: 40%;
+}
+
+.pgs {
+    appearance: none;
 }
 
 .payment-gateway-method .c-indicator {
@@ -2559,6 +2562,8 @@ Single Product Page
     height: 13px;
     border: 1px solid var(--text-color);
     cursor: pointer;
+    left: 0;
+    top: 3px;
 }
 
 .payment-gateway-method .c-indicator::after {
@@ -2567,7 +2572,7 @@ Single Product Page
     display: none;
 }
 
-.checkout-form input:checked~.payment-gateway-method .c-indicator::after {
+.pgs:checked~.c-indicator::after {
     display: block;
     width: 5px;
     height: 7px;
@@ -2591,7 +2596,7 @@ Single Product Page
     margin-bottom: 1rem;
 }
 
-.checkout-form  input[type=radio]:checked~.payment-gateway-info {
+.checkout-form input[type=radio]:checked~.payment-gateway-info {
     display: block !important;
 }
 
