@@ -124,7 +124,7 @@ body {
 }
 
 .shopping-cart {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 /*=======Dropdown======*/
@@ -139,7 +139,6 @@ body {
     left: 42%;
     z-index: 1000;
     display: none;
-
 }
 
 #dropdown-popup:hover .popup {
@@ -192,8 +191,13 @@ body {
     transition: var(--delay);
 }
 
+/* .action-btn button:hover {
+
+} */
+
 .action-btn button:hover {
-    background: var(--linkHoverColor);
+    background: var(--btn-orange-hover);
+    color: #fff;
 }
 
 .action-btn a {
@@ -273,6 +277,10 @@ body {
     font-size: 1rem;
 }
 
+.dropdown-foot a:hover{
+    background: var(--btn-hover);
+}
+
 /*
 ============Top Social-Media-links=========*/
 
@@ -336,6 +344,10 @@ body {
     max-height: 500px;
 }
 
+.badge{
+    margin-top: -28px;
+}
+
 
 /*
 =======Hero top text==========*/
@@ -352,7 +364,7 @@ body {
 }
 
 .hero-top-text {
-    padding: 3px 0;
+    padding: 6px 0;
     background: #fbb722;
     text-align: center;
     max-width: 100%;
@@ -638,7 +650,7 @@ body {
     width: 50px;
     height: 27px;
     background: url(../img/indicator.png) no-repeat right white;
-    border: 2px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
     display: inline-block;
     border-radius: 1px;
     position: relative;
@@ -836,13 +848,14 @@ body {
 }
 
 .client-testmonial {
-    width: 98%;
+    width: 99%;
     max-width: 100%;
     border: 1px solid var(--borderColor);
     padding: 2rem 3rem 2rem 3rem;
-    display: FLEX;
+    display: flex;
     background: #fff;
     align-items: center;
+    justify-content: space-between;
 }
 
 .left-task {
@@ -862,27 +875,30 @@ body {
 }
 
 .right-task {
-    margin-left: auto;
+    /* margin-left: auto; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: CENTER;
+    margin-top: -10px;
 }
 
 .right-task img {
     max-width: 100%;
-    width: 150px;
-    height: 150px;
+    width: 114px;
+    height: 114px;
     border-radius: 50%;
-
 }
 
 .name {
-    margin-top: 10px !important;
-    font-size: 16px;
+    margin-top: 0 !important;
+    font-size: 15px;
     color: var(--text-color);
     font-weight: 600;
 }
 
 .designation {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -1122,6 +1138,10 @@ footer {
     font-size: 14px;
     color: var(--text-color);
 }
+.lg-action button:hover {
+    background: var(--btn-orange-hover);
+    color: #fff;
+}
 
 .lg-red-txt {
     font-size: 14px;
@@ -1314,6 +1334,10 @@ footer {
     cursor: pointer;
 }
 
+.reg-verification-code button:hover {
+    background: var(--orange)
+}
+
 .reg-btn {
     margin-top: 2rem;
 }
@@ -1411,16 +1435,22 @@ a {}
 }
 
 .contact-option-list {
-    width: 55%;
     margin: 1rem auto 0;
-    display: flex;
     justify-content: space-between;
     font-size: 18px;
 }
 
 .contact-option-list a {
     color: var(--text-color-2);
-    margin-left: 5px;
+}
+
+.contact-option-list a:nth-child(2) {
+    margin: 0 15px;
+}
+
+
+.contact-option-list span a {
+    margin: 0 !important;
 }
 
 /*
@@ -1442,14 +1472,16 @@ a {}
     max-width: 100%;
     padding: 3px 11px !important;
     font-style: italic;
+    background: #fff;
 }
 
 .faq-search-form input {
     width: 80%;
     max-width: 100%;
-    border: none;
+    border: none !important;
     margin-left: 0 !important;
     padding: 7px 0;
+    background: #fff;
 }
 
 .faq-search-form input::placeholder {
@@ -1476,7 +1508,7 @@ a {}
     outline: none;
     color: var(--text-color);
     text-align: left;
-    padding: 9px 18px;
+    padding: 9px 23px;
     cursor: pointer;
     border: 0;
     background: transparent;
@@ -1493,7 +1525,9 @@ a {}
 .accordion::after {
     content: '\f067';
     font-family: FontAwesome;
-    float: right;
+    position: absolute;
+    right: 17px;
+    top: 11px;
 }
 
 .acc-active::after {
@@ -1509,6 +1543,7 @@ a {}
 
 .shop {
     background: var(--light-orange);
+    padding-bottom: 6rem !important;
 }
 
 .shop-wrapper {}
@@ -1742,6 +1777,7 @@ Single Product Page
     border: 1px solid var(--borderColor);
     display: flex;
     align-items: CENTER;
+    position: relative;
 }
 
 .single-product-gallery img {
@@ -1901,6 +1937,9 @@ Single Product Page
     font-weight: 600;
     margin-bottom: 1rem;
 }
+.single-product-tab a:hover{
+    background: var(--orange)
+}
 
 .tab-pane p {
     font-size: 13px;
@@ -1995,8 +2034,10 @@ Single Product Page
 }
 
 .m-product-description .stock-status {
-    display: unset !important;
+    display: grid!important;
     padding: 8px 24px !important;
+    width: 120px;
+    margin-left: auto;
 }
 
 .m-discoumt-price {
@@ -2032,7 +2073,7 @@ Single Product Page
 
 .m-product-quantity .add-to-cart {
     margin-top: 2rem;
-    width: 100% !important;
+    width: 100%;
     padding: 1rem;
     font-size: 26px;
 }
@@ -2974,7 +3015,7 @@ Single Product Page
 
 .abo-subscription {
     background: var(--light-orange);
-    padding: 1.5rem 0 2rem;
+    padding: 3rem 0 4rem;
 }
 
 .abo-subscription-process h3 {

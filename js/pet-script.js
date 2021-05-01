@@ -25,7 +25,6 @@ window.onscroll = (e) => {
 }
 
 
-
 // Plugins Init
 // Product Slider
 $(document).ready(function () {
@@ -39,7 +38,7 @@ $(document).ready(function () {
     nextArrow: "<img src='./img/right-arrow.png' class='right-arrow' /> ",
     dots: true,
     dotsClass: "slick-dots",
-    centerPadding: '50px',
+    centerPadding: '5px',
     responsive: [{
       breakpoint: 1200,
       settings: {
@@ -259,7 +258,7 @@ for (i = 0; i < filter_title.length; i++) {
 
 
 // Checkout page diff address 
-var invoice = document.getElementById('invoice-address');
+var invoice = document.getElementById("invoice-address");
 var diff_address = document.getElementById('diff-address');
 var address = document.querySelector('.diff-address-info');
 

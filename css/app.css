@@ -139,7 +139,8 @@ button:focus {
 }
 
 .cm-btn:hover {
-    background-color: var(--linkHoverColor);
+    background-color: var(--btn-orange-hover);
+    color: #fff;
 }
 
 .breadcum {
@@ -206,7 +207,7 @@ button:focus {
 }
 
 .nav-active {
-    color: var(--nav-active) !important;
+    /* color: var(--nav-active) !important; */
 }
 
 .menu-active {
@@ -228,11 +229,15 @@ input[type='password'] {
     width: 100%;
     max-width: 100%;
     padding: 5px 10px;
-    border: 2px solid var(--input-color);
+    border: 1px solid var(--input-color) !important;
     outline: none;
     color: #888;
     font-size: 15px;
     font-weight: 400;
+}
+
+.info i{
+    color: var(--text-color) !important;
 }
 
 input::placeholder {
@@ -332,6 +337,7 @@ label {
 .grid.product {
     padding: 0 0 1.5rem 0;
     width: 100%;
+    position: relative;
 }
 
 .product-image {
@@ -369,7 +375,7 @@ label {
         overflow: hidden;
         flex-direction: column;
         position: absolute;
-        bottom: 0px;
+        bottom: -5%;
         left: 6px;
     }
 
@@ -528,3 +534,12 @@ hr.header-line {
     background: #fffbf4;
     padding: 3rem;
 }
+
+.slick-slide {
+    margin-left:27px !important;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left:-27px !important;
+  }
