@@ -2777,6 +2777,7 @@ Single Product Page
 
 .wishlist-left {
     width: 65%;
+    position: relative;
 }
 
 .wishlist-thumb {
@@ -2808,7 +2809,7 @@ Single Product Page
     font-size: 16px;
     font-weight: 600;
     color: var(--text-color);
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 /*
@@ -2833,7 +2834,7 @@ Single Product Page
     width: 100% !important;
     display: inline-block;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .wishlist-basic-info h4 a:hover {
@@ -2903,7 +2904,7 @@ Single Product Page
 .w-cart-btn button {
     border-radius: 9px;
     padding: 5px 28px;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff !important;
     cursor: pointer;
     border: none;
@@ -2938,6 +2939,7 @@ Single Product Page
     border: none;
     outline: none;
     letter-spacing: 1px;
+    margin-left: AUTO;
 }
 
 .wishlist-list .select-indicator,
@@ -3218,15 +3220,17 @@ Single Product Page
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .ribon p {
     color: #fff;
-    font-size: 12px;
     display: block;
-    width: 70%;
     transform: rotate(-7deg);
-    font-weight: 500;
+    width: 80%;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 14px;
 }
 
 .cart-archive-product-list {}
@@ -3245,7 +3249,8 @@ Single Product Page
 }
 
 .cart-product-thumb img {
-    height: 150px;
+    height: 100%;
+    width: 170px;
 }
 
 .cart-product-details {
@@ -3343,6 +3348,10 @@ Single Product Page
 /*
 =========== desktop-v ==========*/
 
+.myaccount {
+    padding: 3rem 0 6rem !important;
+}
+
 .myaccount .tab-content {
     padding: 15px 7px;
     background: #fff;
@@ -3410,7 +3419,7 @@ Single Product Page
 }
 
 .subscription-history table tr td {
-    font-size: 15px;
+    font-size: 14px;
     border-right: 2px solid #fff;
     color: var(--text-color);
     padding: 2px 0 14px 0;
@@ -3425,7 +3434,7 @@ Single Product Page
 }
 
 .subscription-history table tr td button {
-    font-size: 13px;
+    font-size: 14px;
     width: 80%;
     text-align: center;
     margin: auto;
@@ -3468,6 +3477,11 @@ Single Product Page
     /* width: 52%; */
 }
 
+.myaccount .nav-tabs .nav-link:hover{
+    background: var(--orange);
+    
+}
+
 /*
 ============ order history =============*/
 
@@ -3487,7 +3501,7 @@ Single Product Page
 }
 
 .order-history table tr:nth-child(odd) {
-    background: var(--medium-orange-1);
+    background: #fef0d4;
 }
 
 .order-history table tr:nth-child(even) {

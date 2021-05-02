@@ -504,7 +504,7 @@ label {
 }
 
 .btn-black:hover {
-    background: #020202 !important;
+    background: var(--text-color)!important;
     color: #fff !important;
 }
 

@@ -223,7 +223,7 @@
                 <p> Mo–Fr, 8–16 Uhr</p>|
                 <i class="fa fa-envelope-o"></i>
             </div>
-            <h2 class="page-title text-upper pt-3 pb-4">Wunschliste</h2>
+            <h2 class="page-title checkout-title text-upper pt-3 pb-4">Wunschliste</h2>
         </div>
         <!-- wishlist -->
         <div class="wishlists pt-5 pb-4">
@@ -239,7 +239,7 @@
                                     <img src="./img/product-1.jpg" alt="">
                                 </a>
                             </div>
-                            <!-- basic info -->
+                            <!-- product basic info -->
                             <div class="wishlist-basic-info ml-3">
                                 <div>
                                     <h4>
@@ -247,7 +247,8 @@
                                     </h4>
                                     <a href="#">DETAILS</a>
                                 </div>
-                                <div class="wish-p-selection d-flex align-items-center">
+                                <div class="wish-p-selection d-flex">
+                                   <div class="m-wish-group">
                                     <div class="wish-p-s d-flex">
                                         <p>Packungsgröße</p>
                                         <div class="select-indicator ml-2">
@@ -258,19 +259,6 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="wish-p-s d-flex">
-                                        <p class="mx-2">Anzahl</p>
-                                        <div class="select-indicator quantity-select">
-                                            <select name="wishlist" id="">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
                                     <!-- mobile-v option -->
                                     <div class="d-none wish-p-s mobile-select-option">
                                         <p class="ml-2">ZUM ABO</p>
@@ -281,6 +269,23 @@
                                                 <option value="900">Charly</option>
                                             </select>
                                         </div>
+                                    </div>
+                                   </div>
+
+                                    <div class="wish-p-s d-flex">
+                                        <div class="d-flex">
+                                            <p class="mx-2">Anzahl</p>
+                                        <div class="select-indicator quantity-select">
+                                            <select name="wishlist" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <button class="d-none m-v-btn btn-orange">HINZUFÜGEN</button>
                                     </div>
                                 </div>
                             </div>
@@ -311,9 +316,9 @@
                             <div class="w-cart-btn d-flex justify-content-end">
                                 <button class="btn-blue">IN DEN WARENKORB</button>
                             </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <div class="d-flex w-archive-p-option">
-                                    <p class="ml-2">ZUM ABO</p>
+                            <div class="w-archive-price-btn d-flex align-items-end">
+                                <div class="d-flex w-archive-p-option ">
+                                    <p class="">ZUM ABO</p>
                                     <div class="select-indicator ml-2 mr-3">
                                         <select name="wishlist" id="">
                                             <option value="300">Charly</option>
@@ -322,11 +327,12 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
+                                <button class="d-v-btn btn-orange">HINZUFÜGEN</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- product -->
                 <div class="wishlist-list d-flex justify-content-between mb-4">
                     <!-- left section -->
@@ -337,16 +343,18 @@
                                     <img src="./img/product-4.jpg" alt="">
                                 </a>
                             </div>
-                            <!-- basic info -->
+                            <!-- product basic info -->
                             <div class="wishlist-basic-info ml-3">
                                 <div>
                                     <h4>
-                                        <a href="#">Royal Cannin – LECKER BISSEN für besonders sensible Hunde mit
-                                            Pferdefleisch</a>
+                                        <a href="#">Royal Cannin – LECKER
+                                            BISSEN für besonders sensible Hunde
+                                            mit Pferdefleisch</a>
                                     </h4>
                                     <a href="#">DETAILS</a>
                                 </div>
-                                <div class="wish-p-selection d-flex align-items-center">
+                                <div class="wish-p-selection d-flex">
+                                   <div class="m-wish-group">
                                     <div class="wish-p-s d-flex">
                                         <p>Packungsgröße</p>
                                         <div class="select-indicator ml-2">
@@ -357,19 +365,6 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="wish-p-s d-flex">
-                                        <p class="mx-2">Anzahl</p>
-                                        <div class="select-indicator quantity-select">
-                                            <select name="wishlist" id="">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
                                     <!-- mobile-v option -->
                                     <div class="d-none wish-p-s mobile-select-option">
                                         <p class="ml-2">ZUM ABO</p>
@@ -381,13 +376,29 @@
                                             </select>
                                         </div>
                                     </div>
+                                   </div>
+
+                                    <div class="wish-p-s d-flex">
+                                        <div class="d-flex">
+                                            <p class="mx-2">Anzahl</p>
+                                        <div class="select-indicator quantity-select">
+                                            <select name="wishlist" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <button class="d-none m-v-btn btn-orange">HINZUFÜGEN</button>
+                                    </div>
                                 </div>
                             </div>
                         </div> <!-- wishlist inner end -->
                         <div class="wishlist-right-head w-30 d-flex justify-content-between flex-column">
                             <div class="w-product-feature ml-auto">
-                                <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
+                                
                                 <img src="./img/regional.png" alt="">
                                 <img src="./img/vegan.png" alt="">
                             </div>
@@ -399,7 +410,7 @@
 
                     <!-- right section -->
                     <div class="wishlist-right w-30 d-flex flex-column justify-content-between">
-                        <div class="w-trash d-flex justify-content-between">
+                        <div class="w-trash d-flex ml-auto">
                             <p>von der Wunschliste <a href="#">entfernen</a></p>
                             <span>
                                 <i class="fa fa-trash"></i>
@@ -410,9 +421,9 @@
                             <div class="w-cart-btn d-flex justify-content-end">
                                 <button class="btn-blue">IN DEN WARENKORB</button>
                             </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <div class="d-flex w-archive-p-option">
-                                    <p class="ml-2">ZUM ABO</p>
+                            <div class="w-archive-price-btn d-flex align-items-end">
+                                <div class="d-flex w-archive-p-option ">
+                                    <p class="">ZUM ABO</p>
                                     <div class="select-indicator ml-2 mr-3">
                                         <select name="wishlist" id="">
                                             <option value="300">Charly</option>
@@ -421,11 +432,12 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
+                                <button class="d-v-btn btn-orange">HINZUFÜGEN</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- product -->
                 <div class="wishlist-list d-flex justify-content-between mb-4">
                     <!-- left section -->
@@ -436,15 +448,17 @@
                                     <img src="./img/product-3.jpg" alt="">
                                 </a>
                             </div>
-                            <!-- basic info -->
+                            <!-- product basic info -->
                             <div class="wishlist-basic-info ml-3">
                                 <div>
                                     <h4>
-                                        <a href="#">Dog‘s Love – Welpenfutter</a>
+                                        <a href="#">Cat‘s Love Senior feines Geflügel –
+                                            Pute</a>
                                     </h4>
                                     <a href="#">DETAILS</a>
                                 </div>
-                                <div class="wish-p-selection d-flex align-items-center">
+                                <div class="wish-p-selection d-flex">
+                                   <div class="m-wish-group">
                                     <div class="wish-p-s d-flex">
                                         <p>Packungsgröße</p>
                                         <div class="select-indicator ml-2">
@@ -455,19 +469,6 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="wish-p-s d-flex">
-                                        <p class="mx-2">Anzahl</p>
-                                        <div class="select-indicator quantity-select">
-                                            <select name="wishlist" id="">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
                                     <!-- mobile-v option -->
                                     <div class="d-none wish-p-s mobile-select-option">
                                         <p class="ml-2">ZUM ABO</p>
@@ -479,80 +480,11 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div> <!-- wishlist inner end -->
-                        <div class="wishlist-right-head w-30 d-flex justify-content-between flex-column">
-                            <div class="w-product-feature ml-auto">
-                                <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
-                            </div>
-                            <div class="w-price ml-auto">
-                                <h3>€ 12,50</h3>
-                            </div>
-                        </div>
-                    </div><!-- end left section -->
+                                   </div>
 
-                    <!-- right section -->
-                    <div class="wishlist-right w-30 d-flex flex-column justify-content-between">
-                        <div class="w-trash d-flex justify-content-between">
-                            <p>von der Wunschliste <a href="#">entfernen</a></p>
-                            <span>
-                                <i class="fa fa-trash"></i>
-                            </span>
-                        </div>
-
-                        <div class="wishlist-right-footer">
-                            <div class="w-cart-btn d-flex justify-content-end">
-                                <button class="btn-blue">IN DEN WARENKORB</button>
-                            </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <div class="d-flex w-archive-p-option">
-                                    <p class="ml-2">ZUM ABO</p>
-                                    <div class="select-indicator ml-2 mr-3">
-                                        <select name="wishlist" id="">
-                                            <option value="300">Charly</option>
-                                            <option value="600">Charly</option>
-                                            <option value="900">Charly</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- product -->
-                <div class="wishlist-list d-flex justify-content-between mb-4">
-                    <!-- left section -->
-                    <div class="wishlist-left d-flex justify-content-between">
-                        <div class="whislist-inner d-flex w-40">
-                            <div class="wishlist-thumb">
-                                <a href="#">
-                                    <img src="./img/product-1.jpg" alt="">
-                                </a>
-                            </div>
-                            <!-- basic info -->
-                            <div class="wishlist-basic-info ml-3">
-                                <div>
-                                    <h4>
-                                        <a href="#">Dog‘s Love – Welpenfutter</a>
-                                    </h4>
-                                    <a href="#">DETAILS</a>
-                                </div>
-                                <div class="wish-p-selection d-flex align-items-center">
                                     <div class="wish-p-s d-flex">
-                                        <p>Packungsgröße</p>
-                                        <div class="select-indicator ml-2">
-                                            <select name="wishlist" id="">
-                                                <option value="300">300g</option>
-                                                <option value="600">600g</option>
-                                                <option value="900">900g</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="wish-p-s d-flex">
-                                        <p class="mx-2">Anzahl</p>
+                                        <div class="d-flex">
+                                            <p class="mx-2">Anzahl</p>
                                         <div class="select-indicator quantity-select">
                                             <select name="wishlist" id="">
                                                 <option value="1">1</option>
@@ -562,18 +494,8 @@
                                                 <option value="5">5</option>
                                             </select>
                                         </div>
-                                    </div>
-
-                                    <!-- mobile-v option -->
-                                    <div class="d-none wish-p-s mobile-select-option">
-                                        <p class="ml-2">ZUM ABO</p>
-                                        <div class="select-indicator ml-2 mr-3">
-                                            <select name="wishlist" id="">
-                                                <option value="300">Charly</option>
-                                                <option value="600">Charly</option>
-                                                <option value="900">Charly</option>
-                                            </select>
                                         </div>
+                                        <button class="d-none m-v-btn btn-orange">HINZUFÜGEN</button>
                                     </div>
                                 </div>
                             </div>
@@ -581,7 +503,6 @@
                         <div class="wishlist-right-head w-30 d-flex justify-content-between flex-column">
                             <div class="w-product-feature ml-auto">
                                 <img src="./img/bio.png" alt="">
-                                <img src="./img/glutenfrei.png" alt="">
                                 <img src="./img/regional.png" alt="">
                                 <img src="./img/vegan.png" alt="">
                             </div>
@@ -593,7 +514,7 @@
 
                     <!-- right section -->
                     <div class="wishlist-right w-30 d-flex flex-column justify-content-between">
-                        <div class="w-trash d-flex justify-content-between">
+                        <div class="w-trash d-flex ml-auto">
                             <p>von der Wunschliste <a href="#">entfernen</a></p>
                             <span>
                                 <i class="fa fa-trash"></i>
@@ -604,9 +525,9 @@
                             <div class="w-cart-btn d-flex justify-content-end">
                                 <button class="btn-blue">IN DEN WARENKORB</button>
                             </div>
-                            <div class="w-archive-price-btn d-flex justify-content-end ">
-                                <div class="d-flex w-archive-p-option">
-                                    <p class="ml-2">ZUM ABO</p>
+                            <div class="w-archive-price-btn d-flex align-items-end">
+                                <div class="d-flex w-archive-p-option ">
+                                    <p class="">ZUM ABO</p>
                                     <div class="select-indicator ml-2 mr-3">
                                         <select name="wishlist" id="">
                                             <option value="300">Charly</option>
@@ -615,11 +536,117 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button class="btn-orange">HINZUFÜGEN</button>
+                                <button class="d-v-btn btn-orange">HINZUFÜGEN</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- product -->
+                <div class="wishlist-list d-flex justify-content-between mb-4">
+                    <!-- left section -->
+                    <div class="wishlist-left d-flex justify-content-between">
+                        <div class="whislist-inner d-flex w-40">
+                            <div class="wishlist-thumb">
+                                <a href="#">
+                                    <img src="./img/product-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- product basic info -->
+                            <div class="wishlist-basic-info ml-3">
+                                <div>
+                                    <h4>
+                                        <a href="#">Dog‘s Love Welpenfutter – Nassfutter</a>
+                                    </h4>
+                                    <a href="#">DETAILS</a>
+                                </div>
+                                <div class="wish-p-selection d-flex">
+                                   <div class="m-wish-group">
+                                    <div class="wish-p-s d-flex">
+                                        <p>Packungsgröße</p>
+                                        <div class="select-indicator ml-2">
+                                            <select name="wishlist" id="">
+                                                <option value="300">300g</option>
+                                                <option value="600">600g</option>
+                                                <option value="900">900g</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- mobile-v option -->
+                                    <div class="d-none wish-p-s mobile-select-option">
+                                        <p class="ml-2">ZUM ABO</p>
+                                        <div class="select-indicator ml-2 mr-3">
+                                            <select name="wishlist" id="">
+                                                <option value="300">Charly</option>
+                                                <option value="600">Charly</option>
+                                                <option value="900">Charly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   </div>
+
+                                    <div class="wish-p-s d-flex">
+                                        <div class="d-flex">
+                                            <p class="mx-2">Anzahl</p>
+                                        <div class="select-indicator quantity-select">
+                                            <select name="wishlist" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <button class="d-none m-v-btn btn-orange">HINZUFÜGEN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- wishlist inner end -->
+                        <div class="wishlist-right-head w-30 d-flex justify-content-between flex-column">
+                            <div class="w-product-feature ml-auto">
+                                <img src="./img/bio.png" alt="">
+                                <img src="./img/regional.png" alt="">
+                                <img src="./img/vegan.png" alt="">
+                            </div>
+                            <div class="w-price ml-auto">
+                                <h3>€ 12,50</h3>
+                            </div>
+                        </div>
+                    </div><!-- end left section -->
+
+                    <!-- right section -->
+                    <div class="wishlist-right w-30 d-flex flex-column justify-content-between">
+                        <div class="w-trash d-flex ml-auto">
+                            <p>von der Wunschliste <a href="#">entfernen</a></p>
+                            <span>
+                                <i class="fa fa-trash"></i>
+                            </span>
+                        </div>
+
+                        <div class="wishlist-right-footer">
+                            <div class="w-cart-btn d-flex justify-content-end">
+                                <button class="btn-blue">IN DEN WARENKORB</button>
+                            </div>
+                            <div class="w-archive-price-btn d-flex align-items-end">
+                                <div class="d-flex w-archive-p-option ">
+                                    <p class="">ZUM ABO</p>
+                                    <div class="select-indicator ml-2 mr-3">
+                                        <select name="wishlist" id="">
+                                            <option value="300">Charly</option>
+                                            <option value="600">Charly</option>
+                                            <option value="900">Charly</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="d-v-btn btn-orange">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+               
 
                 <!-- Shop link -->
                 <h5 class="back-shop-link underline text-center py-4">
