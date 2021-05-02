@@ -429,6 +429,9 @@
     footer .rows {
         position: relative;
     }
+    .footer-menu{
+        width: 41% !important;
+    }
 
     .client-testmonial p {
         font-size: 13px !important;
@@ -580,7 +583,7 @@
     }
 
     .order-1 {
-        order: 1;
+        order: 1 !important;
     }
 
     .order-2 {
@@ -722,6 +725,7 @@
         width: 60%;
         font-size: 1rem !important;
 
+}
 }
 
 @media screen and (min-width: 801px) {

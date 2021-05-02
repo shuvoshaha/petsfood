@@ -135,7 +135,7 @@ body {
     background: #fffbf2;
     padding: 2rem 2rem;
     position: absolute;
-    top: 38px;
+    top: 36px;
     left: 42%;
     z-index: 1000;
     display: none;
@@ -277,7 +277,7 @@ body {
     font-size: 1rem;
 }
 
-.dropdown-foot a:hover{
+.dropdown-foot a:hover {
     background: var(--btn-hover);
 }
 
@@ -344,7 +344,7 @@ body {
     max-height: 500px;
 }
 
-.badge{
+.badge {
     margin-top: -28px;
 }
 
@@ -648,7 +648,7 @@ body {
 
 .cart-option .select-indicator {
     width: 50px;
-    height: 27px;
+    height: 22px;
     background: url(../img/indicator.png) no-repeat right white;
     border: 1px solid var(--borderColor);
     display: inline-block;
@@ -679,12 +679,12 @@ body {
 .cart-btn {
     outline: none;
     border: none;
-    width: 32px;
-    height: 27px;
+    width: 30px;
+    height: 23px;
     background: var(--text-color);
     color: #fff;
     font-size: 14px;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     margin-left: -5px;
     z-index: 1;
@@ -1138,6 +1138,7 @@ footer {
     font-size: 14px;
     color: var(--text-color);
 }
+
 .lg-action button:hover {
     background: var(--btn-orange-hover);
     color: #fff;
@@ -1937,7 +1938,8 @@ Single Product Page
     font-weight: 600;
     margin-bottom: 1rem;
 }
-.single-product-tab a:hover{
+
+.single-product-tab a:hover {
     background: var(--orange)
 }
 
@@ -2034,7 +2036,7 @@ Single Product Page
 }
 
 .m-product-description .stock-status {
-    display: grid!important;
+    display: grid !important;
     padding: 8px 24px !important;
     width: 120px;
     margin-left: auto;
@@ -3477,9 +3479,9 @@ Single Product Page
     /* width: 52%; */
 }
 
-.myaccount .nav-tabs .nav-link:hover{
+.myaccount .nav-tabs .nav-link:hover {
     background: var(--orange);
-    
+
 }
 
 /*
