@@ -458,24 +458,25 @@ label {
 }
 
 /* width */
-::-webkit-scrollbar {
+.cart-product-list::-webkit-scrollbar {
     width: 8px;
 }
 
+
 /* Track */
-::-webkit-scrollbar-track {
+.cart-product-list::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #fff;
     border-radius: 10px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.cart-product-list::-webkit-scrollbar-thumb {
     background: var(--orange);
     border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.cart-product-list::-webkit-scrollbar-thumb:hover {
     background: var(--medium-orange-2);
 }
 

@@ -36,9 +36,9 @@
                     <!-- Top Social-Media-links -->
                     <div class="social-media-links ">
                         <nav class="nav d-flex">
-                            <a href="#" class="social-links"><i class="fa fa-phone"></i>
+                            <a href="tel:+43 1 234 567 890" class="social-links"><i class="fa fa-phone"></i>
                                 <span>+43 1 234 567 890</span></a>
-                            <a href="#" class="social-links"><i class="fa fa-envelope-o"></i></a>
+                            <a href="mailto:healthypet@avyota.com" class="social-links"><i class="fa fa-envelope-o"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
                             <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
@@ -118,58 +118,67 @@
         <!-- Primary Nav mobile -->
         <div class="mobile-main-nav d-none main-nav mt-2">
             <nav class="navbar navbar-expand-lg">
+              <div class="container">
                 <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="bar-1"></span>
-                    <span class="bar-2"></span>
-                    <span class="bar-3"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="./img/logo.png" class="brand-logo" alt="">
-                </a>
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="bar-1"></span>
+                <span class="bar-2"></span>
+                <span class="bar-3"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.png" class="brand-logo" alt="">
+            </a>
 
-                <a href="#" class="shopping-cart">
-                    <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
-                    <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
-                </a>
+            <a href="#" class="shopping-cart">
+                <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
+                <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
+            </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./login.html"> <i class="fa fa-user-o"></i> LOGIN </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./wishlist.html"><i class="far fa-heart"></i> Wunschliste</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./hund.html">Hund</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Katze</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BARF</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Zubehör</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./abo-info.html">ABO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #46b1e7 ">
-                                <img src="./img/icons.png" class="nav-icon" alt="">
-                                Ernährungsberatung</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link top-nav-link" href="./login.html">
+                            <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                            LOGIN </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  top-nav-link" href="./cart.html">
+                            <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                            Warenkorb</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top-nav-link" href="./wishlist.html">
+                            <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                            Wunschliste
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hund.html">Hund</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Katze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BARF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Zubehör</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./abo-info.html">ABO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #46b1e7 ">
+                            <img src="./img/icons.png" class="nav-icon" alt="">
+                            Ernährungsberatung</a>
+                    </li>
+                </ul>
+            </div>
+              </div>
             </nav>
         </div>
         <!-- Primary Nav desktop -->
@@ -205,7 +214,10 @@
             </div>
         </div>
 
-    </div><!-- Header End -->
+    </div>
+    <!-- Header end -->
+
+
     <!-- main -->
     <div class="main">
         <div class="container">

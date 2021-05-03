@@ -32,58 +32,144 @@
         <!-- Top Nav -->
         <div class="top-nav d-flex align-items-center">
             <div class="container">
-                <!-- Desktop version Top Nav-->
-                <ul class="nav d-flex justify-content-end align-items-center desktop-v">
-                    <li class="nav-item" id="dropdown-popup">
-                        <a class="nav-link"> <i class="fa fa-user-o"></i> LOGIN </a>
-                        <!-- popup -->
-                        <div class="popup">
-                            <form action="index.html">
-                                <input type="text" required name="email" autocomplete="off"
-                                    placeholder="Benutzername*" />
-                                <input type="password" required name="password" placeholder="Passwort*" />
-                                <span class="required-txt">* Pflichtfeld</span>
+                <div class="nav-wrapper sm-d-none d-flex align-items-center justify-content-between">
+                    <!-- Top Social-Media-links -->
+                    <div class="social-media-links ">
+                        <nav class="nav d-flex">
+                            <a href="tel:+43 1 234 567 890" class="social-links"><i class="fa fa-phone"></i>
+                                <span>+43 1 234 567 890</span></a>
+                            <a href="mailto:healthypet@avyota.com" class="social-links"><i class="fa fa-envelope-o"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-links"><i class="fab fa-youtube"></i></a>
+                        </nav>
+                    </div>
+                    <!-- Desktop version top Nav-->
+                    <ul class="nav d-flex justify-content-end align-items-center desktop-v">
+                        <li class="nav-item" id="dropdown-popup">
+                            <a class="nav-link top-nav-link" href="./login.html">
+                                <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                                LOGIN </a>
+                            <!-- dropdown -->
+                            <div class="popup">
+                                <form action="index.html">
+                                    <input type="text" required name="email" autocomplete="off"
+                                        placeholder="Benutzername*" />
+                                    <input type="password" required name="password" placeholder="Passwort*" />
+                                    <span class="required-txt">* Pflichtfeld</span>
 
-                                <span class="action-btn">
-                                    <button type="button" class="login-btn">ANMELDEN</button>
-                                    <a href="#">Passwort vergessen?</a>
-                                </span>
-                            </form>
-                            <hr>
+                                    <span class="action-btn">
+                                        <button type="button" class="login-btn">ANMELDEN</button>
+                                        <a href="#">Passwort vergessen?</a>
+                                    </span>
+                                </form>
+                                <hr>
 
-                            <!-- optional-login -->
-                            <div class="optional-login">
-                                <p>oder LOGIN mit</p>
-                                <span>
-                                    <a href="#" class="facebook round">
-                                        <i class="fa fa-google"></i>
-                                    </a>
-                                    <a href="#" class="google round">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#" class="apple round">
-                                        <i class="fa fa-apple"></i>
-                                    </a>
-                                </span>
+                                <!-- optional-login -->
+                                <div class="optional-login">
+                                    <p>oder LOGIN mit</p>
+                                    <span>
+                                        <a href="#" class="facebook round">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="#" class="google round">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#" class="apple round">
+                                            <i class="fa fa-apple"></i>
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <hr>
+                                <div class="dropdown-foot">
+                                    <p>Noch kein Konto?</p>
+                                    <a href="#">JETZT REGISTRIEREN</a>
+                                </div>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav-link" href="./cart.html">
+                                <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                                Warenkorb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link top-nav-link" href="./wishlist.html">
+                                <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                                Wunschliste
+                            </a>
+                        </li>
+                        <li class="lang d-flex">
+                            <a class="lang-de" href="#">DE</a>
+                            <span class="seperator">|</span>
+                            <a class="lang-en" href="#">EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #46b1e7 ">
+                                <img src="./img/icons.png" class="nav-icon" alt="">
+                                Ernährungsberatung</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- Top nav end -->
 
-                            <hr>
-                            <div class="dropdown-foot">
-                                <p>Noch kein Konto?</p>
-                                <a href="#">JETZT REGISTRIEREN</a>
-                            </div>
-                        </div>
+        <!-- Primary Nav mobile -->
+        <div class="mobile-main-nav d-none main-nav mt-2">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container">
+                <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="bar-1"></span>
+                <span class="bar-2"></span>
+                <span class="bar-3"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.png" class="brand-logo" alt="">
+            </a>
+
+            <a href="#" class="shopping-cart">
+                <!-- <img src="./img/shopping-bag-icon.svg" alt=""> -->
+                <img src="./img/shopping-bag-icon.svg" height="27px" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link top-nav-link" href="./login.html">
+                            <img src="./img/login-step-1-icon.svg" class="nav-item-icon">
+                            LOGIN </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Warenkorb</a>
+                        <a class="nav-link  top-nav-link" href="./cart.html">
+                            <img src="./img/shopping-bag-icon.svg" class="nav-item-icon" alt="">
+                            Warenkorb</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-heart"></i> Wunschliste</a>
+                        <a class="nav-link top-nav-link" href="./wishlist.html">
+                            <img src="./img/heart-icon.svg" class="nav-item-icon" alt="">
+                            Wunschliste
+                        </a>
                     </li>
-                    <li class="lang d-flex">
-                        <a class="lang-de" href="#">DE</a>
-                        <span class="seperator">|</span>
-                        <a class="lang-en" href="#">EN</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hund.html">Hund</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Katze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BARF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Zubehör</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./abo-info.html">ABO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: #46b1e7 ">
@@ -91,55 +177,21 @@
                             Ernährungsberatung</a>
                     </li>
                 </ul>
-
-                <!-- Mobile version Top Nav -->
-                <nav class="nav d-flex justify-content-start align-items-center mobile-v">
-                    <a class="nav-link" href="#"> <i class="fa fa-user-o"></i></a>
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> </a>
-                    <a class="nav-link" href="#"><i class="far fa-heart"></i> </a>
-                    <span class="lang d-flex">
-                        <a class="lang-de" href="#">DE</a>
-                        <span class="seperator">|</span>
-                        <a class="lang-en" href="#">EN</a>
-                    </span>
-                    <a class="nav-link" href="#">
-                        <img src="./img/icons.png" class="nav-icon" alt="">
-                    </a>
-                </nav>
             </div>
-
-            <!-- Top Social-Media-links -->
-            <div class="social-media-links">
-                <nav class="nav d-flex">
-                    <a href="#" class="social-links"><i class="fa fa-phone"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-envelope"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-whatsapp"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
-                </nav>
-            </div>
+              </div>
+            </nav>
         </div>
-
-        <!-- Nav -->
-        <div class="main-nav mt-2">
+        <!-- Primary Nav desktop -->
+        <div class="desktop-main-nav main-nav mt-2">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html">
                         <img src="./img/logo.png" class="brand-logo" alt="">
                     </a>
-                    <button onclick="resbar(this)" class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- <span class="fa fa-bars"></span> -->
-                        <span class="bar-1"></span>
-                        <span class="bar-2"></span>
-                        <span class="bar-3"></span>
-                    </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./hund.html">Hund</a>
+                                <a class="nav-link nav-active" href="./hund.html">Hund</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Katze</a>
@@ -161,7 +213,9 @@
                 </nav>
             </div>
         </div>
+
     </div>
+    <!-- Header end -->
 
     <!-- main -->
     <div class="main">
@@ -452,6 +506,7 @@
             </div>
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="py-5">
         <div class="container">

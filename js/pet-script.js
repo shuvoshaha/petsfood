@@ -15,7 +15,7 @@ window.onscroll = (e) => {
 
     scroll.style.display = "flex";
     header.style.boxShadow = "0 2px 2px rgba(0,0,0,0.2)"
-    header.style.paddingBottom = "10px"
+    // header.style.paddingBottom = "10px"
   }
 
   else {

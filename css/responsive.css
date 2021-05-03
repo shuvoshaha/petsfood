@@ -155,8 +155,8 @@
     }
 
     .mobile-main-nav .nav-item {
-        padding-left: 38% !important;
-        border-bottom: 1px solid #f1f1f1 !important;
+        padding-left: 36% !important;
+        border-bottom: 2px solid #e9ecef !important;
     }
 
     .mobile-hotline-roster {
@@ -455,6 +455,9 @@
 
 @media screen and (max-width: 800px) {
 
+    .header{
+        padding-top: 0 !important;
+    }
     /*
     ======= wishlist page ========*/
     .m-v-btn {
